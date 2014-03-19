@@ -1,0 +1,127 @@
+#! /bin/sh
+
+#{\hrulefill\ {\tt\#}
+#	\vskip 1ex
+#	\input ../fonts.tex % define fonts
+#	\input ../title.tex % title and authors
+#	\vskip 1ex
+# \noindent{\tt\#}\ \hrulefill\ {\tt\#}}
+
+
+#{\hrulefill\ c2tex\ \hrulefill\ {\tt\#}
+# \par\vskip 1ex
+# \centerline{\tt c2tex [-pagelength <n>] {\sl filenames}}
+# \par\vskip 1ex
+# It is necessary for {\sl c2tex\/}
+# that the following softwares are installed properly:
+# \par
+# {\sl\qquad nkf\ ,\ \ src2tex\ .}
+# \par
+# \noindent {\sl C2tex\/} is just written
+# by \ K. Amano \ for his private use.
+# Here Kanji converter {\sl nkf\/} would be unnecessary
+# if you are not Japanese.
+# If you are
+# a L\kern-.35em\raise.33ex\hbox{\eightcmr A}\kern-.2em\hbox{\TeX}\ user,
+# you have to replace ``{\tt tex}`` with ``{\tt latex}``.
+# If {\tt jtex} and {\tt jlatex} are not installed at your site
+# and if you are a Japanese install them
+# else replace them with {\tt tex} and {\tt latex} respectively.
+# \par
+# \noindent{\tt\#}\ \hrulefill\ {\tt\#}}
+
+
+#{\hrulefill\ Preliminaries\ \hrulefill\ {\tt\#}
+# \par
+# Though {\sl src2tex\/} accepts only one single filename,
+# {\sl c2tex} allows to input multiple filenames
+# by virtue of the first\  `` {\tt for $\cdots$} ''\ statement.
+# There is an option related to number of lines printed in each logical page
+# \par
+# {\tt -pagelength}\ \ $n$
+# \par\noindent
+# Here we also make a carbon copy of tilde file
+# \ {\sl filename}{\~\ }
+# which is created by Emacs, Mule or something like that.
+# \par
+# \noindent{\tt\#}\ \hrulefill\ {\tt\#}}
+
+if
+	test $# = 0
+then
+	echo "Usage: src2tex2dvi [-pagelength <n>] filenames"
+fi
+
+src2tex_option=""
+if
+	test "$1" = "-pagelength" -o "$1" = "-p"
+then
+	shift
+	src2tex_option="-$1"
+	shift
+fi
+
+for i in $*
+do
+
+if
+	test -f $i~
+then
+	mv $i~ $i.bak
+fi
+
+#{\hrulefill\ Any Kanji $\Rightarrow$ EUC Kanji\ \hrulefill\ {\tt\#}
+# \par
+# This conversion is necessary since {\sl src2tex} works only for EUC codes.
+# If you don't use Japanese, you can skip this procedure.
+# \par
+# \noindent{\tt\#}\ \hrulefill\ {\tt\#}}
+
+if
+	test -f $i
+then
+	mv $i $i~
+	nkf -e $i~ > $i
+fi
+
+#{\hrulefill\ Source File $\Rightarrow$ TeX file\ \hrulefill\ {\tt\#}
+# \par
+# This block is actually the main part of {\sl src2tex2dvi\/}.
+# Given source files are translated into {\TeX} here.
+# At the last stage, {\TeX} file is modified by using sed script c2tex.sed.
+# \par\noindent
+# Here, it is necessary to indicate
+# where the sed script {\sl c2tex.sed\/} exists.
+# So, please rewrite the following two lines containing ``c2tex.sed''
+# appropriately.
+# \par
+# \noindent{\tt\#}\ \hrulefill\ {\tt\#}}
+
+if
+	test -f $i
+then
+	echo "src2tex" $src2tex_option $i
+	src2tex $src2tex_option $i
+fi
+if
+	test -f $i~
+then
+	mv $i~ $i
+fi
+if
+	test -f $i.tex
+then
+	if
+		test -f c2tex.sed
+#		test -f /home/kamano/etc/c2tex.sed
+	then
+		mv $i.tex $i.tex~
+		sed -f c2tex.sed $i.tex~ > $i.tex
+#		sed -f /home/kamano/etc/c2tex.sed $i.tex~ > $i.tex
+	else
+		echo "Error: cannot find c2tex.sed file"
+		echo "       It would be necessary to modity c2tex."
+	fi
+fi
+
+done

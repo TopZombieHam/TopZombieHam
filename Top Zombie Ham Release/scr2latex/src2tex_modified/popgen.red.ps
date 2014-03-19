@@ -1,0 +1,2442 @@
+%!PS-Adobe-2.0
+%%Creator: dvi2ps
+%%Title: popgen.red.dvi
+%%Pages: 2 0
+%%BoundingBox: 0 0 595 842
+%%DocumentPaperSizes: A4
+%%Orientation: Portrait
+%%EndComments
+%%BeginProcSet: pstops-clip 1 0
+[/showpage/erasepage/copypage]{dup where{pop dup load
+ type/operatortype eq{1 array cvx dup 0 3 index cvx put
+ bind def}{pop}ifelse}{pop}ifelse}forall
+[/letter/legal/executivepage/a4/a4small/b5/com10envelope
+ /monarchenvelope/c5envelope/dlenvelope/lettersmall/note
+ /folio/quarto/a5]{dup where{dup wcheck{exch{}put}
+ {pop{}def}ifelse}{pop}ifelse}forall
+/lcvx{dup load dup type dup/operatortype eq{pop exch pop}
+ {/arraytype eq{dup xcheck{exch pop aload pop}
+ {pop cvx}ifelse}{pop cvx}ifelse}ifelse}bind def
+/pstopsmatrix matrix currentmatrix def
+/pstopsxform matrix def
+/defaultmatrix{pstopsmatrix exch pstopsxform exch concatmatrix}bind def
+/initmatrix{matrix defaultmatrix setmatrix}bind def
+/pathtoproc{[{currentpoint}stopped{$error/newerror false
+ put{newpath}}{/newpath cvx 3 1 roll/moveto cvx 4 array
+ astore cvx}ifelse]{[/newpath cvx{/moveto cvx}{/lineto cvx}
+ {/curveto cvx}{/closepath cvx}pathforall]cvx exch pop}
+ stopped{$error/errorname get/invalidaccess eq{cleartomark
+ $error/newerror false put cvx exec}{stop}ifelse}if}def
+/initclip[/matrix lcvx/currentmatrix lcvx/pstopsmatrix cvx/setmatrix lcvx
+ /pathtoproc lcvx/initclip lcvx/newpath lcvx
+ 0 0 /moveto lcvx 595.000000 0/rlineto lcvx
+ 0 842.000000/rlineto lcvx -595.000000 0/rlineto lcvx
+ /closepath lcvx/clip lcvx
+ /newpath lcvx/exec lcvx/setmatrix lcvx]cvx def
+/initgraphics{initmatrix newpath initclip 1 setlinewidth
+ 0 setlinecap 0 setlinejoin []0 setdash 0 setgray
+ 10 setmiterlimit}bind def
+%%EndProcSet
+%%BeginFile: /home/kamano/lib/dvi2ps/tex.ps
+%
+systemdict /setpacking known {
+/savepacking currentpacking def
+true setpacking
+} if
+/TeXDict 200 dict def
+TeXDict begin
+/inch {
+72 mul
+} bind def
+/largepaperarray [
+/letter /legal /11x17
+/b4 /b5 /a5 /a4 /a3
+] def
+/smallpaperarray [
+/note dup where {
+pop
+}{
+pop /lettersmall dup where {
+pop
+}{
+pop /letter
+} ifelse
+} ifelse
+/legal /11x17
+/b4 /b5 /a5
+/a4small dup where {
+pop
+}{
+pop /note dup where {
+pop
+}{
+pop /a4
+} ifelse
+} ifelse
+/a3
+] def
+/setpaper {
+dup where papertray and {
+exch get exec
+} if
+} bind def
+/trayarray [
+/lettertray /legaltray /11x17tray
+/b4tray /b5tray /a5tray /a4tray /a3tray
+] def
+/settray {
+dup statusdict exch known {
+{
+statusdict begin load exec end
+} stopped {
+$error /newerror get {
+$error /errorname get /rangecheck eq {
+(Tray not found, using default tray.) print flush
+/papertray false def
+}{
+handleerror
+} ifelse
+$error /newerror false put
+} if
+} if
+}{
+pop
+} ifelse
+} bind def
+/papertray true def
+/widtharray  [
+8.5 inch 8.5 inch 11 inch
+9.84 inch 6.93 inch
+5.83 inch 8.27 inch 11.69 inch
+] def
+/heightarray [
+11 inch 14 inch 17 inch
+13.9 inch 9.84 inch
+8.27 inch 11.69 inch 16.54 inch
+] def
+/xoffset 0 def
+/yoffset 0 def
+/landscape false def
+/pagesetup {
+dup widtharray exch get /paperwidth exch def
+dup heightarray exch get /paperheight exch def
+dup trayarray exch get settray
+large {largepaperarray}{smallpaperarray} ifelse
+exch get setpaper
+} bind def
+/@letter {0 pagesetup} def
+/@legal {1 pagesetup} def
+/@tabloid {2 pagesetup} def
+/@b4 {3 pagesetup} def
+/@b5 {4 pagesetup} def
+/@a5 {5 pagesetup} def
+/@a4 {6 pagesetup} def
+/@a3 {7 pagesetup} def
+/@landscape {/landscape true def} bind def
+/@manualfeed {
+statusdict /manualfeed known {
+statusdict /manualfeed true put
+statusdict /manualfeedtimeout 120 put
+} if
+} bind def
+/@large {
+/large true def
+} bind def
+/@small {
+/large false def
+} bind def
+/@envelope {
+/xoffset 4.28 inch def
+/yoffset 1.5 inch def
+@letter
+} bind def
+/COPIES	{
+/#copies exch def
+} bind def
+/NF {
+/newname exch def
+/fsize exch def
+/corr exch def
+newname 7 dict def
+newname load begin
+/FontType 3 def
+/FontMatrix [corr 0 0 corr neg 0 0] def
+/FontBBox [0 0 1 1] def
+/BitMaps fsize array def
+/BuildChar /CharBuilder load def
+/Encoding 256 array def
+0 1 255 {Encoding exch /.notdef put} for
+end
+newname newname load definefont pop
+} bind def
+/ch-image {ch-data 0 get} bind def
+/ch-width {ch-data 1 get} bind def
+/ch-height {ch-data 2 get} bind def
+/ch-xoff {ch-data 3 get} bind def
+/ch-yoff {ch-data 4 get} bind def
+/ch-tfmw {ch-data 5 get} bind def
+/CharBuilder {
+/ch-code exch def
+/font-dict exch def
+/ch-data font-dict /BitMaps get ch-code get def
+ch-data null eq not {
+ch-tfmw 0
+ch-xoff neg  ch-yoff neg ch-width ch-xoff sub ch-height ch-yoff sub
+setcachedevice
+ch-width ch-height true [1 0  0 1  ch-xoff ch-yoff]
+{ch-image} imagemask
+} if
+} bind def
+/LWF {
+/lw-v exch def
+/lw-h exch def
+findfont [lw-h 0 0 lw-v 0 0] makefont def
+} bind def
+/LWFX {
+/lw-v exch def
+/lw-h exch def
+/savecurfont currentfont def
+findfont dup setfont
+[
+( ) stringwidth pop dup lw-h exch div
+exch lw-v exch div 0 0 3 -1 roll
+0 0
+] makefont def
+savecurfont setfont
+} bind def
+/LWJF /LWF load def
+/SF /setfont load def
+/s3 3 string def
+/D {
+/ch-code exch def
+dup 0 get
+length 2 lt {
+pop [ <00> 1 1 0 0 8.00 ]
+} if
+/ch-data exch def
+currentfont /BitMaps get ch-code ch-data put
+currentfont /Encoding get ch-code
+dup s3 cvs cvn
+put
+} bind def
+/BP {
+/SaveImage save def
+xoffset yoffset translate
+72 72
+landscape {
+exch translate
+90 rotate
+}{
+paperheight exch sub translate
+} ifelse
+72 Resolution div dup neg scale
+0 0 moveto
+} bind def
+/EP {
+showpage 
+SaveImage restore
+} bind def
+/START {
+/Resolution exch def
+} bind def
+/END /end load def
+/l /lineto load def
+/p /moveto load def
+/r {
+0 rmoveto
+} def
+/s /show load def
+/ru {
+/dy exch neg def
+/dx exch def
+/x currentpoint /y exch def def
+newpath x y moveto
+dx 0 rlineto
+0 dy rlineto
+dx neg 0 rlineto
+closepath fill
+x y moveto
+} bind def
+/@SpecialDefaults {
+/hsi paperwidth inch def
+/vsi paperheight inch def
+/hof 0 def
+/vof 0 def
+/hsc 1 def
+/vsc 1 def
+/rotat 0 def
+/CLIP false def
+/BBOX false def
+/EPSF false def
+} bind def
+/@hsize {/hsi exch def /CLIP true def} bind def
+/@vsize {/vsi exch def /CLIP true def} bind def
+/@hoffset {/hof exch def} bind def
+/@voffset {/vof exch def} bind def
+/@hscale {/hsc exch def} bind def
+/@vscale {/vsc exch def} bind def
+/@rotation {/rotat exch def} bind def
+/@bbox {
+/ury exch def
+/urx exch def
+/lly exch def
+/llx exch def
+/BBOX true def
+} bind def
+/@epsf {
+/hsi 0 def
+/vsi 0 def
+/EPSF true def
+} bind def
+/@setclipper {
+CLIP {
+newpath 0 0 moveto hsi 0 rlineto 0 vsi rlineto hsi neg 0 rlineto
+closepath clip
+} if
+} bind def
+/@beginspecial {
+/SpecialSave save def
+currentpoint transform initgraphics itransform translate
+dup scale
+landscape {90 rotate} if
+@SpecialDefaults
+@MacSetUp
+} bind def
+/@setspecial {
+hof vof translate
+EPSF BBOX and {
+hsi 0 eq {
+vsi 0 eq {
+hsc vsc
+}{
+vsi ury lly sub div dup
+}ifelse
+}{
+vsi 0 eq {
+hsi urx llx sub div dup
+}{
+hsi urx llx sub div vsi ury lly sub div
+} ifelse
+} ifelse
+scale
+llx neg ury neg translate
+newpath
+llx lly moveto
+urx llx sub 0 rlineto
+0 ury lly sub rlineto
+llx urx sub 0 rlineto
+closepath clip
+newpath
+}{
+@setclipper hsc vsc scale rotat rotate
+} ifelse
+end
+/letter {} def /note {} def /legal {} def /11x17
+/b4 {} def /b5 {} def /a5 {} def /a4 {} def /a3 {} def
+/showpage {} def /copypage {} def /erasepage {} def
+} bind def
+/@MacSetUp {
+userdict /md known {
+userdict /md get type /dicttype eq {
+/MacDrwgs true def
+md /txpose known {
+md /txpose {pxs pys neg scale} put
+} if
+md /cp known {
+md /cp {pop pop pm restore} put
+} if
+} if
+} if
+} bind def
+/@push {
+/SpecialSave save def
+currentpoint translate
+dup scale
+newpath
+} bind def
+/@pop {
+SpecialSave restore
+} bind def
+/@pn
+/setlinewidth load
+def
+/@pt {
+moveto currentpoint currentlinewidth 2 div 0 360 arc fill
+} bind def
+/@ln {
+moveto lineto stroke
+} bind def
+/@ar {
+matrix currentmatrix
+7 -2 roll moveto
+currentpoint translate
+newpath
+5 -2 roll scale
+0 0 1 6 -2 roll arc
+setmatrix
+} bind def
+/@wh {1 setgray} bind def
+/@sh {0.75 setgray} bind def
+/@bk {0 setgray} bind def
+/@RGB {setrgbcolor} bind def
+/@HSB {sethsbcolor} bind def
+/@CMYK {setcmykcolor} bind def
+end
+/@endspecial {
+clear
+TeXDict begin
+SpecialSave restore
+} bind def
+systemdict /setpacking known {
+savepacking setpacking
+} if
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%PaperSize: A4
+%%Feature: *ManualFeed False
+%%Feature: *Resolution 240
+TeXDict begin
+@large
+@a4
+240 START
+1.000 122 /f0 NF
+f0 SF
+[<FE07FC3801E01801C00801C00801C004038004038007FF80020700020700020700010E00010E00010E00009C00009C00009C
+  00007800007800007800003000003000003000> 24 23 -1 0 24.906] 65 D
+[<FF87FC1C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01FFFE01C00E01C00E01C00E01C00E01C00
+  E01C00E01C00E01C00E01C00E01C00E0FF87FC> 24 23 -1 0 24.906] 72 D
+[<FF81FE1C00F81C00F01C00E01C01C01C01C01C03801C07001C0F001E0E001D1C001CBC001C78001C30001C10001C08001C04
+  001C02001C01001C00801C00401C00F0FF81FC> 24 23 -1 0 25.829] 75 D
+[<0FFF800070000070000070000070000070000070000070000070000070000070000070000070000070000070000070008070
+  088070088070084070104070106070307FFFF0> 24 23 -1 0 23.984] 84 D
+[<0040040000C0060000E00E0000E00E0001E00F0001D01D0001D01D0001D01D0003901C800388388003883880070838400704
+  7040070470400E0470200E02E0200E02E0200E02E0201C03E0101C01C0101C01C0103C03C038FF0FF8FE> 32 23 -1 0 34.131] 87 D
+[<1F3C70FEE072E072E072607070701C7007F000702070706070E03F80> 16 14 -1 0 16.604] 97 D
+[<11F01A181C0C1C061C071C071C071C071C071C071C061C0C1E181DF01C001C001C001C001C001C001C001C00FC00> 16 23 0 0 18.449] 98 D
+[<0F80186030107010E000E000E000E000E000E0007020307018700FE0> 16 14 -1 0 14.759] 99 D
+[<0FBF187830386038E038E038E038E038E038E0386038303818780FB80038003800380038003800380038003801F8> 16 23 -1 0 18.449] 100 D
+[<0F80186030106010E000E000E000E000FFF0E0306070306018C00F80> 16 14 -1 0 14.759] 101 D
+[<FF801C001C001C001C001C001C001C001C001C001C001C001C00FF001C001C001C001C001C001C400CE006E003C0> 16 23 0 0 10.147] 102 D
+[<0FC030306018C00CC00CC00C601C3FF83FF03FE0600060002F0039C030C070E070E070E030C039E60F3C> 16 21 -1 7 16.604] 103 D
+[<FF9F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001E1C001D18001CF0001C00001C00001C00
+  001C00001C00001C00001C00001C0000FC0000> 24 23 0 0 18.449] 104 D
+[<FF1C1C1C1C1C1C1C1C1C1C1C1C7C0000000000183C3C18> 8 23 0 0 9.224] 105 D
+[<FF801C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C00FC00> 16 23 0 0 9.224] 108 D
+[<FF9FCFE01C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001E0F07001D0C
+  8600FCF87C00> 32 14 0 0 27.673] 109 D
+[<FF9F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001E1C001D1800FCF000> 24 14 0 0 18.449] 110 D
+[<0FC0186030306018E01CE01CE01CE01CE01CE01C6018303018600FC0> 16 14 -1 0 16.604] 111 D
+[<FF801C001C001C001C001C001DF01E181C0C1C0E1C071C071C071C071C071C071C0E1C0C1E18FDF0> 16 20 0 6 18.449] 112 D
+[<00FF80001C00001C00001C00001C00001C00079C00185C00303C00701C00601C00E01C00E01C00E01C00E01C00601C00701C
+  00303C001C6C00078400> 24 20 -1 6 17.526] 113 D
+[<FF801C001C001C001C001C001C001C001C001C001C201E701E70FDE0> 16 14 0 0 13.006] 114 D
+[<9F00E180C0C080C080C003C03F807F00FE00E000C080C08061803E80> 16 14 -1 0 13.099] 115 D
+[<0F00198038803880388038803800380038003800380038003800FF80380018001800080008000800> 16 20 -1 0 12.914] 116 D
+[<07DF800C3C001C3C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C00FCFC00> 24 14 0 0 18.449] 117 D
+[<0100038003800380074007400F200E200E201C101C103C18381CFE3E> 16 14 -1 0 17.527] 118 D
+[<030600030600070700078F00078F000E8E800E5C800E5C801C58401C38401C3840383020387070FCFCF8> 24 14 -1 0 23.984] 119 D
+[<FCFF3878187008F004E007C003C0038007800EC00E401C203C38FE7E> 16 14 -1 0 17.527] 120 D
+[<7800EC00E600E200020001000100038003800380074007400F200E200E201C101C103C18381CFE3E> 16 20 -1 6 17.527] 121 D
+[<0FC018603030703860186018E01CE01CE01CE01CE01CE01CE01CE01CE01C601860187038303018600FC0> 16 21 -1 0 16.604] 48 D
+[<FFE00E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E00FE000E000600> 16 21 -3 0 16.604] 49 D
+[<FFE07FE03FE0203010100810040006000300018001C000E000E000F04070E070C07080E040E021C01F00> 16 21 -2 0 16.604] 50 D
+[<0FC030604070C038E03CE03C003C003C00380070006007C000E000700070007870787078607030600FC0> 16 21 -1 0 16.604] 51 D
+[<07FC00E000E000E000E000E0FFFCC0E040E020E030E010E008E004E004E002E001E001E000E000600060> 16 21 -1 0 16.604] 52 D
+[<1F00218040C08060E070E070407000700070006040E070C04F0040004000400040007F007F807FC06060> 16 21 -2 0 16.604] 53 D
+[<07C0186030307018601C601CE01CE01CE01CF018F030E860E7C0E000600070003038303818180E1003E0> 16 21 -1 0 16.604] 54 D
+[<0102040C1818303070606060E0E0E0E0E0E0E0E0E0E060606070303018180C040201> 8 34 -2 9 12.914] 40 D
+[<8040203018180C0C0E060606070707070707070707070606060E0C0C181830204080> 8 34 -2 9 12.914] 41 D
+[<003000003000003000003000003000003000003000003000003000003000FFFFF8FFFFF80030000030000030000030000030
+  00003000003000003000003000003000> 24 22 -2 3 25.829] 43 D
+[<60F0F060> 8 4 -2 0 9.224] 46 D
+[<60F0F06000000000000060F0F060> 8 14 -2 0 9.224] 58 D
+[<7FFFF0FFFFF8000000000000000000000000000000000000FFFFF87FFFF0> 24 10 -2 -3 25.829] 61 D
+[<FF3F9FE01C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E
+  0700FFFFFF001C0E00001C0E00001C0E00001C0E00001C0E02001C0E07000E0F07000707820001F8FC00> 32 23 0 0 27.673] 14 D
+[<FFFF> 8 2 0 -6 11.069] 45 D
+1.000 53 /f1 NF
+f1 SF
+[<FF807F80204010400800060003000180018000C0C0C0C0C080C041803E00> 16 15 -1 0 13.237] 50 D
+[<1FC00300030003000300FFC0C3004300230013001B000B00070003000300> 16 15 -1 0 13.237] 52 D
+1.000 121 /f2 NF
+f2 SF
+[<FF0020001800200008007000080070000800F0000800F0000400E8000401C8000401C8000403880002038400020704000207
+  040002070400010E0200010E0200011C0200011C020000B8010000B8010000F8010000F0018007F00FF0> 32 23 -1 0 26.682] 78 D
+[<03F0000E1C001807003003807001C07000E0600070600070E0003870003870001C70001C70001C30001C38001C18001C1C00
+  1C0C001C0600180300180180300060E0001F80> 24 23 -1 0 25.330] 79 D
+[<1C7062C841C440C4C0C4C0C06060606060603060303018700C700390> 16 14 -1 0 17.553] 97 D
+[<1C00620041004180C0C0C0C06060606060606060306030603C40338018001800180018000C000C000C000C003E00> 16 23 -1 0 14.252] 98 D
+[<3E004180C040802080008000C000C000C000600060E030E018400780> 16 14 -2 0 14.371] 99 D
+[<C070C04C60C460C260626060303030303030303018101C101A3019E00C000C000C000C0006000600060006001F00> 16 23 -2 0 19.133] 104 D
+[<1C003200310031003100300018001800180018000C000C000C00FF80060006000600060003000300> 16 20 -1 0 11.992] 116 D
+[<071C08F218711831183118300C180C180C188618460C460C260C1C04> 16 14 -1 0 19.010] 117 D
+[<78E0C510E708C30403040300018001800180418020C620C711A30F1E> 16 14 -1 0 18.979] 120 D
+[<3C004200C100810080808080C0C0C040C040604060C030C01980078007000C0018001800180008000C10061001E0> 16 23 -2 0 14.759] 14 D
+[<3E006100C080804080608030C030C018C0186018201C301C082C07CC000C00040004380C1C0C10080818043003C0> 16 23 -2 0 17.630] 64 D
+[<60F0F060> 8 4 -2 0 9.224] 58 D
+[<40402020101070F0F060> 8 10 -2 6 9.224] 59 D
+[<0000600001E0000780001E0000780000E0000380000F00003C0000F00000F000003C00000F000003800000E000007800001E
+  000007800001E0000060> 24 20 -3 2 25.829] 60 D
+1.000 25 /f3 NF
+f3 SF
+[<FFFFE0FFFFE0> 24 2 -3 -7 25.829] 0 D
+[<FFFFE07FFFC00000000000000000000000000000000000600001E0000780001E0000780000E0000380000F00003C0000F000
+  00F000003C00000F000003C00000E000003800001E000007800001E0000060> 24 27 -3 6 25.829] 20 D
+[<8007C0800FE0803FF0C07838E0F0187FC0083F80081F0008> 24 8 -2 -4 25.829] 24 D
+1.000 113 /f4 NF
+f4 SF
+[<02040C08181830307070706060E0E0E0E0E0E0E0E0E0E0E0E0E0606070707030301818080C0402> 8 39 -5 38 15.220] 0 D
+[<80406020303018181C1C1C0C0C0E0E0E0E0E0E0E0E0E0E0E0E0E0C0C1C1C1C1818303020604080> 8 39 -2 38 15.220] 1 D
+[<0003000F001E0038007000E000E001C001C00380038003800380038003800380038003800380038003800380038003800380
+  0380038003800380038003800380038003800380038003800380038003800300070007000E000E001C0038007000E000E000
+  700038001C000E000E0007000700030003800380038003800380038003800380038003800380038003800380038003800380
+  0380038003800380038003800380038003800380038003800380038001C001C000E000E000700038001E000F0003> 16 98 -5 97 26.751] 40 D
+[<F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F00070007800780038003C001C00
+  1E000F00078003C000C0> 16 30 -13 31 29.518] 56 D
+[<00C003C007800F001E001C003C003800780078007000F000F000F000F000F000F000F000F000F000F000F000F000F000F000
+  F000F000F000F000F000> 16 30 -13 29 29.518] 58 D
+[<01E001E001E001E001E001E001E001E001E001E001E001E001E001E001E001E001E001E001E001E003C003C003C007800780
+  0F000E001C0038007000E000E000700038001C000E000F000780078003C003C003C001E001E001E001E001E001E001E001E0
+  01E001E001E001E001E001E001E001E001E001E001E001E0> 16 62 -6 61 29.518] 60 D
+[<F0F0F0F0F0F0F0F0F0F0F0F0> 8 12 -13 11 29.518] 62 D
+[<0060000000E0000000F0000000F0000001D8000001D80000038C0000038C00000706000007060000070300000E0300000E01
+  80001C0180001C00C0001C00C00038006000B8006000700030003000300000003000000018000000180000000C0000000C00
+  000006000000060000000300000003000000018000000180000000C0000000C0000000600000006000000030000000300000
+  0018000000180000000C00000004> 32 41 -4 39 33.208] 112 D
+1.000 115 /f5 NF
+f5 SF
+[<07CFC01C3FC0380F00700F00700F00F00F00F00F00F00F00F00F00F00F00700F00700F00380F001C3F0007EF00000F00000F
+  00000F00000F00000F00000F00003F00003F00> 24 23 -1 0 21.216] 100 D
+[<07F01C18380C78067000F000F000FFFEF00EF00E700E700C381C1C3807E0> 16 15 -1 0 17.503] 101 D
+[<0FF0381C700EE007E007E007700F3FFE3FFC3FF0300020002FC0186030307038703870387038303718770FCE> 16 22 -1 7 19.095] 103 D
+[<FF3FC0FF3FC03C0F003C0F003C0F003C0F003C0F003C0F003C0F003C0F003C0F003E0F003E0F00FD8E00FC7C00> 24 15 -1 0 21.216] 110 D
+[<07E01C38381C700E700EF00FF00FF00FF00FF00F700E700E381C1C3807E0> 16 15 -1 0 19.095] 111 D
+[<FF0000FF00003C00003C00003C00003C00003DF8003F0E003C07003C07803C03803C03C03C03C03C03C03C03C03C03C03C03
+  803C07803C0700FF0E00FDF800> 24 21 -1 6 21.216] 112 D
+[<FF80FF803C003C003C003C003C003C003C003C003C303A783A78F938F8E0> 16 15 -1 0 15.728] 114 D
+[<70F8F8F870> 8 5 -3 0 10.608] 46 D
+1.000 126 /f6 NF
+f6 SF
+[<1F3E3FFE70F0E070E070E07078703FF00FF00070107038E03FC01F80> 16 14 -1 0 17.434] 97 D
+[<1BC03FE03C703838381C381C381C381C381C381C38383C303FE03BC03800380038003800F800F800> 16 20 -1 0 17.434] 98 D
+[<07C01FE0387070706000E000E000E000E0006000702038701FF007E0> 16 14 -2 0 17.434] 99 D
+[<0F7C1FFC30F07070E070E070E070E070E070E070707038F01FF00F70007000700070007001F001F0> 16 20 -1 0 17.434] 100 D
+[<07C01FF0383870386000E000FFF8FFF8E0386038707038701FE00780> 16 14 -1 0 17.434] 101 D
+[<3FF83FF80380038003800380038003800380038003800380FFFC7FFC03800380038401CE00FE007C> 16 20 0 0 17.434] 102 D
+[<0FC03FF078786018E01CE01CE01C703C3FF83FF03FC070007F003F8039C070E070E070E070E039CE1FFE0F3C> 16 22 -1 8 17.434] 103 D
+[<FE7CFE7C387038703870387038703870387038703C703E703FE039C03800380038003800F800F800> 16 20 -1 0 17.434] 104 D
+[<FFF0FFF00700070007000700070007000700070007000700FF00FF0000000000000006000F000F000600> 16 21 -2 0 17.434] 105 D
+[<FFF8FFF80700070007000700070007000700070007000700070007000700070007000700FF00FF00> 16 20 -2 0 17.434] 108 D
+[<F8E380F9E78071C70071C70071C70071C70071C70071C70071C70071C70071C70079E700FFBE00F71C00> 24 14 0 0 17.434] 109 D
+[<FE7CFE7C387038703870387038703870387038703C703E70FFE0F9C0> 16 14 -1 0 17.434] 110 D
+[<0F003FC079E070E0E070E070E070E070E070E07070E079E03FC00F00> 16 14 -2 0 17.434] 111 D
+[<FE00FE00380038003800380038003BC03FE03C703838381C381C381C381C381C381C38383C30FFE0FBC0> 16 21 -1 7 17.434] 112 D
+[<00FE00FE003800380038003800380FB81FF8387870786038E038E038E038E0386038707838781FF807B8> 16 21 -1 7 17.434] 113 D
+[<FFF0FFF00E000E000E000E000E000E000E000F000F080F9CFEFCFE78> 16 14 -1 0 17.434] 114 D
+[<DF80FFC0F060E030603000700FE03FC07E00C000C0E0E0E07FE01FE0> 16 14 -2 0 17.434] 115 D
+[<03C007F00E380E380E380E000E000E000E000E000E000E00FFF07FF00E000E000E000600> 16 18 -1 0 17.434] 116 D
+[<0F7C1FFC38F0387038703870387038703870387038703870F9F0F9F0> 16 14 -1 0 17.434] 117 D
+[<18E03DF03DF035B035B035B037B037B03030703870387038FFFCFFFC> 16 14 -1 0 17.434] 119 D
+[<FCFCFCFC1CE01CE00FC00F800780070007800FC01FC01CE0FCF8F8F8> 16 14 -1 0 17.434] 120 D
+[<3C007E0077007700038003800380038003C007C006C006C00EE00EE00CE01CE01C701C703870FCFCFCFC> 16 21 -1 7 17.434] 121 D
+[<07801FE03CF0387070387038E01CE01CE01CE01CE01CE01CE01CE01C7038703838703CF01FE00780> 16 20 -1 0 17.434] 48 D
+[<FFC0FFC00E000E000E000E000E000E000E000E000E000E000E000E00EE00FE001E000E0006000600> 16 20 -3 0 17.434] 49 D
+[<7FF0FFF0707038701C000E000700038001C000C000E0006000704070E070E070E0E070E03FC01F00> 16 20 -2 0 17.434] 50 D
+[<0FC03FE07070E038E01C401C001C001C0038007007E007E00070003000382038703870703FE00FC0> 16 20 -1 0 17.434] 51 D
+[<07FC07FC00E000E000E000E0FFFCFFFCE0E070E030E038E018E01CE00CE006E006E002E003E001E0> 16 20 -1 0 17.434] 52 D
+[<1F003F8071C0E0E0E070E07040700070006060E07FC07F007000700070007000700070007FE07FE0> 16 20 -2 0 17.434] 53 D
+[<07C01FE038707038701C601CE01CE01CE01CF038F870EFE0E7C070007000303838381E3807F003E0> 16 20 -1 0 17.434] 54 D
+[<30107038707C387C387C1C7C1C7C1C380E100E0007000700070003800380038021C071C0F8E0F8E0F8E0F870F870F8387038
+  2018> 16 26 -1 3 17.434] 37 D
+[<0180038006000C0018003800300070007000E000E000E000E000E000E000E000700070003000380018000C00060003800180> 16 25 -4 2 17.434] 40 D
+[<80C06030181C0C0E0E070707070707070E0E0C1C183060C080> 8 25 -4 2 17.434] 41 D
+[<060007000600E670F6F0FFF03FC03FC0FFF0F6F0E670060007000600> 16 14 -2 -3 17.434] 42 D
+[<038003800380038003800380FFFCFFFCFFFC038003800380038003800380> 16 15 -1 -3 17.434] 43 D
+[<C0E030301878F8F060> 8 9 -6 5 17.434] 44 D
+[<60F0F060> 8 4 -6 0 17.434] 46 D
+[<C000E000E000700070003800380038001C001C000E000E000E000700070007000380038001C001C001C000E000E000700070
+  0030> 16 26 -2 3 17.434] 47 D
+[<60F0F06000000000000060F0F060> 8 14 -6 0 17.434] 58 D
+[<80C060303070F0F06000000000000060F0F060> 8 19 -6 5 17.434] 59 D
+[<FFFCFFFC7FFC0000000000007FFCFFFCFFFC> 16 9 -1 -6 17.434] 61 D
+[<FFF0FFF0FFF0> 16 3 -2 -9 17.434] 45 D
+[<007000F003E007C00F001E003C00F800F000F8003C001E000F0007C003E000F00070> 16 17 -2 -2 17.434] 60 D
+[<4000E000F0007C003E000F00078003C001F000F001F003C007800F003E007C00F000E0004000> 16 19 -2 -1 17.434] 62 D
+[<00F001F00380070007000700070007000700070007000E00FC00FC000E0007000700070007000700070007000700038001F0
+  00F0> 16 26 -2 3 17.434] 123 D
+[<7800FC000E0007000700070007000700070007000700038001F001F00380070007000700070007000700070007000E00FC00
+  7800> 16 26 -2 3 17.434] 125 D
+/pstopsxform pstopsmatrix matrix currentmatrix matrix invertmatrix matrix concatmatrix matrix invertmatrix store
+%%EndSetup
+
+%%Page: pstops 1
+/pstopssaved save def
+pstopsmatrix setmatrix
+0.000000 0.000000 translate
+1.000000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f6 SF
+0 33 p (%)s
+f5 SF
+17 r (p)s
+1 r (opgen.red)s
+f6 SF
+0 73 p (%)s
+f0 SF
+17 r (W)s
+-2 r (e)s
+10 r (shall)s
+11 r (solve)s
+10 r (the)s
+11 r (equation)s
+f2 SF
+511 112 p (@)s
+2 r (u)s
+511 126 p 38 1 ru
+515 157 p (@)s
+1 r (t)s
+f0 SF
+563 134 p (=)s
+f2 SF
+9 r (a)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+664 112 p (@)s
+f1 SF
+684 99 p (2)s
+f2 SF
+698 112 p (u)s
+664 126 p 53 1 ru
+664 157 p (@)s
+2 r (x)s
+f1 SF
+703 147 p (2)s
+f0 SF
+729 134 p (+)s
+f2 SF
+7 r (b)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+825 112 p (@)s
+2 r (u)s
+825 126 p 38 1 ru
+825 157 p (@)s
+2 r (x)s
+f0 SF
+875 134 p (+)s
+f2 SF
+7 r (c)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+(u)s
+f0 SF
+563 220 p (=)s
+f2 SF
+602 197 p (x)s
+f0 SF
+(\(1)s
+f3 SF
+7 r (\000)s
+f2 SF
+8 r (x)s
+f0 SF
+(\))s
+602 212 p 121 1 ru
+654 242 p (2)s
+f2 SF
+731 197 p (@)s
+f1 SF
+750 185 p (2)s
+f2 SF
+765 197 p (u)s
+731 212 p 53 1 ru
+731 242 p (@)s
+2 r (x)s
+f1 SF
+769 233 p (2)s
+f0 SF
+795 220 p (+)s
+f2 SF
+8 r (b)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+892 197 p (@)s
+2 r (u)s
+892 212 p 38 1 ru
+892 242 p (@)s
+2 r (x)s
+f0 SF
+942 220 p (+)s
+f2 SF
+7 r (c)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+(u)s
+f0 SF
+0 293 p (by)s
+12 r (using)s
+13 r (numerical-symbolic)s
+13 r (hybrid)s
+12 r (metho)s
+1 r (d)s
+13 r (established)s
+13 r (by)s
+13 r (K.)s
+13 r (Amano.)s
+21 r (This)s
+13 r (equation)s
+13 r (plays)s
+13 r (an)s
+13 r (imp)s
+1 r (ortant)s
+0 333 p (role)s
+11 r (in)s
+11 r (p)s
+1 r (opulation)s
+11 r (genetics.)s
+f6 SF
+0 414 p (%)s
+f0 SF
+17 r (co)s
+1 r (e\016cients)s
+f6 SF
+0 454 p (p)s
+-15 r (p)s
+-1 r (r)s
+-16 r (r)s
+-2 r (o)s
+-16 r (o)s
+-1 r (c)s
+-16 r (c)s
+-2 r (e)s
+-15 r (e)s
+-2 r (d)s
+-16 r (d)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-1 r (e)s
+-16 r (e)s
+15 r (sqrt)s
+2 r 10 1 ru
+15 r (a\(x\);)s
+52 494 p (sqrt\(x*\(1-x\)/2\);)s
+0 534 p (p)s
+-15 r (p)s
+-1 r (r)s
+-16 r (r)s
+-2 r (o)s
+-16 r (o)s
+-1 r (c)s
+-16 r (c)s
+-2 r (e)s
+-15 r (e)s
+-2 r (d)s
+-16 r (d)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-1 r (e)s
+-16 r (e)s
+15 r (b\(x\);)s
+52 575 p (1/2-x;)s
+0 615 p (p)s
+-15 r (p)s
+-1 r (r)s
+-16 r (r)s
+-2 r (o)s
+-16 r (o)s
+-1 r (c)s
+-16 r (c)s
+-2 r (e)s
+-15 r (e)s
+-2 r (d)s
+-16 r (d)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-1 r (e)s
+-16 r (e)s
+15 r (c\(x\);)s
+52 655 p (0;)s
+0 736 p (%)s
+f0 SF
+17 r (domain)s
+f6 SF
+0 776 p (%)s
+391 844 p (domain)s
+2 r 10 1 ru
+11 r (p)s
+f0 SF
+(\()s
+f6 SF
+(t)s
+f2 SF
+(;)s
+f6 SF
+5 r (x)s
+f0 SF
+(\))s
+10 r (=)s
+f4 SF
+646 787 p (\()s
+f0 SF
+678 808 p (1)s
+33 r (if)s
+11 r (\()s
+f2 SF
+(t;)s
+6 r (x)s
+f0 SF
+(\))s
+11 r (b)s
+1 r (elongs)s
+11 r (to)s
+11 r (the)s
+11 r (domain)s
+678 888 p (0)s
+33 r (otherwise)s
+f6 SF
+0 939 p (p)s
+-15 r (p)s
+-1 r (r)s
+-16 r (r)s
+-2 r (o)s
+-16 r (o)s
+-1 r (c)s
+-16 r (c)s
+-2 r (e)s
+-15 r (e)s
+-2 r (d)s
+-16 r (d)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-1 r (e)s
+-16 r (e)s
+15 r (domain)s
+2 r 10 1 ru
+15 r (p\(t,x\);)s
+0 979 p (b)s
+-15 r (b)s
+-1 r (e)s
+-16 r (e)s
+-2 r (g)s
+-16 r (g)s
+-1 r (i)s
+-16 r (i)s
+-2 r (n)s
+-16 r (n)s
+-1 r (;)s
+52 1020 p (on)s
+18 r (rounded;)s
+52 1060 p (i)s
+-15 r (i)s
+-1 r (f)s
+-16 r (f)s
+15 r (t)s
+17 r (<)s
+18 r (0)s
+17 r (o)s
+-15 r (o)s
+-1 r (r)s
+-16 r (r)s
+15 r (x)s
+17 r (<)s
+18 r (0)s
+17 r (o)s
+-15 r (o)s
+-1 r (r)s
+-16 r (r)s
+15 r (x)s
+17 r (>)s
+17 r (1)s
+18 r (t)s
+-15 r (t)s
+-2 r (h)s
+-15 r (h)s
+-2 r (e)s
+-15 r (e)s
+-2 r (n)s
+-16 r (n)s
+52 1100 p (<<)s
+105 1140 p (off)s
+17 r (rounded;)s
+105 1181 p (r)s
+-15 r (r)s
+-2 r (e)s
+-15 r (e)s
+-2 r (t)s
+-16 r (t)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-2 r (n)s
+-16 r (n)s
+15 r (0)s
+52 1221 p (>>)s
+52 1261 p (e)s
+-14 r (e)s
+-2 r (l)s
+-16 r (l)s
+-2 r (s)s
+-15 r (s)s
+-2 r (e)s
+-16 r (e)s
+52 1301 p (<<)s
+105 1342 p (off)s
+17 r (rounded;)s
+105 1382 p (r)s
+-15 r (r)s
+-2 r (e)s
+-15 r (e)s
+-2 r (t)s
+-16 r (t)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-2 r (n)s
+-16 r (n)s
+15 r (1)s
+52 1422 p (>>)s
+0 1462 p (e)s
+-15 r (e)s
+-1 r (n)s
+-16 r (n)s
+-2 r (d)s
+-16 r (d)s
+-1 r (;)s
+0 1543 p (%)s
+f0 SF
+17 r (numerical)s
+f6 SF
+(-)s
+f0 SF
+(sym)s
+-1 r (bolic)s
+16 r (hybrid)s
+16 r (metho)s
+1 r (d)s
+f6 SF
+0 1583 p (%)s
+f0 SF
+17 r (Key)s
+11 r (idea)s
+11 r (dep)s
+1 r (ends)s
+11 r (on)s
+11 r (the)s
+11 r (following)s
+10 r (formula:)s
+f2 SF
+275 1678 p (u)s
+f0 SF
+(\()s
+f2 SF
+(t;)s
+5 r (x)s
+f0 SF
+(\))s
+9 r (=)s
+413 1655 p (1)s
+413 1670 p 17 1 ru
+413 1701 p (6)s
+f2 SF
+440 1678 p (u)s
+f4 SF
+459 1651 p (\000)s
+f2 SF
+474 1678 p (t;)s
+5 r (x)s
+f0 SF
+8 r (+)s
+f4 SF
+560 1648 p (p)s
+62 1 ru
+f2 SF
+593 1678 p (a)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+6 r (h)s
+f4 SF
+680 1651 p (\001)s
+f0 SF
+703 1678 p (+)s
+740 1655 p (1)s
+740 1670 p 17 1 ru
+740 1701 p (6)s
+f2 SF
+766 1678 p (u)s
+f4 SF
+785 1651 p (\000)s
+f2 SF
+800 1678 p (t;)s
+6 r (x)s
+f3 SF
+7 r (\000)s
+f4 SF
+887 1648 p (p)s
+62 1 ru
+f2 SF
+920 1678 p (a)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+5 r (h)s
+f4 SF
+1007 1651 p (\001)s
+f0 SF
+372 1763 p (+)s
+410 1741 p (1)s
+410 1756 p 17 1 ru
+410 1786 p (3)s
+f2 SF
+436 1763 p (u)s
+f4 SF
+455 1737 p (\000)s
+f2 SF
+470 1763 p (t;)s
+6 r (x)s
+f0 SF
+7 r (+)s
+f2 SF
+7 r (b)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+(h)s
+f1 SF
+635 1750 p (2)s
+f4 SF
+649 1737 p (\001)s
+f0 SF
+672 1763 p (+)s
+709 1741 p (1)s
+709 1756 p 17 1 ru
+709 1786 p (3)s
+f2 SF
+735 1763 p (u)s
+f0 SF
+(\()s
+f2 SF
+(t)s
+f3 SF
+8 r (\000)s
+f2 SF
+7 r (h)s
+f1 SF
+839 1750 p (2)s
+f2 SF
+854 1763 p (;)s
+5 r (x)s
+f0 SF
+(\))s
+8 r (+)s
+f2 SF
+945 1741 p (h)s
+f1 SF
+964 1729 p (2)s
+945 1756 p 34 1 ru
+f0 SF
+954 1786 p (3)s
+f2 SF
+989 1763 p (c)s
+f0 SF
+(\()s
+f2 SF
+(x)s
+f0 SF
+(\))s
+f2 SF
+(u)s
+f0 SF
+(\()s
+f2 SF
+(t;)s
+5 r (x)s
+f0 SF
+(\))s
+8 r (+)s
+f2 SF
+7 r (O)s
+f0 SF
+1 r (\()s
+f2 SF
+(h)s
+f1 SF
+1237 1750 p (4)s
+f0 SF
+1252 1763 p (\))s
+f2 SF
+11 r (:)s
+f6 SF
+0 1854 p (p)s
+-15 r (p)s
+-1 r (r)s
+-16 r (r)s
+-2 r (o)s
+-16 r (o)s
+-1 r (c)s
+-16 r (c)s
+-2 r (e)s
+-15 r (e)s
+-2 r (d)s
+-16 r (d)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-1 r (e)s
+-16 r (e)s
+15 r (hybrid)s
+2 r 10 1 ru
+15 r (method\(t,)s
+17 r (x,)s
+18 r (n\);)s
+0 1894 p (b)s
+-15 r (b)s
+-1 r (e)s
+-16 r (e)s
+-2 r (g)s
+-16 r (g)s
+-1 r (i)s
+-16 r (i)s
+-2 r (n)s
+-16 r (n)s
+-1 r (;)s
+52 1935 p (list)s
+2 r 10 1 ru
+16 r (in)s
+17 r (:=)s
+18 r ({{1,)s
+17 r (t,)s
+18 r (x}};)s
+52 1975 p (list)s
+2 r 10 1 ru
+16 r (tmp)s
+17 r (:=)s
+18 r ({};)s
+52 2015 p (w)s
+-15 r (w)s
+-1 r (h)s
+-16 r (h)s
+-2 r (i)s
+-15 r (i)s
+-2 r (l)s
+-16 r (l)s
+-1 r (e)s
+-16 r (e)s
+15 r (n)s
+17 r (>)s
+17 r (0)s
+18 r (d)s
+-15 r (d)s
+-2 r (o)s
+-15 r (o)s
+52 2055 p (<<)s
+105 2096 p (w)s
+-15 r (w)s
+-2 r (h)s
+-16 r (h)s
+-1 r (i)s
+-16 r (i)s
+-2 r (l)s
+-16 r (l)s
+-1 r (e)s
+-16 r (e)s
+15 r (length\(list)s
+2 r 10 1 ru
+15 r (in\))s
+18 r (>)s
+17 r (0)s
+18 r (d)s
+-15 r (d)s
+-2 r (o)s
+-16 r (o)s
+105 2136 p (<<)s
+f0 SF
+1240 2216 p (p)s
+1 r (opgen.red)s
+66 r (page)s
+11 r (1)s
+EP
+
+pstopssaved restore
+%%Page: pstops 2
+/pstopssaved save def
+pstopsmatrix setmatrix
+0.000000 0.000000 translate
+1.000000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f6 SF
+157 33 p (tmp)s
+17 r (:=)s
+18 r (first\(list)s
+2 r 10 1 ru
+15 r (in\);)s
+157 73 p (q)s
+17 r (:=)s
+18 r (first\(tmp\);)s
+157 113 p (s)s
+17 r (:=)s
+18 r (first\(rest\(tmp\)\);)s
+157 153 p (y)s
+17 r (:=)s
+18 r (first\(rest\(rest\(tmp\)\)\);)s
+157 193 p (i)s
+-15 r (i)s
+-2 r (f)s
+-15 r (f)s
+14 r (domain)s
+3 r 10 1 ru
+15 r (p\(s,)s
+17 r (y\))s
+18 r (neq)s
+17 r (0)s
+18 r (t)s
+-15 r (t)s
+-2 r (h)s
+-16 r (h)s
+-1 r (e)s
+-16 r (e)s
+-2 r (n)s
+-16 r (n)s
+157 232 p (<<)s
+209 272 p (list)s
+2 r 10 1 ru
+16 r (tmp)s
+17 r (:=)s
+18 r (cons\({q/6,)s
+17 r (s,)s
+17 r (y+sqrt)s
+3 r 10 1 ru
+15 r (a\(y\)*h},)s
+17 r (list)s
+2 r 10 1 ru
+16 r (tmp\);)s
+209 312 p (list)s
+2 r 10 1 ru
+16 r (tmp)s
+17 r (:=)s
+18 r (cons\({q/6,)s
+17 r (s,)s
+17 r (y-sqrt)s
+3 r 10 1 ru
+15 r (a\(y\)*h},)s
+17 r (list)s
+2 r 10 1 ru
+16 r (tmp\);)s
+209 352 p (list)s
+2 r 10 1 ru
+16 r (tmp)s
+17 r (:=)s
+18 r (cons\({q/3,)s
+17 r (s,)s
+17 r (y+b\(y\)*h**2},)s
+18 r (list)s
+2 r 10 1 ru
+15 r (tmp\);)s
+209 392 p (list)s
+2 r 10 1 ru
+16 r (tmp)s
+17 r (:=)s
+18 r (cons\({q/3,)s
+17 r (s-h**2,)s
+17 r (y},)s
+18 r (list)s
+2 r 10 1 ru
+15 r (tmp\);)s
+209 432 p (list)s
+2 r 10 1 ru
+16 r (tmp)s
+17 r (:=)s
+18 r (cons\({h**2*c\(y\)/3,)s
+17 r (s,)s
+17 r (y},)s
+18 r (list)s
+2 r 10 1 ru
+15 r (tmp\))s
+157 472 p (>>)s
+157 511 p (e)s
+-15 r (e)s
+-2 r (l)s
+-15 r (l)s
+-2 r (s)s
+-16 r (s)s
+-1 r (e)s
+-16 r (e)s
+209 551 p (list)s
+2 r 10 1 ru
+16 r (tmp)s
+17 r (:=)s
+18 r (cons\({q,)s
+17 r (s,)s
+17 r (y},)s
+18 r (list)s
+2 r 10 1 ru
+15 r (tmp\);)s
+157 591 p (list)s
+2 r 10 1 ru
+15 r (in)s
+18 r (:=)s
+17 r (rest\(list)s
+2 r 10 1 ru
+16 r (in\))s
+105 631 p (>>;)s
+105 671 p (list)s
+2 r 10 1 ru
+15 r (in)s
+18 r (:=)s
+17 r (list)s
+2 r 10 1 ru
+15 r (tmp;)s
+105 711 p (list)s
+2 r 10 1 ru
+15 r (tmp)s
+18 r (:=)s
+17 r ({};)s
+105 751 p (n)s
+17 r (:=)s
+17 r (n-1)s
+52 790 p (>>;)s
+52 830 p (r)s
+-15 r (r)s
+-1 r (e)s
+-16 r (e)s
+-2 r (t)s
+-15 r (t)s
+-2 r (u)s
+-16 r (u)s
+-1 r (r)s
+-16 r (r)s
+-2 r (n)s
+-16 r (n)s
+15 r (list)s
+2 r 10 1 ru
+16 r (in)s
+0 870 p (e)s
+-15 r (e)s
+-1 r (n)s
+-16 r (n)s
+-2 r (d)s
+-16 r (d)s
+-1 r (;)s
+0 950 p (%)s
+f0 SF
+17 r (main)s
+16 r (mo)s
+1 r (dule)s
+f6 SF
+0 990 p (h)s
+17 r (:=)s
+18 r (0.1;)s
+0 1029 p (hybrid)s
+2 r 10 1 ru
+15 r (method\(4,)s
+18 r (0.5,)s
+17 r (2\);)s
+0 1109 p (e)s
+-15 r (e)s
+-1 r (n)s
+-16 r (n)s
+-2 r (d)s
+-16 r (d)s
+-1 r (;)s
+0 1189 p (%)s
+f0 SF
+17 r (Here)s
+16 r (we)s
+16 r (give)s
+16 r (a)s
+16 r (numerical)s
+16 r (example.)s
+f6 SF
+0 1229 p (%)s
+f4 SF
+361 1235 p (8)s
+361 1265 p (>)s
+361 1275 p (<)s
+361 1334 p (>)s
+361 1344 p (:)s
+f2 SF
+400 1263 p (@)s
+2 r (u)s
+400 1278 p 38 1 ru
+404 1308 p (@)s
+2 r (t)s
+f0 SF
+452 1285 p (=)s
+506 1263 p (1)s
+491 1278 p 47 1 ru
+491 1308 p (4)s
+f2 SF
+(N)s
+555 1263 p (@)s
+f1 SF
+575 1251 p (2)s
+546 1278 p 53 1 ru
+f2 SF
+546 1308 p (@)s
+2 r (x)s
+f1 SF
+584 1298 p (2)s
+f4 SF
+603 1258 p (\000)s
+f2 SF
+618 1285 p (x)s
+f0 SF
+(\(1)s
+f3 SF
+8 r (\000)s
+f2 SF
+7 r (x)s
+f0 SF
+(\))s
+f2 SF
+(u)s
+f4 SF
+758 1258 p (\001)s
+f0 SF
+840 1285 p (\(0)s
+f2 SF
+9 r (<)s
+10 r (t)s
+f3 SF
+9 r (\024)s
+f0 SF
+9 r (4)s
+f2 SF
+(N)s
+2 r (;)s
+f0 SF
+16 r (0)s
+f2 SF
+10 r (<)s
+9 r (x)s
+9 r (<)s
+f0 SF
+9 r (1\))s
+f2 SF
+396 1365 p (u)s
+f0 SF
+(\(0)s
+f2 SF
+(;)s
+6 r (x)s
+f0 SF
+(\))s
+f3 SF
+9 r (\030)s
+f2 SF
+9 r (\016)s
+f0 SF
+2 r (\()s
+f2 SF
+(x)s
+f3 SF
+7 r (\000)s
+f0 SF
+7 r (0)s
+f2 SF
+(:)s
+f0 SF
+(5\))s
+f6 SF
+0 1441 p (%)s
+17 r 1.000 @beginspecial
+@epsf
+0.700000 @hscale
+0.700000 @vscale
+0.000000 0.000000 559.000000 326.000000 @bbox
+@setspecial
+%%BeginDocument: solution.eps
+%!
+%%Title: /tmp/xfig-export003985
+%%Creator: fig2dev
+%%CreationDate: Thu Sep 29 08:09:05 1994
+%%For: kamano@novas (Kazuo AMANO,,,)
+%%BoundingBox: 0 0 559 326
+%%Pages: 0
+%%EndComments
+/$F2psDict 6400 dict def 
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/l {lineto} bind def
+/m {moveto} bind def
+/s {stroke} bind def
+/n {newpath} bind def
+/gs {gsave} bind def
+/gr {grestore} bind def
+/clp {closepath} bind def
+/graycol {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+4 -2 roll mul setrgbcolor} bind def
+/col-1 {} def
+/col0 {0 0 0 setrgbcolor} bind def
+/col1 {0 0 1 setrgbcolor} bind def
+/col2 {0 1 0 setrgbcolor} bind def
+/col3 {0 1 1 setrgbcolor} bind def
+/col4 {1 0 0 setrgbcolor} bind def
+/col5 {1 0 1 setrgbcolor} bind def
+/col6 {1 1 0 setrgbcolor} bind def
+/col7 {1 1 1 setrgbcolor} bind def
+	end
+	/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+	/$F2psEnd {$F2psEnteredState restore end} def
+	%%EndProlog
+
+$F2psBegin
+0 setlinecap 0 setlinejoin
+-9 9 translate
+0.0 326.0 translate 0.900 -0.900 scale
+0.000 setlinewidth
+% Polyline
+n 317 89 m 562 230 l  317 372 l  72 230 l gs 0.30 setgray fill gr
+1.000 setlinewidth
+% Polyline
+n 317 89 m 586 245 l gs col-1 s gr
+n 574.166 233.513 m 586.000 245.000 l 570.152 240.434 l gs 2 setlinejoin col-1 s gr
+% Polyline
+n 317 89 m 317 44 l gs col-1 s gr
+n 313.000 60.000 m 317.000 44.000 l 321.000 60.000 l gs 2 setlinejoin col-1 s gr
+% Polyline
+n 317 89 m 48 245 l gs col-1 s gr
+n 63.848 240.434 m 48.000 245.000 l 59.834 233.513 l gs 2 setlinejoin col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 286 107 m 286 105 l  271 108 l  271 116 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 286 105 m 271 108 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 271 116 m 271 108 l  256 105 l  256 124 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 271 108 m 256 105 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 256 124 m 256 105 l  240 92 l  240 133 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 256 105 m 240 92 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 240 133 m 240 92 l  225 68 l  225 142 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 240 92 m 225 68 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 225 142 m 225 68 l  210 38 l  210 151 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 225 68 m 210 38 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 210 151 m 210 38 l  195 31 l  195 160 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 210 38 m 195 31 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 195 160 m 195 31 l  179 55 l  179 169 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 195 31 m 179 55 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 179 169 m 179 55 l  164 103 l  164 177 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 179 55 m 164 103 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 164 177 m 164 103 l  149 145 l  149 186 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 164 103 m 149 145 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 149 186 m 149 145 l  133 176 l  133 195 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 149 145 m 133 176 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 133 195 m 133 176 l  118 196 l  118 204 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 133 176 m 118 196 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 118 204 m 118 196 l  103 211 l  103 213 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 118 196 m 103 211 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 103 213 m 103 211 l  87 221 l  87 222 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 103 211 m 87 221 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 87 222 m 87 221 l  72 230 l  72 230 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 87 221 m 72 230 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 72 230 m 72 230 l  72 230 l  72 230 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 72 230 m 72 230 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 358 113 m 358 112 l  343 119 l  343 121 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 358 112 m 343 119 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 343 121 m 343 119 l  327 123 l  327 130 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 343 119 m 327 123 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 327 130 m 327 123 l  312 122 l  312 139 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 327 123 m 312 122 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 312 139 m 312 122 l  297 115 l  297 148 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 312 122 m 297 115 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 297 148 m 297 115 l  281 104 l  281 157 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 297 115 m 281 104 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 281 157 m 281 104 l  266 92 l  266 166 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 281 104 m 266 92 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 266 166 m 266 92 l  251 82 l  251 174 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 266 92 m 251 82 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 251 174 m 251 82 l  235 84 l  235 183 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 251 82 m 235 84 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 235 183 m 235 84 l  220 100 l  220 192 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 235 84 m 220 100 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 220 192 m 220 100 l  205 127 l  205 201 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 220 100 m 205 127 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 205 201 m 205 127 l  189 157 l  189 210 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 205 127 m 189 157 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 189 210 m 189 157 l  174 186 l  174 219 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 189 157 m 174 186 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 174 219 m 174 186 l  159 210 l  159 227 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 174 186 m 159 210 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 159 227 m 159 210 l  143 229 l  143 236 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 159 210 m 143 229 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 143 236 m 143 229 l  128 243 l  128 245 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 143 229 m 128 243 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 128 245 m 128 243 l  113 254 l  113 254 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 128 243 m 113 254 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 113 254 m 113 254 l  113 254 l  113 254 l gs 0.55 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 113 254 m 113 254 l gs 0.55 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 399 136 m 399 124 l  383 126 l  383 145 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 399 124 m 383 126 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 383 145 m 383 126 l  368 126 l  368 154 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 383 126 m 368 126 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 368 154 m 368 126 l  353 125 l  353 163 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 368 126 m 353 125 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 353 163 m 353 125 l  337 125 l  337 171 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 353 125 m 337 125 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 337 171 m 337 125 l  322 126 l  322 180 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 337 125 m 322 126 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 322 180 m 322 126 l  307 129 l  307 189 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 322 126 m 307 129 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 307 189 m 307 129 l  291 134 l  291 198 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 307 129 m 291 134 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 291 198 m 291 134 l  276 141 l  276 207 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 291 134 m 276 141 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 276 207 m 276 141 l  261 152 l  261 216 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 276 141 m 261 152 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 261 216 m 261 152 l  246 164 l  246 225 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 261 152 m 246 164 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 246 225 m 246 164 l  230 179 l  230 233 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 246 164 m 230 179 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 230 233 m 230 179 l  215 196 l  215 242 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 230 179 m 215 196 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 215 242 m 215 196 l  200 214 l  200 251 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 215 196 m 200 214 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 200 251 m 200 214 l  184 232 l  184 260 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 200 214 m 184 232 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 184 260 m 184 232 l  169 249 l  169 269 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 184 232 m 169 249 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 169 269 m 169 249 l  154 266 l  154 278 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 169 249 m 154 266 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 154 278 m 154 266 l  154 278 l  154 278 l gs 0.65 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 154 266 m 154 278 l gs 0.65 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 439 160 m 439 131 l  424 137 l  424 169 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 439 131 m 424 137 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 424 169 m 424 137 l  409 143 l  409 177 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 424 137 m 409 143 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 409 177 m 409 143 l  394 149 l  394 186 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 409 143 m 394 149 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 394 186 m 394 149 l  378 156 l  378 195 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 394 149 m 378 156 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 378 195 m 378 156 l  363 163 l  363 204 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 378 156 m 363 163 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 363 204 m 363 163 l  348 171 l  348 213 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 363 163 m 348 171 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 348 213 m 348 171 l  332 179 l  332 222 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 348 171 m 332 179 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 332 222 m 332 179 l  317 187 l  317 230 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 332 179 m 317 187 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 317 230 m 317 187 l  302 196 l  302 239 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 317 187 m 302 196 l gs 0.70 setgray fill gr
+gs col-1 s gr
+% Polyline
+n 317 89 m 302 97 l gs 0.50 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 302 98 m 302 97 l  286 105 l  286 107 l gs 0.50 setgray fill gr
+% Polyline
+n 286 248 m 286 206 l  271 216 l  271 257 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 286 206 m 271 216 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 271 257 m 271 216 l  256 227 l  256 266 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 271 216 m 256 227 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 256 266 m 256 227 l  240 238 l  240 275 l gs 0.70 setgray fill gr
+% Polyline
+n 302 239 m 302 196 l  286 206 l  286 248 l gs 0.70 setgray fill gr
+% Polyline
+n 240 275 m 240 238 l  225 249 l  225 283 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 240 238 m 225 249 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 225 283 m 225 249 l  210 261 l  210 292 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 225 249 m 210 261 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 210 292 m 210 261 l  195 273 l  195 301 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 210 261 m 195 273 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 195 301 m 195 273 l  195 301 l  195 301 l gs 0.70 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 195 273 m 195 301 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 480 183 m 480 160 l  465 168 l  465 192 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 480 160 m 465 168 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 465 192 m 465 168 l  450 177 l  450 201 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 465 168 m 450 177 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 450 201 m 450 177 l  434 186 l  434 210 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 450 177 m 434 186 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 434 210 m 434 186 l  419 194 l  419 219 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 434 186 m 419 194 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 419 219 m 419 194 l  404 203 l  404 227 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 419 194 m 404 203 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 404 227 m 404 203 l  388 212 l  388 236 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 404 203 m 388 212 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 388 236 m 388 212 l  373 221 l  373 245 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 388 212 m 373 221 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 373 245 m 373 221 l  358 230 l  358 254 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 373 221 m 358 230 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 358 254 m 358 230 l  343 238 l  343 263 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 358 230 m 343 238 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 343 263 m 343 238 l  327 247 l  327 272 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 343 238 m 327 247 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 327 272 m 327 247 l  312 256 l  312 281 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 327 247 m 312 256 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 312 281 m 312 256 l  297 265 l  297 289 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 312 256 m 297 265 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 297 289 m 297 265 l  281 274 l  281 298 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 297 265 m 281 274 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 281 298 m 281 274 l  266 283 l  266 307 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 281 274 m 266 283 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 266 307 m 266 283 l  251 292 l  251 316 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 266 283 m 251 292 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 251 316 m 251 292 l  235 301 l  235 325 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 251 292 m 235 301 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 235 325 m 235 301 l  235 325 l  235 325 l gs 0.80 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 235 301 m 235 325 l gs 0.80 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 521 207 m 521 192 l  506 201 l  506 216 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 521 192 m 506 201 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 506 216 m 506 201 l  491 210 l  491 225 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 506 201 m 491 210 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 491 225 m 491 210 l  475 219 l  475 233 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 491 210 m 475 219 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 475 233 m 475 219 l  460 227 l  460 242 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 475 219 m 460 227 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 460 242 m 460 227 l  445 236 l  445 251 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 460 227 m 445 236 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 445 251 m 445 236 l  429 245 l  429 260 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 445 236 m 429 245 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 429 260 m 429 245 l  414 254 l  414 269 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 429 245 m 414 254 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 414 269 m 414 254 l  399 263 l  399 278 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 414 254 m 399 263 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 399 278 m 399 263 l  383 272 l  383 286 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 399 263 m 383 272 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 383 286 m 383 272 l  368 281 l  368 295 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 383 272 m 368 281 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 368 295 m 368 281 l  353 289 l  353 304 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 368 281 m 353 289 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 353 304 m 353 289 l  337 298 l  337 313 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 353 289 m 337 298 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 337 313 m 337 298 l  322 307 l  322 322 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 337 298 m 322 307 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 322 322 m 322 307 l  307 316 l  307 331 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 322 307 m 307 316 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 307 331 m 307 316 l  291 325 l  291 339 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 307 316 m 291 325 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 291 339 m 291 325 l  276 334 l  276 348 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 291 325 m 276 334 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 276 348 m 276 334 l  276 348 l  276 348 l gs 0.85 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 276 334 m 276 348 l gs 0.85 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 562 230 m 562 222 l  547 230 l  547 239 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 562 222 m 547 230 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 547 239 m 547 230 l  531 239 l  531 248 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 547 230 m 531 239 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 531 248 m 531 239 l  516 248 l  516 257 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 531 239 m 516 248 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 516 257 m 516 248 l  501 257 l  501 266 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 516 248 m 501 257 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 501 266 m 501 257 l  485 266 l  485 275 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 501 257 m 485 266 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 485 275 m 485 266 l  470 275 l  470 283 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 485 266 m 470 275 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 470 283 m 470 275 l  455 283 l  455 292 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 470 275 m 455 283 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 455 292 m 455 283 l  439 292 l  439 301 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 455 283 m 439 292 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 439 301 m 439 292 l  424 301 l  424 310 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 439 292 m 424 301 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 424 310 m 424 301 l  409 310 l  409 319 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 424 301 m 409 310 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 409 319 m 409 310 l  394 319 l  394 328 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 409 310 m 394 319 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 394 328 m 394 319 l  378 328 l  378 336 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 394 319 m 378 328 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 378 336 m 378 328 l  363 336 l  363 345 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 378 328 m 363 336 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 363 345 m 363 336 l  348 345 l  348 354 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 363 336 m 348 345 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 348 354 m 348 345 l  332 354 l  332 363 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 348 345 m 332 354 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 332 363 m 332 354 l  317 363 l  317 372 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 332 354 m 317 363 l gs 0.95 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 317 372 m 317 363 l  317 372 l  317 372 l gs 0.95 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 317 363 m 317 372 l gs 0.95 setgray fill gr
+gs col-1 s gr
+% Polyline
+n 317 372 m 562 230 l gs 0.95 setgray fill gr
+gs col-1 s gr
+% Polyline
+n 302 97 m 286 105 l gs 0.50 setgray fill gr
+gs col-1 s gr
+% Polyline
+n 302 196 m 286 206 l gs 0.70 setgray fill gr
+gs col-1 s gr
+0.000 setlinewidth
+% Polyline
+n 317 89 m 317 89 l  302 97 l  302 98 l gs 0.50 setgray fill gr
+0.500 setlinewidth
+% Polyline
+n 256 227 m 240 238 l gs 0.70 setgray fill gr
+gs col-1 s gr
+/Helvetica findfont 12.00 scalefont setfont
+325 46 m 
+gs 1 -1 scale (1) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+211 28 m 
+gs 1 -1 scale (t=0.1) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+487 157 m 
+gs 1 -1 scale (t=2) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+532 190 m 
+gs 1 -1 scale (t=3) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+265 79 m 
+gs 1 -1 scale (t=0.2) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+397 118 m 
+gs 1 -1 scale (t=0.5) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+445 127 m 
+gs 1 -1 scale (t=1) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+574 220 m 
+gs 1 -1 scale (t=4) col-1 show gr
+/Times-BoldItalic findfont 30.00 scalefont setfont
+310 25 m 
+gs 1 -1 scale (u) col-1 show gr
+/Times-BoldItalic findfont 30.00 scalefont setfont
+10 262 m 
+gs 1 -1 scale ( x) col-1 show gr
+/Helvetica findfont 12.00 scalefont setfont
+70 220 m 
+gs 1 -1 scale (1) col-1 show gr
+/Times-BoldItalic findfont 30.00 scalefont setfont
+598 262 m 
+gs 1 -1 scale (Nt) col-1 show gr
+$F2psEnd
+%%EndDocument
+@endspecial
+f0 SF
+1240 2216 p (p)s
+1 r (opgen.red)s
+66 r (page)s
+11 r (2)s
+EP
+pstopssaved restore
+%%Trailer
+%%Pages: 2
+END
+%%EOF

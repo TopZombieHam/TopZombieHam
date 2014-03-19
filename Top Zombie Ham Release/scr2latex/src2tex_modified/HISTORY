@@ -1,0 +1,47 @@
+Oct 6, 1992
+Src2tex version 1.1 was written by K. AMANO only for his private use.
+After that, several vesion ups followed.
+
+Aug 17, 1993
+Version 1.9 was released to some friends of K. AMANO's.
+
+Jan 11, 1994
+Version 2.1 was completed by K. AMANO, S. HATAKI and S. MAEDA and
+released to their friends. Version 2.1 was followed by several revised
+versions 2.2-2.7.
+
+Jul 7, 1994
+Version 2.8 was released to the public as a free software in fj.sources.
+
+Nov 3, 1994
+Prof. M. Yamasaki joined src2tex-group. Version 2.8 is totally brushed up
+by virtue of net people and version 2.9 is completed. Version 2.9 is
+released in fj.sources newsgroup.
+
+Mar 3, 1995
+FAQ and FAQ.JIS are added to the package. They also fixed several bugs. The
+acceptable language family of src2tex and src2latex is extented to the union
+of {BASIC, C, C++, FORTRAN, LISP, PASCAL} and {MAPLE, MATHEMATICA, REDUCE,
+ASIR}. Src2tex version 2.10 is posted to fj.sources newsgroup.
+
+Sep 11, 1995
+Src2tex version 2.11 is released in fj.sources newsgroup. This version is able
+to translate not only  BASIC, C, C++, FORTRAN, LISP, PASCAL, SCHEME;  ASIR,
+MAPLE, MATHEMATICA, REDUCE  but also  COBOL, MAKE, PERL, SHELL, TCL/TK, MATLAB
+and OCTAVE into TeX.
+
+Jan 12, 1997
+Version 2.12 was written by K. AMANO and S. NOMOTO.  HTML, JAVA, MACSYMA,
+MAXIMA and MuPAD are added to the language list of src2tex.
+
+-------------------------------------------------------------------------
+*   ASIR, JAVA, MACSYMA, MAPLE, MATHEMATICA, MATLAB, REDUCE are registered
+    trademarks of
+	Fujitsu Laboratories, Ltd.,
+	Sun Microsystems, Inc.,
+	Macsyma Inc.,
+	Waterloo Maple Software,
+	Wolfram Research, Inc.,
+	The MathWorks, Inc.,
+	The Rand Corporation
+    respectively.

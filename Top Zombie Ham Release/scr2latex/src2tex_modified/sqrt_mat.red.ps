@@ -1,0 +1,2018 @@
+%!PS-Adobe-2.0
+%%Creator: dvi2ps
+%%Title: sqrt_mat.red.dvi
+%%Pages: 1 0
+%%BoundingBox: 0 0 595 842
+%%DocumentPaperSizes: A4
+%%Orientation: Portrait
+%%EndComments
+%%BeginProcSet: pstops-clip 1 0
+[/showpage/erasepage/copypage]{dup where{pop dup load
+ type/operatortype eq{1 array cvx dup 0 3 index cvx put
+ bind def}{pop}ifelse}{pop}ifelse}forall
+[/letter/legal/executivepage/a4/a4small/b5/com10envelope
+ /monarchenvelope/c5envelope/dlenvelope/lettersmall/note
+ /folio/quarto/a5]{dup where{dup wcheck{exch{}put}
+ {pop{}def}ifelse}{pop}ifelse}forall
+/lcvx{dup load dup type dup/operatortype eq{pop exch pop}
+ {/arraytype eq{dup xcheck{exch pop aload pop}
+ {pop cvx}ifelse}{pop cvx}ifelse}ifelse}bind def
+/pstopsmatrix matrix currentmatrix def
+/pstopsxform matrix def
+/defaultmatrix{pstopsmatrix exch pstopsxform exch concatmatrix}bind def
+/initmatrix{matrix defaultmatrix setmatrix}bind def
+/pathtoproc{[{currentpoint}stopped{$error/newerror false
+ put{newpath}}{/newpath cvx 3 1 roll/moveto cvx 4 array
+ astore cvx}ifelse]{[/newpath cvx{/moveto cvx}{/lineto cvx}
+ {/curveto cvx}{/closepath cvx}pathforall]cvx exch pop}
+ stopped{$error/errorname get/invalidaccess eq{cleartomark
+ $error/newerror false put cvx exec}{stop}ifelse}if}def
+/initclip[/matrix lcvx/currentmatrix lcvx/pstopsmatrix cvx/setmatrix lcvx
+ /pathtoproc lcvx/initclip lcvx/newpath lcvx
+ 0 0 /moveto lcvx 595.000000 0/rlineto lcvx
+ 0 842.000000/rlineto lcvx -595.000000 0/rlineto lcvx
+ /closepath lcvx/clip lcvx
+ /newpath lcvx/exec lcvx/setmatrix lcvx]cvx def
+/initgraphics{initmatrix newpath initclip 1 setlinewidth
+ 0 setlinecap 0 setlinejoin []0 setdash 0 setgray
+ 10 setmiterlimit}bind def
+%%EndProcSet
+%%BeginFile: /home/kamano/lib/dvi2ps/tex.ps
+%
+systemdict /setpacking known {
+/savepacking currentpacking def
+true setpacking
+} if
+/TeXDict 200 dict def
+TeXDict begin
+/inch {
+72 mul
+} bind def
+/largepaperarray [
+/letter /legal /11x17
+/b4 /b5 /a5 /a4 /a3
+] def
+/smallpaperarray [
+/note dup where {
+pop
+}{
+pop /lettersmall dup where {
+pop
+}{
+pop /letter
+} ifelse
+} ifelse
+/legal /11x17
+/b4 /b5 /a5
+/a4small dup where {
+pop
+}{
+pop /note dup where {
+pop
+}{
+pop /a4
+} ifelse
+} ifelse
+/a3
+] def
+/setpaper {
+dup where papertray and {
+exch get exec
+} if
+} bind def
+/trayarray [
+/lettertray /legaltray /11x17tray
+/b4tray /b5tray /a5tray /a4tray /a3tray
+] def
+/settray {
+dup statusdict exch known {
+{
+statusdict begin load exec end
+} stopped {
+$error /newerror get {
+$error /errorname get /rangecheck eq {
+(Tray not found, using default tray.) print flush
+/papertray false def
+}{
+handleerror
+} ifelse
+$error /newerror false put
+} if
+} if
+}{
+pop
+} ifelse
+} bind def
+/papertray true def
+/widtharray  [
+8.5 inch 8.5 inch 11 inch
+9.84 inch 6.93 inch
+5.83 inch 8.27 inch 11.69 inch
+] def
+/heightarray [
+11 inch 14 inch 17 inch
+13.9 inch 9.84 inch
+8.27 inch 11.69 inch 16.54 inch
+] def
+/xoffset 0 def
+/yoffset 0 def
+/landscape false def
+/pagesetup {
+dup widtharray exch get /paperwidth exch def
+dup heightarray exch get /paperheight exch def
+dup trayarray exch get settray
+large {largepaperarray}{smallpaperarray} ifelse
+exch get setpaper
+} bind def
+/@letter {0 pagesetup} def
+/@legal {1 pagesetup} def
+/@tabloid {2 pagesetup} def
+/@b4 {3 pagesetup} def
+/@b5 {4 pagesetup} def
+/@a5 {5 pagesetup} def
+/@a4 {6 pagesetup} def
+/@a3 {7 pagesetup} def
+/@landscape {/landscape true def} bind def
+/@manualfeed {
+statusdict /manualfeed known {
+statusdict /manualfeed true put
+statusdict /manualfeedtimeout 120 put
+} if
+} bind def
+/@large {
+/large true def
+} bind def
+/@small {
+/large false def
+} bind def
+/@envelope {
+/xoffset 4.28 inch def
+/yoffset 1.5 inch def
+@letter
+} bind def
+/COPIES	{
+/#copies exch def
+} bind def
+/NF {
+/newname exch def
+/fsize exch def
+/corr exch def
+newname 7 dict def
+newname load begin
+/FontType 3 def
+/FontMatrix [corr 0 0 corr neg 0 0] def
+/FontBBox [0 0 1 1] def
+/BitMaps fsize array def
+/BuildChar /CharBuilder load def
+/Encoding 256 array def
+0 1 255 {Encoding exch /.notdef put} for
+end
+newname newname load definefont pop
+} bind def
+/ch-image {ch-data 0 get} bind def
+/ch-width {ch-data 1 get} bind def
+/ch-height {ch-data 2 get} bind def
+/ch-xoff {ch-data 3 get} bind def
+/ch-yoff {ch-data 4 get} bind def
+/ch-tfmw {ch-data 5 get} bind def
+/CharBuilder {
+/ch-code exch def
+/font-dict exch def
+/ch-data font-dict /BitMaps get ch-code get def
+ch-data null eq not {
+ch-tfmw 0
+ch-xoff neg  ch-yoff neg ch-width ch-xoff sub ch-height ch-yoff sub
+setcachedevice
+ch-width ch-height true [1 0  0 1  ch-xoff ch-yoff]
+{ch-image} imagemask
+} if
+} bind def
+/LWF {
+/lw-v exch def
+/lw-h exch def
+findfont [lw-h 0 0 lw-v 0 0] makefont def
+} bind def
+/LWFX {
+/lw-v exch def
+/lw-h exch def
+/savecurfont currentfont def
+findfont dup setfont
+[
+( ) stringwidth pop dup lw-h exch div
+exch lw-v exch div 0 0 3 -1 roll
+0 0
+] makefont def
+savecurfont setfont
+} bind def
+/LWJF /LWF load def
+/SF /setfont load def
+/s3 3 string def
+/D {
+/ch-code exch def
+dup 0 get
+length 2 lt {
+pop [ <00> 1 1 0 0 8.00 ]
+} if
+/ch-data exch def
+currentfont /BitMaps get ch-code ch-data put
+currentfont /Encoding get ch-code
+dup s3 cvs cvn
+put
+} bind def
+/BP {
+/SaveImage save def
+xoffset yoffset translate
+72 72
+landscape {
+exch translate
+90 rotate
+}{
+paperheight exch sub translate
+} ifelse
+72 Resolution div dup neg scale
+0 0 moveto
+} bind def
+/EP {
+showpage 
+SaveImage restore
+} bind def
+/START {
+/Resolution exch def
+} bind def
+/END /end load def
+/l /lineto load def
+/p /moveto load def
+/r {
+0 rmoveto
+} def
+/s /show load def
+/ru {
+/dy exch neg def
+/dx exch def
+/x currentpoint /y exch def def
+newpath x y moveto
+dx 0 rlineto
+0 dy rlineto
+dx neg 0 rlineto
+closepath fill
+x y moveto
+} bind def
+/@SpecialDefaults {
+/hsi paperwidth inch def
+/vsi paperheight inch def
+/hof 0 def
+/vof 0 def
+/hsc 1 def
+/vsc 1 def
+/rotat 0 def
+/CLIP false def
+/BBOX false def
+/EPSF false def
+} bind def
+/@hsize {/hsi exch def /CLIP true def} bind def
+/@vsize {/vsi exch def /CLIP true def} bind def
+/@hoffset {/hof exch def} bind def
+/@voffset {/vof exch def} bind def
+/@hscale {/hsc exch def} bind def
+/@vscale {/vsc exch def} bind def
+/@rotation {/rotat exch def} bind def
+/@bbox {
+/ury exch def
+/urx exch def
+/lly exch def
+/llx exch def
+/BBOX true def
+} bind def
+/@epsf {
+/hsi 0 def
+/vsi 0 def
+/EPSF true def
+} bind def
+/@setclipper {
+CLIP {
+newpath 0 0 moveto hsi 0 rlineto 0 vsi rlineto hsi neg 0 rlineto
+closepath clip
+} if
+} bind def
+/@beginspecial {
+/SpecialSave save def
+currentpoint transform initgraphics itransform translate
+dup scale
+landscape {90 rotate} if
+@SpecialDefaults
+@MacSetUp
+} bind def
+/@setspecial {
+hof vof translate
+EPSF BBOX and {
+hsi 0 eq {
+vsi 0 eq {
+hsc vsc
+}{
+vsi ury lly sub div dup
+}ifelse
+}{
+vsi 0 eq {
+hsi urx llx sub div dup
+}{
+hsi urx llx sub div vsi ury lly sub div
+} ifelse
+} ifelse
+scale
+llx neg ury neg translate
+newpath
+llx lly moveto
+urx llx sub 0 rlineto
+0 ury lly sub rlineto
+llx urx sub 0 rlineto
+closepath clip
+newpath
+}{
+@setclipper hsc vsc scale rotat rotate
+} ifelse
+end
+/letter {} def /note {} def /legal {} def /11x17
+/b4 {} def /b5 {} def /a5 {} def /a4 {} def /a3 {} def
+/showpage {} def /copypage {} def /erasepage {} def
+} bind def
+/@MacSetUp {
+userdict /md known {
+userdict /md get type /dicttype eq {
+/MacDrwgs true def
+md /txpose known {
+md /txpose {pxs pys neg scale} put
+} if
+md /cp known {
+md /cp {pop pop pm restore} put
+} if
+} if
+} if
+} bind def
+/@push {
+/SpecialSave save def
+currentpoint translate
+dup scale
+newpath
+} bind def
+/@pop {
+SpecialSave restore
+} bind def
+/@pn
+/setlinewidth load
+def
+/@pt {
+moveto currentpoint currentlinewidth 2 div 0 360 arc fill
+} bind def
+/@ln {
+moveto lineto stroke
+} bind def
+/@ar {
+matrix currentmatrix
+7 -2 roll moveto
+currentpoint translate
+newpath
+5 -2 roll scale
+0 0 1 6 -2 roll arc
+setmatrix
+} bind def
+/@wh {1 setgray} bind def
+/@sh {0.75 setgray} bind def
+/@bk {0 setgray} bind def
+/@RGB {setrgbcolor} bind def
+/@HSB {sethsbcolor} bind def
+/@CMYK {setcmykcolor} bind def
+end
+/@endspecial {
+clear
+TeXDict begin
+SpecialSave restore
+} bind def
+systemdict /setpacking known {
+savepacking setpacking
+} if
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%PaperSize: A4
+%%Feature: *ManualFeed False
+%%Feature: *Resolution 240
+TeXDict begin
+@large
+@a4
+240 START
+1.000 122 /f0 NF
+f0 SF
+[<FFFC001C07001C03801C01C01C00E01C00F01C00701C00701C00781C00781C00781C00781C00781C00781C00781C00701C00
+  701C00F01C00E01C01C01C03801C0700FFFC00> 24 23 -1 0 25.367] 68 D
+[<FFC0001C00001C00001C00001C00001C00001C00001C08001C08001C08001C18001FF8001C18001C08001C08001C08001C00
+  201C00201C00201C00401C00401C01C0FFFFC0> 24 23 -1 0 21.678] 70 D
+[<FF87FC1C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01FFFE01C00E01C00E01C00E01C00E01C00
+  E01C00E01C00E01C00E01C00E01C00E0FF87FC> 24 23 -1 0 24.906] 72 D
+[<8F80F060C030C01080188018801800180038007003F01FE03FC07E00F000E000C010C010C0104030603030F01F10> 16 23 -2 0 18.449] 83 D
+[<0FFF800070000070000070000070000070000070000070000070000070000070000070000070000070000070000070008070
+  088070088070084070104070106070307FFFF0> 24 23 -1 0 23.984] 84 D
+[<0040040000C0060000E00E0000E00E0001E00F0001D01D0001D01D0001D01D0003901C800388388003883880070838400704
+  7040070470400E0470200E02E0200E02E0200E02E0201C03E0101C01C0101C01C0103C03C038FF0FF8FE> 32 23 -1 0 34.131] 87 D
+[<1F3C70FEE072E072E072607070701C7007F000702070706070E03F80> 16 14 -1 0 16.604] 97 D
+[<11F01A181C0C1C061C071C071C071C071C071C071C061C0C1E181DF01C001C001C001C001C001C001C001C00FC00> 16 23 0 0 18.449] 98 D
+[<0F80186030107010E000E000E000E000E000E0007020307018700FE0> 16 14 -1 0 14.759] 99 D
+[<0FBF187830386038E038E038E038E038E038E0386038303818780FB80038003800380038003800380038003801F8> 16 23 -1 0 18.449] 100 D
+[<0F80186030106010E000E000E000E000FFF0E0306070306018C00F80> 16 14 -1 0 14.759] 101 D
+[<FF801C001C001C001C001C001C001C001C001C001C001C001C00FF001C001C001C001C001C001C400CE006E003C0> 16 23 0 0 10.147] 102 D
+[<0FC030306018C00CC00CC00C601C3FF83FF03FE0600060002F0039C030C070E070E070E030C039E60F3C> 16 21 -1 7 16.604] 103 D
+[<FF9F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001E1C001D18001CF0001C00001C00001C00
+  001C00001C00001C00001C00001C0000FC0000> 24 23 0 0 18.449] 104 D
+[<FF1C1C1C1C1C1C1C1C1C1C1C1C7C0000000000183C3C18> 8 23 0 0 9.224] 105 D
+[<78EEE6470707070707070707070707070707073F0000000000060F0F06> 8 29 2 6 10.147] 106 D
+[<FF801C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C00FC00> 16 23 0 0 9.224] 108 D
+[<FF9FCFE01C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001E0F07001D0C
+  8600FCF87C00> 32 14 0 0 27.673] 109 D
+[<FF9F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001E1C001D1800FCF000> 24 14 0 0 18.449] 110 D
+[<0FC0186030306018E01CE01CE01CE01CE01CE01C6018303018600FC0> 16 14 -1 0 16.604] 111 D
+[<FF801C001C001C001C001C001DF01E181C0C1C0E1C071C071C071C071C071C071C0E1C0C1E18FDF0> 16 20 0 6 18.449] 112 D
+[<00FF80001C00001C00001C00001C00001C00079C00185C00303C00701C00601C00E01C00E01C00E01C00E01C00601C00701C
+  00303C001C6C00078400> 24 20 -1 6 17.526] 113 D
+[<FF801C001C001C001C001C001C001C001C001C001C201E701E70FDE0> 16 14 0 0 13.006] 114 D
+[<9F00E180C0C080C080C003C03F807F00FE00E000C080C08061803E80> 16 14 -1 0 13.099] 115 D
+[<0F00198038803880388038803800380038003800380038003800FF80380018001800080008000800> 16 20 -1 0 12.914] 116 D
+[<07DF800C3C001C3C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C00FCFC00> 24 14 0 0 18.449] 117 D
+[<0100038003800380074007400F200E200E201C101C103C18381CFE3E> 16 14 -1 0 17.527] 118 D
+[<030600030600070700078F00078F000E8E800E5C800E5C801C58401C38401C3840383020387070FCFCF8> 24 14 -1 0 23.984] 119 D
+[<FCFF3878187008F004E007C003C0038007800EC00E401C203C38FE7E> 16 14 -1 0 17.527] 120 D
+[<7800EC00E600E200020001000100038003800380074007400F200E200E201C101C103C18381CFE3E> 16 20 -1 6 17.527] 121 D
+[<0FC018603030703860186018E01CE01CE01CE01CE01CE01CE01CE01CE01C601860187038303018600FC0> 16 21 -1 0 16.604] 48 D
+[<FFE00E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E00FE000E000600> 16 21 -3 0 16.604] 49 D
+[<FFE07FE03FE0203010100810040006000300018001C000E000E000F04070E070C07080E040E021C01F00> 16 21 -2 0 16.604] 50 D
+[<0FC030604070C038E03CE03C003C003C00380070006007C000E000700070007870787078607030600FC0> 16 21 -1 0 16.604] 51 D
+[<07FC00E000E000E000E000E0FFFCC0E040E020E030E010E008E004E004E002E001E001E000E000600060> 16 21 -1 0 16.604] 52 D
+[<1F00218040C08060E070E070407000700070006040E070C04F0040004000400040007F007F807FC06060> 16 21 -2 0 16.604] 53 D
+[<07C0186030307018601C601CE01CE01CE01CF018F030E860E7C0E000600070003038303818180E1003E0> 16 21 -1 0 16.604] 54 D
+[<0102040C1818303070606060E0E0E0E0E0E0E0E0E0E060606070303018180C040201> 8 34 -2 9 12.914] 40 D
+[<8040203018180C0C0E060606070707070707070707070606060E0C0C181830204080> 8 34 -2 9 12.914] 41 D
+[<003000003000003000003000003000003000003000003000003000003000FFFFF8FFFFF80030000030000030000030000030
+  00003000003000003000003000003000> 24 22 -2 3 25.829] 43 D
+[<40402020101070F0F060> 8 10 -2 6 9.224] 44 D
+[<60F0F060> 8 4 -2 0 9.224] 46 D
+[<7FFFF0FFFFF8000000000000000000000000000000000000FFFFF87FFFF0> 24 10 -2 -3 25.829] 61 D
+[<FE3F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C00FFFC001C00001C00001C00
+  001C00001C08001C1C000E1C0007080001F000> 24 23 0 0 18.449] 12 D
+1.000 62 /f1 NF
+f1 SF
+[<FF181818181818181818181818F818> 8 15 -2 0 13.237] 49 D
+[<FF807F80204010400800060003000180018000C0C0C0C0C080C041803E00> 16 15 -1 0 13.237] 50 D
+[<3E0041808080C0C000C000C0008001801E00030001800180618021001E00> 16 15 -1 0 13.237] 51 D
+[<04081030206040C0C0C0C0C0C0C0C040602030100804> 8 22 -2 5 10.378] 40 D
+[<804020301018080C0C0C0C0C0C0C0C08181030204080> 8 22 -1 5 10.378] 41 D
+[<00C00000C00000C00000C00000C00000C00000C000FFFF80FFFF8000C00000C00000C00000C00000C00000C00000C000> 24 16 -1 2 20.386] 43 D
+[<FFFF80FFFF80000000000000000000000000FFFF80FFFF80> 24 8 -1 -2 20.386] 61 D
+1.000 51 /f2 NF
+f2 SF
+[<FC7C2212080C0606C68478> 8 11 -1 0 11.300] 50 D
+1.000 123 /f3 NF
+f3 SF
+[<FE07FC1800E00800E00400E00400E00200E00300E001FFE00080E00081C00041C00041C00021C00011C00011C00009C00009
+  C00005C00003C00003C00001C0000180000080> 24 23 -1 0 24.906] 65 D
+[<FF07FC001C00E0000400E0000201E0000301C0000101C0000083C000004380000023800000170000000F0000000F0000000E
+  0000000F0000001F0000001C8000001C4000003C2000003810000038080000700C0000780E0003FE3FC0> 32 23 -1 0 27.512] 88 D
+[<1C7062C841C440C4C0C4C0C06060606060603060303018700C700390> 16 14 -1 0 17.553] 97 D
+[<1C00620041004180C0C0C0C06060606060606060306030603C40338018001800180018000C000C000C000C003E00> 16 23 -1 0 14.252] 98 D
+[<3E004180C040802080008000C000C000C000600060E030E018400780> 16 14 -2 0 14.371] 99 D
+[<1C7062C841C440C4C0C4C0C06060606060603060303018700C7003B00018001800180018000C000C000C000C003E> 16 23 -1 0 17.284] 100 D
+[<7000C800E4006600060006000300030003000300030001800180018001800180018000C000C007FC00C000C0006000600060
+  006C002E0036001C> 16 29 -1 6 16.258] 102 D
+[<7E00C180E0C060C000600060076018E010701030303030301818181818180C180C0C061C031C00E4> 16 20 0 6 15.839] 103 D
+[<C070C04C60C460C260626060303030303030303018101C101A3019E00C000C000C000C0006000600060006001F00> 16 23 -2 0 19.133] 104 D
+[<07800C4018201820181018100C080C080C088608460C460C260C1C08> 16 14 -1 0 16.097] 118 D
+[<078F000C58801830401830401830201830200C18100C18100C1810861810460C18460C18260C181C0410> 24 14 -1 0 23.774] 119 D
+[<78E0C510E708C30403040300018001800180418020C620C711A30F1E> 16 14 -1 0 18.979] 120 D
+[<3C006300718070C000C00060076008E018701830183018300C180C180C188618460C460C260C1C04> 16 20 -1 6 16.281] 121 D
+[<838047C03C60201010100C000200010000800040102018700F880708> 16 14 -1 0 15.443] 122 D
+[<40402020101070F0F060> 8 10 -2 6 9.224] 59 D
+1.000 122 /f4 NF
+f4 SF
+[<39804740C320C320C300C3006180618031800E80> 16 10 -1 0 14.404] 97 D
+[<1C00320032003100310031009880998059803180> 16 10 -1 0 13.283] 118 D
+[<1CF03388318831843184318498C298C658C63046> 16 10 -1 0 19.211] 119 D
+[<70008C00C600460003001F003300318031803180318098C098C058C03040> 16 15 -1 5 13.468] 121 D
+[<C000C000600060006000300030003000180018000C000C000C000600060003000300030001800180018000C00040> 16 23 -1 6 13.606] 61 D
+1.000 113 /f5 NF
+f5 SF
+[<FFFFE0FFFFE0> 24 2 -3 -7 25.829] 0 D
+[<FFFFE07FFFC0000000000000000000000000000000C000007000003C00000F000003C00000E000003800001E000007800001
+  E00001E0000780001E0000780000E0000380000F00003C0000F00000C00000> 24 27 -3 6 25.829] 21 D
+[<4002C006600C301818300C6006C00380038006C00C6018303018600CC0064002> 16 16 -5 0 25.829] 2 D
+[<006000000060000000F0000000F000000198000001980000030C0000030C000006060000060600000C0300000C0300000C01
+  8000180180001800C000F000C00030006000000060000000300000003000000018000000180000000C0000000C0000000600
+  0000060000000300000003000000018000000180000000C0000000C00000006000000020> 32 34 -2 32 27.673] 112 D
+1.000 115 /f6 NF
+f6 SF
+[<02040C08181830307070706060E0E0E0E0E0E0E0E0E0E0E0E0E0606070707030301818080C0402> 8 39 -5 38 15.220] 0 D
+[<0006000C001800300070006000C001C0018003800300070006000E000E000C001C001C001800380038003800300070007000
+  7000700070007000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E0007000
+  70007000700070007000300038003800380018001C001C000C000E000E000600070003000380018001C000C0006000700030
+  0018000C0006> 16 78 -7 77 24.445] 18 D
+[<80406020303018181C1C1C0C0C0E0E0E0E0E0E0E0E0E0E0E0E0E0C0C1C1C1C1818303020604080> 8 39 -2 38 15.220] 1 D
+[<C0006000300018001C000C000600070003000380018001C000C000E000E000600070007000300038003800380018001C001C
+  001C001C001C001C000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E001C
+  001C001C001C001C001C0018003800380038003000700070006000E000E000C001C0018003800300070006000C001C001800
+  30006000C000> 16 78 -1 77 24.445] 19 D
+[<C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0> 8 22 -4 21 11.069] 12 D
+[<0060000000E0000000F0000000F0000001D8000001D80000038C0000038C00000706000007060000070300000E0300000E01
+  80001C0180001C00C0001C00C00038006000B8006000700030003000300000003000000018000000180000000C0000000C00
+  000006000000060000000300000003000000018000000180000000C0000000C0000000600000006000000030000000300000
+  0018000000180000000C00000004> 32 41 -4 39 33.208] 112 D
+[<003000000030000000700000007800000078000000F8000000EC000000EC000000EC000001C6000001C6000001C600000383
+  000003830000038300000381800007018000070180000700C0000E00C0000E00C0000E0060000E0060001C0060009C003000
+  5C0030007800300038001800180018000800180000000C0000000C0000000C00000006000000060000000600000003000000
+  030000000300000001800000018000000180000000C0000000C0000000C00000006000000060000000600000003000000030
+  000000300000001800000018000000180000000C0000000C0000000C000000060000000600000002> 32 60 -3 58 33.208] 113 D
+[<0030000000300000007000000078000000780000007800000078000000EC000000EC000000EC000000EC000000E6000001C6
+  000001C6000001C6000001C3000003830000038300000383000003818000038180000701800007018000070180000700C000
+  0700C0000E00C0000E00C0000E0060000E0060000E0060001C0060001C0030009C0030005C00300038003000380018001800
+  1800080018000800180000000C0000000C0000000C0000000C00000006000000060000000600000006000000030000000300
+  000003000000030000000180000001800000018000000180000000C0000000C0000000C0000000C0000000C0000000600000
+  0060000000600000006000000030000000300000003000000030000000180000001800000018000000180000000C0000000C
+  0000000C0000000C000000060000000600000002> 32 80 -3 78 33.208] 114 D
+1.000 117 /f7 NF
+f7 SF
+[<1F8780786F80F02E00F01E00F01E00781E003C1E001F1E0001FE00001E00301E00781E00783C007038001FE000> 24 15 -1 0 18.564] 97 D
+[<07CFC01C3FC0380F00700F00700F00F00F00F00F00F00F00F00F00F00F00700F00700F00380F001C3F0007EF00000F00000F
+  00000F00000F00000F00000F00003F00003F00> 24 23 -1 0 21.216] 100 D
+[<07F01C18380C78067000F000F000FFFEF00EF00E700E700C381C1C3807E0> 16 15 -1 0 17.503] 101 D
+[<FF1FE3FCFF1FE3FC3C0780F03C0780F03C0780F03C0780F03C0780F03C0780F03C0780F03C0780F03C0780F03E07C0F03E07
+  C0F0FD8730E0FC7E0FC0> 32 15 -1 0 31.824] 109 D
+[<003FC0003FC0000F00000F00000F00000F0007CF001C3F00381F00780F00700F00F00F00F00F00F00F00F00F00F00F00700F
+  00780F00381F001C370007E300> 24 21 -1 6 20.155] 113 D
+[<FF80FF803C003C003C003C003C003C003C003C003C303A783A78F938F8E0> 16 15 -1 0 15.728] 114 D
+[<DF80F060E020C030C03000F00FF03FE07FC0FF00E000C060C06060E01FE0> 16 15 -1 0 15.063] 115 D
+[<0F801C403C603C603C603C603C003C003C003C003C003C003C00FFC03FC01C001C000C000C000C000C00> 16 21 -1 0 14.851] 116 D
+[<70F8F8F870> 8 5 -3 0 10.608] 46 D
+1.000 126 /f8 NF
+f8 SF
+[<1F3E3FFE70F0E070E070E07078703FF00FF00070107038E03FC01F80> 16 14 -1 0 17.434] 97 D
+[<1BC03FE03C703838381C381C381C381C381C381C38383C303FE03BC03800380038003800F800F800> 16 20 -1 0 17.434] 98 D
+[<07C01FE0387070706000E000E000E000E0006000702038701FF007E0> 16 14 -2 0 17.434] 99 D
+[<0F7C1FFC30F07070E070E070E070E070E070E070707038F01FF00F70007000700070007001F001F0> 16 20 -1 0 17.434] 100 D
+[<07C01FF0383870386000E000FFF8FFF8E0386038707038701FE00780> 16 14 -1 0 17.434] 101 D
+[<3FF83FF80380038003800380038003800380038003800380FFFC7FFC03800380038401CE00FE007C> 16 20 0 0 17.434] 102 D
+[<0FC03FF078786018E01CE01CE01C703C3FF83FF03FC070007F003F8039C070E070E070E070E039CE1FFE0F3C> 16 22 -1 8 17.434] 103 D
+[<FE7CFE7C387038703870387038703870387038703C703E703FE039C03800380038003800F800F800> 16 20 -1 0 17.434] 104 D
+[<FFF0FFF00700070007000700070007000700070007000700FF00FF0000000000000006000F000F000600> 16 21 -2 0 17.434] 105 D
+[<FFF8FFF80700070007000700070007000700070007000700070007000700070007000700FF00FF00> 16 20 -2 0 17.434] 108 D
+[<F8E380F9E78071C70071C70071C70071C70071C70071C70071C70071C70071C70079E700FFBE00F71C00> 24 14 0 0 17.434] 109 D
+[<FE7CFE7C387038703870387038703870387038703C703E70FFE0F9C0> 16 14 -1 0 17.434] 110 D
+[<0F003FC079E070E0E070E070E070E070E070E07070E079E03FC00F00> 16 14 -2 0 17.434] 111 D
+[<00FE00FE003800380038003800380FB81FF8387870786038E038E038E038E0386038707838781FF807B8> 16 21 -1 7 17.434] 113 D
+[<FFF0FFF00E000E000E000E000E000E000E000F000F080F9CFEFCFE78> 16 14 -1 0 17.434] 114 D
+[<DF80FFC0F060E030603000700FE03FC07E00C000C0E0E0E07FE01FE0> 16 14 -2 0 17.434] 115 D
+[<03C007F00E380E380E380E000E000E000E000E000E000E00FFF07FF00E000E000E000600> 16 18 -1 0 17.434] 116 D
+[<0F7C1FFC38F0387038703870387038703870387038703870F9F0F9F0> 16 14 -1 0 17.434] 117 D
+[<078007800FC00CC00CC00CC01CE01CE01CE01CE038703870FCFCFCFC> 16 14 -1 0 17.434] 118 D
+[<18E03DF03DF035B035B035B037B037B03030703870387038FFFCFFFC> 16 14 -1 0 17.434] 119 D
+[<FCFCFCFC1CE01CE00FC00F800780070007800FC01FC01CE0FCF8F8F8> 16 14 -1 0 17.434] 120 D
+[<3C007E0077007700038003800380038003C007C006C006C00EE00EE00CE01CE01C701C703870FCFCFCFC> 16 21 -1 7 17.434] 121 D
+[<FFF8FFF8703838381C380E0006000300038001C070E070707FF83FF8> 16 14 -1 0 17.434] 122 D
+[<07801FE03CF0387070387038E01CE01CE01CE01CE01CE01CE01CE01C7038703838703CF01FE00780> 16 20 -1 0 17.434] 48 D
+[<FFC0FFC00E000E000E000E000E000E000E000E000E000E000E000E00EE00FE001E000E0006000600> 16 20 -3 0 17.434] 49 D
+[<7FF0FFF0707038701C000E000700038001C000C000E0006000704070E070E070E0E070E03FC01F00> 16 20 -2 0 17.434] 50 D
+[<0FC03FE07070E038E01C401C001C001C0038007007E007E00070003000382038703870703FE00FC0> 16 20 -1 0 17.434] 51 D
+[<07FC07FC00E000E000E000E0FFFCFFFCE0E070E030E038E018E01CE00CE006E006E002E003E001E0> 16 20 -1 0 17.434] 52 D
+[<1F003F8071C0E0E0E070E07040700070006060E07FC07F007000700070007000700070007FE07FE0> 16 20 -2 0 17.434] 53 D
+[<07C01FE038707038701C601CE01CE01CE01CF038F870EFE0E7C070007000303838381E3807F003E0> 16 20 -1 0 17.434] 54 D
+[<04000E000E000E000E000E0006000700070007000380038001C001C000E00060E070E038FFFCFFFCE000> 16 21 -1 0 17.434] 55 D
+[<0FC03FF078787038E01CE01CE01CE01C7038387007800FC03870703870387038703838701FE00FC0> 16 20 -1 0 17.434] 56 D
+[<1F003FC070E07070703000380018001C0F9C1FFC387C703CE01CE01CE018E038703838701FE00F80> 16 20 -1 0 17.434] 57 D
+[<30107038707C387C387C1C7C1C7C1C380E100E0007000700070003800380038021C071C0F8E0F8E0F8E0F870F870F8387038
+  2018> 16 26 -1 3 17.434] 37 D
+[<0180038006000C0018003800300070007000E000E000E000E000E000E000E000700070003000380018000C00060003800180> 16 25 -4 2 17.434] 40 D
+[<80C06030181C0C0E0E070707070707070E0E0C1C183060C080> 8 25 -4 2 17.434] 41 D
+[<060007000600E670F6F0FFF03FC03FC0FFF0F6F0E670060007000600> 16 14 -2 -3 17.434] 42 D
+[<038003800380038003800380FFFCFFFCFFFC038003800380038003800380> 16 15 -1 -3 17.434] 43 D
+[<C0E030301878F8F060> 8 9 -6 5 17.434] 44 D
+[<C000E000E000700070003800380038001C001C000E000E000E000700070007000380038001C001C001C000E000E000700070
+  0030> 16 26 -2 3 17.434] 47 D
+[<60F0F06000000000000060F0F060> 8 14 -6 0 17.434] 58 D
+[<80C060303070F0F06000000000000060F0F060> 8 19 -6 5 17.434] 59 D
+[<FFFCFFFC7FFC0000000000007FFCFFFCFFFC> 16 9 -1 -6 17.434] 61 D
+[<4080F3C0FFC03F000C00> 16 5 -3 -15 17.434] 94 D
+[<FFF0FFF0FFF0> 16 3 -2 -9 17.434] 45 D
+[<00F001F00380070007000700070007000700070007000E00FC00FC000E0007000700070007000700070007000700038001F0
+  00F0> 16 26 -2 3 17.434] 123 D
+[<7800FC000E0007000700070007000700070007000700038001F001F00380070007000700070007000700070007000E00FC00
+  7800> 16 26 -2 3 17.434] 125 D
+/pstopsxform pstopsmatrix matrix currentmatrix matrix invertmatrix matrix concatmatrix matrix invertmatrix store
+%%EndSetup
+
+%%Page: pstops 1
+/pstopssaved save def
+pstopsmatrix setmatrix
+0.000000 421.000000 translate
+0.500000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+/showpage{}def/copypage{}def/erasepage{}def
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f8 SF
+-2 60 p (1:)s
+34 r (%)s
+f7 SF
+16 r (sqrt)s
+2 r 11 1 ru
+12 r (mat.red)s
+f8 SF
+-2 90 p (2:)s
+-2 116 p (3:)s
+34 r (%)s
+f0 SF
+16 r (F)s
+-2 r (or)s
+10 r (a)s
+12 r (given)s
+10 r (2)s
+f5 SF
+7 r (\002)s
+f0 SF
+7 r (2)s
+11 r (matrix)s
+f3 SF
+17 r (A)s
+f5 SF
+9 r (\025)s
+f0 SF
+10 r (0)s
+5 r (,)s
+11 r (we)s
+10 r (shall)s
+11 r (prove)s
+10 r (that)s
+f5 SF
+379 184 p (p)s
+25 1 ru
+f3 SF
+407 214 p (A)s
+f0 SF
+9 r (=)s
+618 191 p (1)s
+480 206 p 292 1 ru
+f6 SF
+480 213 p (p)s
+259 1 ru
+f0 SF
+513 246 p (2)s
+f5 SF
+530 218 p (p)s
+102 1 ru
+f3 SF
+558 246 p (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (b)s
+f1 SF
+645 236 p (2)s
+f0 SF
+667 246 p (+)s
+f3 SF
+7 r (a)s
+f0 SF
+8 r (+)s
+f3 SF
+7 r (c)s
+f6 SF
+782 167 p (\022)s
+f5 SF
+812 166 p (p)s
+102 1 ru
+f3 SF
+840 194 p (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+7 r (b)s
+f1 SF
+926 184 p (2)s
+f0 SF
+949 194 p (+)s
+f3 SF
+7 r (a)s
+118 r (b)s
+899 234 p (b)s
+f5 SF
+1033 206 p (p)s
+102 1 ru
+f3 SF
+1060 234 p (ac)s
+f5 SF
+8 r (\000)s
+f3 SF
+7 r (b)s
+f1 SF
+1147 224 p (2)s
+f0 SF
+1169 234 p (+)s
+f3 SF
+8 r (c)s
+f6 SF
+1223 167 p (\023)s
+f8 SF
+-20 318 p (10:)s
+34 r (%)s
+-20 344 p (11:)s
+-20 368 p (12:)s
+34 r (on)s
+18 r (d)s
+-15 r (d)s
+-2 r (i)s
+-16 r (i)s
+-1 r (v)s
+-16 r (v)s
+-2 r (;)s
+-20 396 p (13:)s
+-20 447 p (14:)s
+34 r (%)s
+f0 SF
+17 r (F)s
+-2 r (or)s
+10 r (a)s
+11 r (given)s
+10 r (matrix)s
+f3 SF
+11 r (A)s
+f0 SF
+10 r (=)s
+f6 SF
+452 400 p (\022)s
+f3 SF
+482 427 p (a)s
+33 r (b)s
+483 467 p (b)s
+35 r (c)s
+f6 SF
+552 400 p (\023)s
+f0 SF
+588 447 p (,)s
+11 r (we)s
+10 r (shall)s
+11 r (\014nd)s
+11 r (a)s
+11 r (matrix)s
+f3 SF
+11 r (X)s
+f0 SF
+12 r (=)s
+f6 SF
+1011 400 p (\022)s
+f3 SF
+1041 427 p (x)s
+33 r (y)s
+1042 467 p (y)s
+35 r (z)s
+f6 SF
+1116 400 p (\023)s
+f0 SF
+1152 447 p (satisfying)s
+f3 SF
+11 r (A)s
+f0 SF
+9 r (=)s
+f3 SF
+9 r (X)s
+f1 SF
+1399 435 p (2)s
+f0 SF
+1414 447 p (.)s
+f8 SF
+-20 505 p (23:)s
+34 r (%)s
+-20 532 p (24:)s
+-20 558 p (25:)s
+34 r (mat)s
+2 r 10 1 ru
+16 r (a:=mat\(\(a,b\),\(b,c\)\);)s
+-20 589 p (26:)s
+34 r (mat)s
+2 r 10 1 ru
+16 r (x:=mat\(\(x,y\),\(y,z\)\);)s
+-20 620 p (27:)s
+-20 650 p (28:)s
+34 r (%)s
+f0 SF
+17 r (The)s
+11 r (equation)s
+f3 SF
+16 r (A)s
+f0 SF
+10 r (=)s
+f3 SF
+9 r (X)s
+f1 SF
+409 638 p (2)s
+f0 SF
+441 650 p (is)s
+11 r (translated)s
+11 r (into)s
+10 r (algebraic)s
+11 r (equations)s
+66 729 p (\(1\))s
+f3 SF
+424 r (x)s
+f1 SF
+551 715 p (2)s
+f0 SF
+573 729 p (+)s
+f3 SF
+8 r (y)s
+f1 SF
+624 715 p (2)s
+f0 SF
+648 729 p (=)s
+f3 SF
+9 r (a;)s
+17 r (y)s
+f0 SF
+1 r (\()s
+f3 SF
+(x)s
+f0 SF
+8 r (+)s
+f3 SF
+7 r (z)s
+f0 SF
+1 r (\))s
+10 r (=)s
+f3 SF
+9 r (b;)s
+17 r (y)s
+f1 SF
+948 715 p (2)s
+f0 SF
+971 729 p (+)s
+f3 SF
+7 r (z)s
+f1 SF
+1021 715 p (2)s
+f0 SF
+1045 729 p (=)s
+f3 SF
+9 r (c)s
+f8 SF
+-20 803 p (33:)s
+34 r (%)s
+-20 830 p (34:)s
+-20 853 p (35:)s
+34 r (mat)s
+2 r 10 1 ru
+16 r (xx:=mat)s
+2 r 10 1 ru
+15 r (x*mat)s
+2 r 10 1 ru
+16 r (x;)s
+f0 SF
+1218 2216 p (sqrt)s
+2 r 10 1 ru
+10 r (mat.red)s
+67 r (page)s
+11 r (1)s
+EP
+
+pstopssaved restore
+/pstopssaved save def
+pstopsmatrix setmatrix
+297.500000 421.000000 translate
+0.500000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+/showpage{}def/copypage{}def/erasepage{}def
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f8 SF
+-20 33 p (36:)s
+-20 61 p (37:)s
+34 r (%)s
+f0 SF
+17 r (\(1\))s
+11 r (is)s
+11 r (equiv)s
+-1 r (alen)s
+-1 r (t)s
+10 r (to)s
+66 146 p (\(2\))s
+f3 SF
+296 r (x)s
+f0 SF
+9 r (=)s
+f6 SF
+468 116 p (p)s
+91 1 ru
+f3 SF
+501 146 p (a)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (y)s
+f1 SF
+577 137 p (2)s
+f3 SF
+592 146 p (;)s
+16 r (y)s
+f6 SF
+635 119 p (\000)s
+650 116 p (p)s
+91 1 ru
+f3 SF
+683 146 p (a)s
+f5 SF
+8 r (\000)s
+f3 SF
+7 r (y)s
+f1 SF
+759 137 p (2)s
+f0 SF
+781 146 p (+)s
+f6 SF
+814 116 p (p)s
+87 1 ru
+f3 SF
+848 146 p (c)s
+f5 SF
+7 r (\000)s
+f3 SF
+7 r (y)s
+f1 SF
+920 137 p (2)s
+f6 SF
+940 119 p (\001)s
+f0 SF
+965 146 p (=)s
+f3 SF
+9 r (b;)s
+17 r (z)s
+f0 SF
+10 r (=)s
+f6 SF
+1101 116 p (p)s
+87 1 ru
+f3 SF
+1134 146 p (c)s
+f5 SF
+8 r (\000)s
+f3 SF
+7 r (y)s
+f1 SF
+1207 137 p (2)s
+f0 SF
+66 224 p (W)s
+-1 r (e)s
+10 r (put)s
+66 307 p (\(3\))s
+f3 SF
+201 r (f)s
+f0 SF
+3 r (\()s
+f3 SF
+(y)s
+f0 SF
+2 r (\))s
+9 r (=)s
+f6 SF
+417 276 p (p)s
+91 1 ru
+f3 SF
+450 307 p (a)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (y)s
+f1 SF
+526 297 p (2)s
+f3 SF
+540 307 p (;)s
+17 r (g)s
+f0 SF
+1 r (\()s
+f3 SF
+(y)s
+f0 SF
+1 r (\))s
+10 r (=)s
+f3 SF
+9 r (y)s
+f6 SF
+688 280 p (\000)s
+704 276 p (p)s
+91 1 ru
+f3 SF
+737 307 p (a)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (y)s
+f1 SF
+812 297 p (2)s
+f0 SF
+835 307 p (+)s
+f6 SF
+868 276 p (p)s
+87 1 ru
+f3 SF
+901 307 p (c)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (y)s
+f1 SF
+974 297 p (2)s
+f6 SF
+994 280 p (\001)s
+f5 SF
+1017 307 p (\000)s
+f3 SF
+7 r (b;)s
+17 r (h)s
+f0 SF
+(\()s
+f3 SF
+(y)s
+f0 SF
+1 r (\))s
+9 r (=)s
+f6 SF
+1197 276 p (p)s
+87 1 ru
+f3 SF
+1230 307 p (c)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (y)s
+f1 SF
+1302 297 p (2)s
+f8 SF
+-20 385 p (49:)s
+34 r (%)s
+-20 411 p (50:)s
+-20 437 p (51:)s
+34 r (func)s
+2 r 10 1 ru
+16 r (f:=rhs\(first\(solve\(mat)s
+2 r 10 1 ru
+15 r (xx\(1,1\)=a,x\)\)\);)s
+-20 468 p (52:)s
+34 r (func)s
+2 r 10 1 ru
+16 r (h:=rhs\(first\(solve\(mat)s
+2 r 10 1 ru
+15 r (xx\(2,2\)=c,z\)\)\);)s
+-20 499 p (53:)s
+34 r (func)s
+2 r 10 1 ru
+16 r (g:=sub\({x=func)s
+2 r 10 1 ru
+15 r (f,z=func)s
+2 r 10 1 ru
+16 r (h},mat)s
+2 r 10 1 ru
+15 r (xx\(1,2\)\)-b;)s
+-20 530 p (54:)s
+-20 559 p (55:)s
+34 r (%)s
+f0 SF
+17 r (W)s
+-2 r (e)s
+10 r (de\014ne)s
+11 r (a)s
+11 r (function)s
+f3 SF
+17 r (g)s
+f1 SF
+433 564 p (1)s
+f0 SF
+448 559 p (\()s
+f3 SF
+(w)s
+f0 SF
+(\))s
+17 r (by)s
+66 668 p (\(4\))s
+f3 SF
+137 r (g)s
+f1 SF
+261 673 p (1)s
+f0 SF
+276 668 p (\()s
+f3 SF
+(w)s
+f0 SF
+1 r (\))s
+9 r (=)s
+f3 SF
+10 r (g)s
+f0 SF
+1 r (\()s
+f3 SF
+(y)s
+f0 SF
+1 r (\))s
+f6 SF
+445 617 p (p)s
+91 1 ru
+f3 SF
+478 646 p (a)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (y)s
+f1 SF
+553 636 p (2)s
+f5 SF
+576 646 p (\000)s
+f6 SF
+609 617 p (p)s
+87 1 ru
+f3 SF
+642 646 p (c)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (y)s
+f1 SF
+715 636 p (2)s
+445 661 p 285 1 ru
+f3 SF
+578 691 p (y)s
+f6 SF
+743 610 p (\014)s
+743 630 p (\014)s
+743 650 p (\014)s
+743 670 p (\014)s
+743 690 p (\014)s
+f4 SF
+754 711 p (y)s
+f1 SF
+1 r (=1)s
+f4 SF
+(=w)s
+f0 SF
+846 668 p (=)s
+f5 SF
+9 r (\000)s
+f3 SF
+(b)s
+f6 SF
+921 636 p (p)s
+114 1 ru
+f3 SF
+954 668 p (aw)s
+f1 SF
+997 659 p (2)s
+f5 SF
+1019 668 p (\000)s
+f0 SF
+7 r (1)s
+8 r (+)s
+f3 SF
+7 r (b)s
+f6 SF
+1123 636 p (p)s
+111 1 ru
+f3 SF
+1157 668 p (cw)s
+f1 SF
+1196 659 p (2)s
+f5 SF
+1218 668 p (\000)s
+f0 SF
+7 r (1)s
+8 r (+)s
+f3 SF
+7 r (a)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (c)s
+f8 SF
+-20 784 p (60:)s
+34 r (%)s
+-20 810 p (61:)s
+-20 836 p (62:)s
+34 r (func)s
+2 r 10 1 ru
+16 r (g1:=sub\(y=1/w,func)s
+2 r 10 1 ru
+15 r (g*\(sqrt\(a-y^2\)-sqrt\(c-y^2\)\)/y\);)s
+-20 867 p (63:)s
+-20 894 p (64:)s
+34 r (%)s
+f0 SF
+17 r (W)s
+-2 r (e)s
+10 r (put)s
+66 1000 p (\(5\))s
+f3 SF
+275 r (g)s
+f1 SF
+399 1005 p (2)s
+f0 SF
+414 1000 p (\()s
+f3 SF
+(v)s
+f0 SF
+1 r (\))s
+9 r (=)s
+f3 SF
+10 r (g)s
+f1 SF
+517 1005 p (1)s
+f0 SF
+532 1000 p (\()s
+f3 SF
+(w)s
+f0 SF
+1 r (\))s
+f6 SF
+583 962 p (\014)s
+583 981 p (\014)s
+583 1001 p (\014)s
+f4 SF
+594 1023 p (w)s
+f1 SF
+(=)s
+f5 SF
+634 1000 p (p)s
+109 1 ru
+f1 SF
+662 1023 p (\()s
+f4 SF
+(v)s
+f2 SF
+686 1016 p (2)s
+f1 SF
+699 1023 p (+1\))s
+f4 SF
+(=a)s
+f0 SF
+782 1000 p (=)s
+f3 SF
+9 r (b)s
+f6 SF
+831 946 p (r)s
+193 1 ru
+f5 SF
+868 977 p (\000)s
+f3 SF
+(a)s
+f0 SF
+8 r (+)s
+f3 SF
+7 r (cv)s
+f1 SF
+984 968 p (2)s
+f0 SF
+1006 977 p (+)s
+f3 SF
+8 r (c)s
+868 992 p 185 1 ru
+952 1022 p (a)s
+f5 SF
+1065 1000 p (\000)s
+f3 SF
+8 r (bv)s
+f0 SF
+8 r (+)s
+f3 SF
+8 r (a)s
+f5 SF
+7 r (\000)s
+f3 SF
+7 r (c)s
+f8 SF
+-20 1098 p (70:)s
+34 r (%)s
+f0 SF
+1218 2216 p (sqrt)s
+2 r 10 1 ru
+10 r (mat.red)s
+67 r (page)s
+11 r (2)s
+EP
+
+pstopssaved restore
+/pstopssaved save def
+pstopsmatrix setmatrix
+0.000000 0.000000 translate
+0.500000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+/showpage{}def/copypage{}def/erasepage{}def
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f8 SF
+-20 33 p (71:)s
+-20 60 p (72:)s
+34 r (func)s
+2 r 10 1 ru
+16 r (g2:=sub\(w=sqrt\(\(v^2+1\)/a\),func)s
+2 r 10 1 ru
+15 r (g1\);)s
+-20 91 p (73:)s
+-20 117 p (74:)s
+34 r (%)s
+f0 SF
+17 r (Since)s
+f3 SF
+774 151 p (g)s
+f1 SF
+790 156 p (2)s
+f0 SF
+805 151 p (\()s
+f3 SF
+(v)s
+f0 SF
+1 r (\))s
+10 r (=)s
+9 r (0)s
+f3 SF
+589 204 p (g)s
+f1 SF
+605 209 p (2)s
+f0 SF
+620 204 p (\()s
+f3 SF
+(v)s
+f0 SF
+1 r (\))s
+7 r (+)s
+f3 SF
+8 r (bv)s
+f5 SF
+8 r (\000)s
+f3 SF
+8 r (a)s
+f0 SF
+7 r (+)s
+f3 SF
+8 r (c)s
+f0 SF
+9 r (=)s
+f3 SF
+9 r (bv)s
+f5 SF
+9 r (\000)s
+f3 SF
+7 r (a)s
+f0 SF
+7 r (+)s
+f3 SF
+8 r (c)s
+f0 SF
+548 258 p (\()s
+f3 SF
+(g)s
+f1 SF
+577 263 p (2)s
+f0 SF
+592 258 p (\()s
+f3 SF
+(v)s
+f0 SF
+1 r (\))s
+8 r (+)s
+f3 SF
+7 r (bv)s
+f5 SF
+9 r (\000)s
+f3 SF
+7 r (a)s
+f0 SF
+7 r (+)s
+f3 SF
+8 r (c)s
+f0 SF
+(\))s
+f1 SF
+833 244 p (2)s
+f0 SF
+857 258 p (=)s
+10 r (\()s
+f3 SF
+(bv)s
+f5 SF
+8 r (\000)s
+f3 SF
+8 r (a)s
+f0 SF
+7 r (+)s
+f3 SF
+7 r (c)s
+f0 SF
+(\))s
+f1 SF
+1063 244 p (2)s
+f3 SF
+595 310 p (b)s
+f1 SF
+609 298 p (2)s
+595 325 p 29 1 ru
+f3 SF
+595 355 p (a)s
+f0 SF
+637 332 p (\()s
+f5 SF
+(\000)s
+f3 SF
+(a)s
+f0 SF
+7 r (+)s
+f3 SF
+8 r (cv)s
+f1 SF
+766 319 p (2)s
+f0 SF
+788 332 p (+)s
+f3 SF
+7 r (c)s
+f0 SF
+(\))s
+9 r (=)s
+10 r (\()s
+f3 SF
+(bv)s
+f5 SF
+8 r (\000)s
+f3 SF
+8 r (a)s
+f0 SF
+7 r (+)s
+f3 SF
+7 r (c)s
+f0 SF
+(\))s
+f1 SF
+1063 319 p (2)s
+f0 SF
+66 402 p (we)s
+11 r (put)s
+66 501 p (\(6\))s
+f3 SF
+404 r (g)s
+f1 SF
+528 506 p (3)s
+f0 SF
+543 501 p (\()s
+f3 SF
+(v)s
+f0 SF
+1 r (\))s
+9 r (=)s
+f3 SF
+634 479 p (b)s
+f1 SF
+649 467 p (2)s
+634 494 p 29 1 ru
+f3 SF
+635 524 p (a)s
+f0 SF
+677 501 p (\()s
+f5 SF
+(\000)s
+f3 SF
+(a)s
+f0 SF
+7 r (+)s
+f3 SF
+8 r (cv)s
+f1 SF
+805 488 p (2)s
+f0 SF
+828 501 p (+)s
+f3 SF
+7 r (c)s
+f0 SF
+(\))s
+f5 SF
+7 r (\000)s
+f0 SF
+8 r (\()s
+f3 SF
+(bv)s
+f5 SF
+8 r (\000)s
+f3 SF
+8 r (a)s
+f0 SF
+7 r (+)s
+f3 SF
+7 r (c)s
+f0 SF
+(\))s
+f1 SF
+1099 488 p (2)s
+f0 SF
+66 592 p (W)s
+-1 r (e)s
+10 r (can)s
+11 r (solve)s
+10 r (the)s
+11 r (equation)s
+f3 SF
+17 r (g)s
+f1 SF
+480 597 p (3)s
+f0 SF
+495 592 p (\()s
+f3 SF
+(v)s
+f0 SF
+1 r (\))s
+9 r (=)s
+10 r (0)s
+16 r (and)s
+11 r (get)s
+11 r (tw)s
+-1 r (o)s
+11 r (solutions)s
+f3 SF
+513 696 p (v)s
+f1 SF
+529 701 p (1)s
+f0 SF
+553 696 p (=)s
+f3 SF
+592 674 p (a)s
+f0 SF
+8 r (+)s
+f5 SF
+650 646 p (p)s
+102 1 ru
+f3 SF
+678 674 p (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (b)s
+f1 SF
+765 664 p (2)s
+592 689 p 187 1 ru
+f3 SF
+679 719 p (b)s
+795 696 p (;)s
+38 r (v)s
+f1 SF
+859 701 p (2)s
+f0 SF
+883 696 p (=)s
+f3 SF
+922 674 p (a)s
+f5 SF
+7 r (\000)s
+980 646 p (p)s
+102 1 ru
+f3 SF
+1008 674 p (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (b)s
+f1 SF
+1095 664 p (2)s
+922 689 p 187 1 ru
+f3 SF
+1009 719 p (b)s
+f0 SF
+66 785 p (Here)s
+11 r (we)s
+11 r (note)s
+11 r (that)s
+11 r (since)s
+f3 SF
+414 878 p (g)s
+f1 SF
+429 883 p (2)s
+f0 SF
+444 878 p (\()s
+f3 SF
+(v)s
+f1 SF
+473 883 p (2)s
+f0 SF
+488 878 p (\))s
+9 r (=)s
+f6 SF
+545 831 p (q)s
+404 1 ru
+f5 SF
+579 878 p (\000)s
+f0 SF
+(2)s
+f3 SF
+(c)s
+f6 SF
+635 845 p (p)s
+102 1 ru
+f3 SF
+669 878 p (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+7 r (b)s
+f1 SF
+755 868 p (2)s
+f0 SF
+778 878 p (+)s
+f3 SF
+7 r (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (b)s
+f1 SF
+898 868 p (2)s
+f0 SF
+920 878 p (+)s
+f3 SF
+7 r (c)s
+f1 SF
+967 868 p (2)s
+f0 SF
+990 878 p (+)s
+f6 SF
+1023 845 p (p)s
+102 1 ru
+f3 SF
+1056 878 p (ac)s
+f5 SF
+8 r (\000)s
+f3 SF
+7 r (b)s
+f1 SF
+1143 868 p (2)s
+f5 SF
+1165 878 p (\000)s
+f3 SF
+8 r (c)s
+72 958 p (g)s
+f1 SF
+88 963 p (2)s
+f0 SF
+103 958 p (\()s
+f3 SF
+(v)s
+f1 SF
+132 963 p (2)s
+f0 SF
+147 958 p (\))s
+16 r (is)s
+11 r (not)s
+11 r (alwa)s
+-1 r (ys)s
+11 r (equal)s
+11 r (to)s
+11 r (0.)s
+14 r (So,)s
+12 r (we)s
+10 r (can)s
+11 r (reject)s
+f3 SF
+16 r (v)s
+f1 SF
+822 963 p (2)s
+f0 SF
+842 958 p (.)s
+f8 SF
+-20 992 p (96:)s
+34 r (%)s
+-20 1019 p (97:)s
+-20 1045 p (98:)s
+34 r (func)s
+2 r 10 1 ru
+16 r (g3:=\(func)s
+2 r 10 1 ru
+15 r (g2+b*v-a+c\)^2-\(b*v-a+c\)^2;)s
+-20 1079 p (99:)s
+34 r (solutions:=solve\(func)s
+2 r 10 1 ru
+16 r (g3,v\);)s
+-37 1113 p (100:)s
+34 r (v1:=rhs\(first\(solutions\)\);)s
+-37 1144 p (101:)s
+34 r (v2:=rhs\(second\(solutions\)\);)s
+-37 1175 p (102:)s
+34 r (sub\(v=v1,func)s
+2 r 10 1 ru
+15 r (g2\);)s
+-37 1209 p (103:)s
+34 r (sub\(v=v2,func)s
+2 r 10 1 ru
+15 r (g2\);)s
+-37 1240 p (104:)s
+-37 1266 p (105:)s
+34 r (%)s
+f0 SF
+16 r (Since)s
+f3 SF
+717 1322 p (y)s
+f0 SF
+10 r (=)s
+f6 SF
+779 1275 p (r)s
+97 1 ru
+f3 SF
+852 1299 p (a)s
+816 1314 p 89 1 ru
+816 1345 p (v)s
+f1 SF
+833 1335 p (2)s
+f0 SF
+856 1345 p (+)s
+7 r (1)s
+66 1403 p (we)s
+11 r (hav)s
+-1 r (e)s
+f3 SF
+625 1451 p (y)s
+f1 SF
+642 1456 p (1)s
+f0 SF
+666 1451 p (=)s
+f3 SF
+844 1429 p (b)s
+705 1444 p 292 1 ru
+f6 SF
+705 1450 p (p)s
+259 1 ru
+f0 SF
+738 1484 p (2)s
+f5 SF
+755 1456 p (p)s
+102 1 ru
+f3 SF
+782 1484 p (ac)s
+f5 SF
+8 r (\000)s
+f3 SF
+7 r (b)s
+f1 SF
+869 1474 p (2)s
+f0 SF
+891 1484 p (+)s
+f3 SF
+8 r (a)s
+f0 SF
+7 r (+)s
+f3 SF
+7 r (c)s
+f0 SF
+1218 2216 p (sqrt)s
+2 r 10 1 ru
+10 r (mat.red)s
+67 r (page)s
+11 r (3)s
+EP
+
+pstopssaved restore
+/pstopssaved save def
+pstopsmatrix setmatrix
+297.500000 0.000000 translate
+0.500000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f8 SF
+-37 33 p (113:)s
+34 r (%)s
+-37 60 p (114:)s
+-37 86 p (115:)s
+34 r (y1:=sqrt\(a/\(v1^2+1\)\);)s
+-37 117 p (116:)s
+-37 143 p (117:)s
+34 r (%)s
+f0 SF
+16 r (Hence,)s
+11 r (we)s
+10 r (obtain)s
+f3 SF
+631 178 p (x)s
+f1 SF
+650 183 p (1)s
+f0 SF
+674 178 p (=)s
+f3 SF
+9 r (f)s
+f0 SF
+4 r (\()s
+f3 SF
+(y)s
+f1 SF
+758 183 p (1)s
+f0 SF
+773 178 p (\))s
+f3 SF
+11 r (;)s
+39 r (z)s
+f1 SF
+860 183 p (1)s
+f0 SF
+884 178 p (=)s
+f3 SF
+10 r (h)s
+f0 SF
+(\()s
+f3 SF
+(y)s
+f1 SF
+968 183 p (1)s
+f0 SF
+983 178 p (\))s
+66 236 p (this)s
+11 r (gives)s
+f3 SF
+413 294 p (X)s
+f1 SF
+441 299 p (1)s
+f0 SF
+465 294 p (=)s
+f6 SF
+500 247 p (\022)s
+f3 SF
+530 274 p (x)s
+f1 SF
+549 279 p (1)s
+f3 SF
+597 274 p (y)s
+f1 SF
+613 279 p (1)s
+f3 SF
+531 314 p (y)s
+f1 SF
+548 319 p (1)s
+f3 SF
+597 314 p (z)s
+f1 SF
+613 319 p (1)s
+f6 SF
+634 247 p (\023)s
+f0 SF
+667 294 p (=)s
+714 271 p (1)s
+706 286 p 32 1 ru
+f3 SF
+706 317 p (d)s
+f1 SF
+724 322 p (1)s
+f6 SF
+748 247 p (\022)s
+f5 SF
+778 246 p (p)s
+102 1 ru
+f3 SF
+806 274 p (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (b)s
+f1 SF
+893 264 p (2)s
+f0 SF
+915 274 p (+)s
+f3 SF
+7 r (a)s
+118 r (b)s
+865 314 p (b)s
+f5 SF
+999 286 p (p)s
+102 1 ru
+f3 SF
+1026 314 p (ac)s
+f5 SF
+8 r (\000)s
+f3 SF
+7 r (b)s
+f1 SF
+1113 304 p (2)s
+f0 SF
+1136 314 p (+)s
+f3 SF
+7 r (c)s
+f6 SF
+1189 247 p (\023)s
+f0 SF
+66 388 p (where)s
+f3 SF
+17 r (d)s
+f1 SF
+185 393 p (1)s
+f0 SF
+209 388 p (=)s
+f6 SF
+244 355 p (p)s
+259 1 ru
+f0 SF
+278 388 p (2)s
+f5 SF
+294 360 p (p)s
+102 1 ru
+f3 SF
+322 388 p (ac)s
+f5 SF
+7 r (\000)s
+f3 SF
+8 r (b)s
+f1 SF
+409 378 p (2)s
+f0 SF
+431 388 p (+)s
+f3 SF
+7 r (a)s
+f0 SF
+8 r (+)s
+f3 SF
+7 r (c)s
+f0 SF
+6 r (.)s
+14 r (Direct)s
+11 r (computation)s
+12 r (shows)s
+f3 SF
+15 r (X)s
+f1 SF
+992 376 p (2)s
+989 396 p (1)s
+f0 SF
+1016 388 p (=)s
+f3 SF
+9 r (A)s
+f0 SF
+6 r (.)s
+f8 SF
+-37 422 p (131:)s
+34 r (%)s
+-37 449 p (132:)s
+-37 475 p (133:)s
+34 r (x1:=sub\(y=y1,func)s
+2 r 10 1 ru
+15 r (f\);)s
+-37 509 p (134:)s
+34 r (z1:=sub\(y=y1,func)s
+2 r 10 1 ru
+15 r (h\);)s
+-37 543 p (135:)s
+34 r (mat)s
+2 r 10 1 ru
+15 r (x1:=mat\(\(x1,y1\),\(y1,z1\)\);)s
+-37 576 p (136:)s
+34 r (d1:=sqrt\(2*sqrt\(a*c)s
+17 r (-)s
+18 r (b**2\))s
+17 r (+)s
+17 r (a)s
+18 r (+)s
+17 r (c\);)s
+-37 607 p (137:)s
+34 r (d1*mat)s
+2 r 10 1 ru
+15 r (x1;)s
+-37 636 p (138:)s
+34 r (mat)s
+2 r 10 1 ru
+15 r (x1*mat)s
+2 r 10 1 ru
+16 r (x1;)s
+-37 664 p (139:)s
+-37 688 p (140:)s
+34 r (e)s
+-15 r (e)s
+-2 r (n)s
+-16 r (n)s
+-1 r (d)s
+-16 r (d)s
+-2 r (;)s
+f0 SF
+1218 2216 p (sqrt)s
+2 r 10 1 ru
+10 r (mat.red)s
+67 r (page)s
+11 r (4)s
+EP
+pstopssaved restore
+%%Trailer
+%%Pages: 4
+END
+%%EOF

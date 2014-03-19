@@ -1,0 +1,72 @@
+
+    src2tex version 2.12
+
+    Kazuo AMANO		(kamano@po.iijnet.or.jp)
+    Shinichi NOMOTO	(m93093@euclides.josai.ac.jp)
+
+
+Roughly speaking, src2tex [resp. src2latex] is a sort of text converter from
+    BASIC, C, C++, OBJECTIVE-C, COBOL, FORTRAN, HTML, JAVA,
+    LISP, MAKE, PASCAL, PERL, SCHEME, SHELL, TCL/TK
+and
+    ASIR, MACSYMA, MAPLE, MATHEMATICA, MATLAB, MAXIMA,
+    MuPAD, OCTAVE, REDUCE
+to TeX [resp. LaTeX]. However, it is not a simple pretty-printer; actually, it
+is designed to fulfill the following desires:
+
+(1) We want to write mathematical formulae in comment area of source
+    program. For instance, it is convenient if we are allowed to use
+    an expression
+
+	r=sqrt(x*x+y*y);  /* radius $r=\sqrt{x^2+y^2}$ */
+
+    or something like that in C, and also, the program become more
+    readable if we can embed mathematical formula into comment area
+    of REDUCE, such as
+
+	int(x/sqrt(1-x^2),x);  % integration $\int{x\over\sqrt{1-x^2}}\,dx$
+
+(2) We would like to patch PS or EPS figures upon source program. For
+    example, if we can show a photograph with a simple phrase
+
+	* See the following numerical simulation.
+	*			{\special{epsfile=simulation.eps}}
+
+    of FORTRAN, it would be very impressive and further, if we are able
+    to say
+
+	(* This program generates the following surface.
+				{\special{epsfile=graph.eps}} *)
+
+    in MATHEMATICA, it is quite helpful.
+(3) We need a simple and easy-to-use tool which enables to combine
+    documentation and manual with source program. Unfortunately, WEB
+    is too complicated to a layperson, i.e., to a person who does not
+    have any special knowledge of literate programming.
+(4) We often have to translate our program from text format to TeX
+    format when we want to quote our own program in research report,
+    lecture note, etc. That is quite time consuming, so it should be
+    automated.
+
+Shell scripts src2tex2dvi, src2tex2ps, src2latex2dvi and src2latex2ps are
+also included in this package.  They would be useful if you could modify them
+properly. For more information, it is better to read DVI files src2tex2dvi.dvi,
+src2tex2ps.dvi, src2latex2dvi.dvi and src2latex2ps.dvi .
+
+-------------------------------------------------------------------------
+*   Our source file src2tex-212?.tar.gz is first uuencoded, split into
+    several articles and after that posted to fj.sources newsgroup. So,
+    using cat and uudecode commands appropriately, you would get the
+    original file src2tex-212?.tar.gz .
+
+**  ASIR, JAVA, MACSYMA, MAPLE, MATHEMATICA, MATLAB, REDUCE, UNIX  are
+    registered trademarks of
+	Fujitsu Laboratories, Ltd.,
+	Sun Microsystems, Inc.,
+	Macsyma Inc.,
+	Waterloo Maple Software,
+	Wolfram Research, Inc.,
+	The MathWorks, Inc.,
+	The Rand Corporation
+	AT&T Bell Laboratories
+    respectively.

@@ -1,0 +1,88 @@
+
+    src2tex version 2.12
+
+    天野一男	(kamano@po.iijnet.or.jp)
+    野本慎一	(m93093@euclides.josai.ac.jp)
+
+
+一言でいえば、src2tex と src2latex は、
+    BASIC, C, C++, OBJECTIVE-C, COBOL, FORTRAN, HTML, JAVA,
+    LISP, MAKE, PASCAL, PERL, SCHEME, SHELL, TCL/TK
+および
+    ASIR, MACSYMA, MAPLE, MATHEMATICA, MATLAB, MAXIMA,
+    MuPAD, OCTAVE, REDUCE
+のソースファイルを、TeX あるいは LaTeX 形式のファイルに変換する、一種のテキスト
+コンバータです。しかしながら、src2tex と src2latex は単なる pretty-printer では
+ありません。src2tex と src2latex は、プログラマの以下のような希望をかなえるため
+のツールです。
+
+● コメントエリアに、TeX のような文法で TeXt や数式を書きたい。
+   たとえば、Ｃのプログラムの中で、
+
+	r=sqrt(x*x+y*y);  /* 半径 $r=\sqrt{x^2+y^2}$ */
+
+   あるいは、REDUCE のプログラムで
+
+	int(x/sqrt(1-x^2),x);  % 不定積分 $\int{x\over\sqrt{1-x^2}}\,dx$
+
+   というようなことをしたい。
+● コメントエリアに、PostScript の写真や絵を張り付けたい。
+   たとえば、FORTRAN のコメントエリアの中で、
+
+	* この数値シミュレーションの結果は、次のスライドのようになる。
+	*			{\special{epsfile=simulation.eps}}
+
+   あるいは、MATHEMATICA のプログラムで
+
+	(* このプログラムにより、次のような曲面が描かれる。
+				{\special{epsfile=graph.eps}} *)
+
+   なんて出来たら便利だ。
+● WEB みたいに苦労しないで、簡単にソースそれ自体が見栄えのするリリー
+   スノートやマニュアルでもあるようにして、仕事の効率化（手抜き  (^^) ）
+   を図りたい。
+● 論文や講義ノート等の中で、プログラムを引用するとき、テキスト形式の
+   プログラムを一々 TeX 形式に書き換えねばならなくなる。これは、時間
+   の浪費以外の何者でもないので、自動化したい。
+
+以下に、version 2.12 における主な変更点を列挙します。
+(1) ユーザの方々に指摘された、幾つかのバグをフィックスしました。私たちの知る限
+    り、version 2.11 には幸いなことに致命的なバグは無かったようです。
+(2) FAQ と FAQ.JIS を少しだけ書き替えました。
+(3) ユーザの皆さんからの要望に答えて、src2tex と src2latex を、HTML, JAVA,
+    MACSYMA, MAXIMA, MuPAD にも対応させました。これらの言語の自動判定ルーチンも
+    組み込みました。
+(4) ユーザの方々の希望に沿って RCS(Revision Control System) に対応しました。具
+    体的には、
+	$<RCSkeyword>: ...$
+    という類の表現を発見した場合には、敢えて TeX-mode に移行しないようにしまし
+    た。
+(5) 言語の自動判定は、予約語等に関する荷重評価を用いて行われますが、多くのソー
+    スを実際に src2tex に通すことによって、この評価関数を改良しました。Version
+    2.12 では、余程ひねくれたプログラムでない限り、言語の判定を正確に行える様
+    になったと思います。
+
+パッケージには、src2tex, src2latex をより使い易くし、かつその機能を拡張するため
+のシェルスクリプト
+    src2tex2dvi, src2tex2ps, src2latex2dvi, src2latex2ps
+も入っています。各人のサイトに合うように「書き換えて」ご利用下さい。より詳し
+くは、パッケージの中の DVI ファイル       ^^^^^^^^^^
+    src2tex2dvi.dvi, src2tex2ps.dvi, src2latex2dvi.dvi, src2latex2ps.dvi
+をお読み下さい。これらのファイル自体
+    src2tex2dvi src2tex2dvi src2tex2ps src2latex2dvi src2latex2ps
+とやって、作られたものです。また、シェルスクリプトが使える環境にない MS-DOS
+ユーザのために、幾つかのバッチファイルも添付しました（ DOS_USER.SJS を参照し
+て下さい ）。
+
+-------------------------------------------------------------------------
+*   ASIR, JAVA, MACSYMA, MAPLE, MATHEMATICA, MATLAB, REDUCE, UNIX  are
+    registered trademarks of
+	Fujitsu Laboratories, Ltd.,
+	Sun Microsystems, Inc.,
+	Macsyma Inc.,
+	Waterloo Maple Software,
+	Wolfram Research, Inc.,
+	The MathWorks, Inc.,
+	The Rand Corporation
+	AT&T Bell Laboratories
+    respectively.

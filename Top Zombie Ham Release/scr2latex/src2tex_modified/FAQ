@@ -1,0 +1,145 @@
+
+		Frequently Asked Questions (FAQ)
+
+[Q1] How can I install src2tex and src2latex?
+[A1] You have only to issue the following commands
+	make
+	make install
+in the src2tex-212 directory, and you will find executables src2tex and
+src2latex there. If you are a DOS user, it suffices to type simply
+	make dos
+In this case, you will get src2tex.exe and src2ltex.exe in the present working
+directory.
+<NB> The authors would be very grateful if you could type
+	make report
+and send them your /etc/motd file (if it exists). They think that this would
+give invaluable information.
+
+[Q2] Why don't you write online manual?
+[A2] The usage of src2tex and src2latex is so simple that we don't think
+it is necessary to write an online manual. In fact, it will suffice to input
+either
+	src2tex <source file>  or  src2latex <source file>
+For example, a command
+	src2tex hanoi.c
+gives a TeX file  hanoi.c.tex  in the current directory. For more information
+please input
+	src2tex -help  or  src2latex -help .
+
+[Q3] Shell scripts src2tex2dvi, src2tex2ps, src2latex2dvi, src2latex2ps do
+not work properly. Is it better to revise them?
+[A3] Maybe, you have to edit them. If you are not Japanese, you should comment
+out those lines containing "nkf" and replace "jtex" and "jlatex" with "tex"
+and "latex" respectively. For more information, please read src2tex2dvi.dvi,
+src2tex2ps.dvi, src2latex2dvi.dvi and src2latex2ps.dvi files.
+
+[Q4] Will you give some source files written in src2tex format?
+[A4] Source files  farmer+hen.scm, hanoi.c, newton.c, simpson.c, popgen.red
+might be helpful. Though their comments are written in Japanese, they would
+illustrate how to write comment in src2tex format.
+
+[Q5] How can I include macros and figures?
+[A5] In TeX-mode, you can use any TeXnique such as
+	\input ...
+	\special{ ... }
+So, please feel free to use any method you are always using in TeX.
+
+[Q6] Is it possible, for src2latex, to use non-defauld style file?
+[A6} Yes, it is possible. For example, if you want src2latex to output
+	\documentstyle[twocolumn,12pt]{article}
+and if you are a PASCAL user, then you have only to write a line
+	(* {\documentstyle[twocolumn,12pt]{article}} *)
+at the beginning of your source file.
+
+[Q7] Can I use typewriter font in comment area as well?
+[A7] Yes, you can write comment in typewriter font by using src2tex escape
+sequence  \src2tex{...}.  For instance, if you are a FORTRAN user, it would
+suffice to insert a line
+	* {\src2tex{texfont=tt}}
+For more information, it is better to read a postscript file src2tex.c.ps.
+
+[Q8] How src2tex and src2latex determine language type of given source file?
+[A8] First, they see file-name-suffix and identify language as follows:
+	.tex, .txt, .doc	=>	TEXT
+	.bas, .vb		=>	BASIC
+	.c, .cpp, .vc		=>	C, C++, OBJECTIVE-C
+	.cbl, .cob		=>	COBOL
+	.f, .for		=>	FORTRAN
+	.html			=>	HTML
+	.java			=>	JAVA
+	.lsp, .sc, .scm, .el	=>	LISP, SCHEME
+	makefile		=>	MAKE
+	.p, .pas, .tp		=>	PASCAL
+	.pl, .prl		=>	PERL
+	.sh, .csh, .ksh		=>	SHELL
+	.tcl, .tk		=>	TCL/TK
+	.asi, .asir, .asr	=>	ASIR
+	.mac, .max		=>	MACSYMA, MAXIMA
+	.map, .mpl		=>	MAPLE
+	.mat, .mma		=>	MATHEMATICA
+	.ml, .mtlb, .oct	=>	MATLAB, OCTAVE
+	.mu			=	MuPAD
+	.red, .rdc		=>	REDUCE
+Next, they search key words and attempt to determine language. Unfortunately,
+the mechanism of automatic language detemination is not complete yet.
+
+[Q9] It looks that src2tex output unnecessary \if's at the beginning of TeX
+file. Can I remove them?
+[A9] Yes, you can. Please just replace
+	#define ASCII
+	#define NTT
+with
+	#undef ASCII
+	#undef NTT
+in  src2tex.h  and make a recompilation.
+
+[Q10] When I write a comment of the form
+	* ----------------------------- *
+	*         SUBROUTINE1           *
+	*       1'st pde solver         *
+	* ----------------------------- *
+in FORTRAN program, I often get unexpected output
+	* ----------------------------- *
+	*           SUBROUTINE1             *
+	*      1'st pde solver        *
+	* ----------------------------- *
+or something like that. Is it a bug of src2tex?
+[A10] No, it is not a bug. Actually, src2tex is just trying to print the
+comment in pretty proportion with cmr font. In this case, it would be better
+to use \hfill escape sequence, such as
+	* {\hrulefill} *
+	* {\hfill SUBROUTINE1 \hfill} *
+	* {\hfill 1'st pde solver \hfill} *
+	* {\hrulefill} *
+Generally speaking, it would be convenient if you could define your favorite
+tabulation style in  src2tex.s2t  file by using \settabs escape sequence or
+something like that.
+
+[Q11] Where do I have to put src2tex.s2t and src2latex.s2t files?
+[A11] You can put those files in the same directory where you find plain TeX
+input-files  *.tex  and LaTeX style-files  *.sty .  As is well-known, you can
+modify those search-directories.
+
+[Q12] Can I print line numbers?
+[A12] There are dirty tricks
+	src2tex -0 <filenames>
+	src2latex -0 <filenames> .
+If you want to print <n> lines on each page,
+	src2tex -<n>  <filenames>
+	src2latex -<n>  <filenames>
+commands would be useful.
+
+[Q13] Can I print a certain key word in bold type font?
+[A13] Yes, you can. It would be better to use sed, perl or something like that.
+For example, if you want to print
+	main()
+function of  sample.c  file in bold type font, it will suffice to type
+	src2tex sample.c
+	sed -e s/main()/{\\bf main()}/g sample.c.tex > sample.tex
+	tex sample.tex
+You can modify several given words simultaneously, if you are familiar with sed
+script (cf., for example, c2tex and c2tex.sed).
+Furthermore, any <keyword> in program area is translated into a string
+	}<keyword>{
+by src2tex. This property is very useful when you modify the src2tex-output
+into your favorite style.

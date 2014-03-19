@@ -1,0 +1,41 @@
+To: DOS_USERs,
+
+[1] Some compilers do not accept unix files, and you may need to convert
+the source files to dos text files.  And you need to modify the makefile
+unless you use GCC.
+
+[2] The behaviour of dos-version of src2tex is different from that of unix-
+version. It produces "sample.tex" from "sample.c" instead of "sample.c.tex".
+This is not a serious problem in general, but read the following carefully!
+
+o src2tex can be used to pretty-print a TeX source file. But >>never<< try :
+     src2tex input.tex
+  unless you want to lose your TeX file!  Anyway src2tex will fail in
+  converting from src to tex.
+
+o src2tex can be used to pretty-print a text file with the extension .log.
+  src2tex will produce the desired .tex file.  But >>never<< tex the .tex
+  file in the same directory unless you want to lose the original .log file! 
+
+You can try :
+     src2tex < input.tex[log] > output.tex
+                                ^^^^^^(use a different name!)
+     tex output
+to avoid overwriting the .tex[log] file. [Note. Redirection is not
+recommended for source files, since src2tex cannot use the file extension
+information when determining the language.]
+
+Or you can write a batch file which takes care of these special situations.
+(You may need a tool to manipulate filenames and extensions in batch files.)
+
+[3] src2tex(resp. src2ltex) produces a tex file which will input a style
+file of the name "src2tex.s2t"(resp. "src2ltex.s2t") if there exists one
+in the current directory.  This can be used to customise your TeX output
+without touching the source file.  If you often switch the style files,
+a batch file (say, "get.bat") like:
+     copy c:\tex\macro\%1.s2t src2tex.s2t
+might be handy to use (e.g., get a3 ).
+
+Msayuki Yamasaki
+myamasa@tansei.cc.u-tokyo.ac.jp
+yamasaki@crescent.josai.ac.jp

@@ -1,0 +1,1463 @@
+%!PS-Adobe-2.0
+%%Creator: dvi2ps
+%%Title: pas_bold.c.dvi
+%%Pages: 3 0
+%%BoundingBox: 0 0 595 842
+%%DocumentPaperSizes: A4
+%%Orientation: Portrait
+%%EndComments
+%%BeginProcSet: pstops-clip 1 0
+[/showpage/erasepage/copypage]{dup where{pop dup load
+ type/operatortype eq{1 array cvx dup 0 3 index cvx put
+ bind def}{pop}ifelse}{pop}ifelse}forall
+[/letter/legal/executivepage/a4/a4small/b5/com10envelope
+ /monarchenvelope/c5envelope/dlenvelope/lettersmall/note
+ /folio/quarto/a5]{dup where{dup wcheck{exch{}put}
+ {pop{}def}ifelse}{pop}ifelse}forall
+/lcvx{dup load dup type dup/operatortype eq{pop exch pop}
+ {/arraytype eq{dup xcheck{exch pop aload pop}
+ {pop cvx}ifelse}{pop cvx}ifelse}ifelse}bind def
+/pstopsmatrix matrix currentmatrix def
+/pstopsxform matrix def
+/defaultmatrix{pstopsmatrix exch pstopsxform exch concatmatrix}bind def
+/initmatrix{matrix defaultmatrix setmatrix}bind def
+/pathtoproc{[{currentpoint}stopped{$error/newerror false
+ put{newpath}}{/newpath cvx 3 1 roll/moveto cvx 4 array
+ astore cvx}ifelse]{[/newpath cvx{/moveto cvx}{/lineto cvx}
+ {/curveto cvx}{/closepath cvx}pathforall]cvx exch pop}
+ stopped{$error/errorname get/invalidaccess eq{cleartomark
+ $error/newerror false put cvx exec}{stop}ifelse}if}def
+/initclip[/matrix lcvx/currentmatrix lcvx/pstopsmatrix cvx/setmatrix lcvx
+ /pathtoproc lcvx/initclip lcvx/newpath lcvx
+ 0 0 /moveto lcvx 595.000000 0/rlineto lcvx
+ 0 842.000000/rlineto lcvx -595.000000 0/rlineto lcvx
+ /closepath lcvx/clip lcvx
+ /newpath lcvx/exec lcvx/setmatrix lcvx]cvx def
+/initgraphics{initmatrix newpath initclip 1 setlinewidth
+ 0 setlinecap 0 setlinejoin []0 setdash 0 setgray
+ 10 setmiterlimit}bind def
+%%EndProcSet
+%%BeginFile: /home/kamano/lib/dvi2ps/tex.ps
+%
+systemdict /setpacking known {
+/savepacking currentpacking def
+true setpacking
+} if
+/TeXDict 200 dict def
+TeXDict begin
+/inch {
+72 mul
+} bind def
+/largepaperarray [
+/letter /legal /11x17
+/b4 /b5 /a5 /a4 /a3
+] def
+/smallpaperarray [
+/note dup where {
+pop
+}{
+pop /lettersmall dup where {
+pop
+}{
+pop /letter
+} ifelse
+} ifelse
+/legal /11x17
+/b4 /b5 /a5
+/a4small dup where {
+pop
+}{
+pop /note dup where {
+pop
+}{
+pop /a4
+} ifelse
+} ifelse
+/a3
+] def
+/setpaper {
+dup where papertray and {
+exch get exec
+} if
+} bind def
+/trayarray [
+/lettertray /legaltray /11x17tray
+/b4tray /b5tray /a5tray /a4tray /a3tray
+] def
+/settray {
+dup statusdict exch known {
+{
+statusdict begin load exec end
+} stopped {
+$error /newerror get {
+$error /errorname get /rangecheck eq {
+(Tray not found, using default tray.) print flush
+/papertray false def
+}{
+handleerror
+} ifelse
+$error /newerror false put
+} if
+} if
+}{
+pop
+} ifelse
+} bind def
+/papertray true def
+/widtharray  [
+8.5 inch 8.5 inch 11 inch
+9.84 inch 6.93 inch
+5.83 inch 8.27 inch 11.69 inch
+] def
+/heightarray [
+11 inch 14 inch 17 inch
+13.9 inch 9.84 inch
+8.27 inch 11.69 inch 16.54 inch
+] def
+/xoffset 0 def
+/yoffset 0 def
+/landscape false def
+/pagesetup {
+dup widtharray exch get /paperwidth exch def
+dup heightarray exch get /paperheight exch def
+dup trayarray exch get settray
+large {largepaperarray}{smallpaperarray} ifelse
+exch get setpaper
+} bind def
+/@letter {0 pagesetup} def
+/@legal {1 pagesetup} def
+/@tabloid {2 pagesetup} def
+/@b4 {3 pagesetup} def
+/@b5 {4 pagesetup} def
+/@a5 {5 pagesetup} def
+/@a4 {6 pagesetup} def
+/@a3 {7 pagesetup} def
+/@landscape {/landscape true def} bind def
+/@manualfeed {
+statusdict /manualfeed known {
+statusdict /manualfeed true put
+statusdict /manualfeedtimeout 120 put
+} if
+} bind def
+/@large {
+/large true def
+} bind def
+/@small {
+/large false def
+} bind def
+/@envelope {
+/xoffset 4.28 inch def
+/yoffset 1.5 inch def
+@letter
+} bind def
+/COPIES	{
+/#copies exch def
+} bind def
+/NF {
+/newname exch def
+/fsize exch def
+/corr exch def
+newname 7 dict def
+newname load begin
+/FontType 3 def
+/FontMatrix [corr 0 0 corr neg 0 0] def
+/FontBBox [0 0 1 1] def
+/BitMaps fsize array def
+/BuildChar /CharBuilder load def
+/Encoding 256 array def
+0 1 255 {Encoding exch /.notdef put} for
+end
+newname newname load definefont pop
+} bind def
+/ch-image {ch-data 0 get} bind def
+/ch-width {ch-data 1 get} bind def
+/ch-height {ch-data 2 get} bind def
+/ch-xoff {ch-data 3 get} bind def
+/ch-yoff {ch-data 4 get} bind def
+/ch-tfmw {ch-data 5 get} bind def
+/CharBuilder {
+/ch-code exch def
+/font-dict exch def
+/ch-data font-dict /BitMaps get ch-code get def
+ch-data null eq not {
+ch-tfmw 0
+ch-xoff neg  ch-yoff neg ch-width ch-xoff sub ch-height ch-yoff sub
+setcachedevice
+ch-width ch-height true [1 0  0 1  ch-xoff ch-yoff]
+{ch-image} imagemask
+} if
+} bind def
+/LWF {
+/lw-v exch def
+/lw-h exch def
+findfont [lw-h 0 0 lw-v 0 0] makefont def
+} bind def
+/LWFX {
+/lw-v exch def
+/lw-h exch def
+/savecurfont currentfont def
+findfont dup setfont
+[
+( ) stringwidth pop dup lw-h exch div
+exch lw-v exch div 0 0 3 -1 roll
+0 0
+] makefont def
+savecurfont setfont
+} bind def
+/LWJF /LWF load def
+/SF /setfont load def
+/s3 3 string def
+/D {
+/ch-code exch def
+dup 0 get
+length 2 lt {
+pop [ <00> 1 1 0 0 8.00 ]
+} if
+/ch-data exch def
+currentfont /BitMaps get ch-code ch-data put
+currentfont /Encoding get ch-code
+dup s3 cvs cvn
+put
+} bind def
+/BP {
+/SaveImage save def
+xoffset yoffset translate
+72 72
+landscape {
+exch translate
+90 rotate
+}{
+paperheight exch sub translate
+} ifelse
+72 Resolution div dup neg scale
+0 0 moveto
+} bind def
+/EP {
+showpage 
+SaveImage restore
+} bind def
+/START {
+/Resolution exch def
+} bind def
+/END /end load def
+/l /lineto load def
+/p /moveto load def
+/r {
+0 rmoveto
+} def
+/s /show load def
+/ru {
+/dy exch neg def
+/dx exch def
+/x currentpoint /y exch def def
+newpath x y moveto
+dx 0 rlineto
+0 dy rlineto
+dx neg 0 rlineto
+closepath fill
+x y moveto
+} bind def
+/@SpecialDefaults {
+/hsi paperwidth inch def
+/vsi paperheight inch def
+/hof 0 def
+/vof 0 def
+/hsc 1 def
+/vsc 1 def
+/rotat 0 def
+/CLIP false def
+/BBOX false def
+/EPSF false def
+} bind def
+/@hsize {/hsi exch def /CLIP true def} bind def
+/@vsize {/vsi exch def /CLIP true def} bind def
+/@hoffset {/hof exch def} bind def
+/@voffset {/vof exch def} bind def
+/@hscale {/hsc exch def} bind def
+/@vscale {/vsc exch def} bind def
+/@rotation {/rotat exch def} bind def
+/@bbox {
+/ury exch def
+/urx exch def
+/lly exch def
+/llx exch def
+/BBOX true def
+} bind def
+/@epsf {
+/hsi 0 def
+/vsi 0 def
+/EPSF true def
+} bind def
+/@setclipper {
+CLIP {
+newpath 0 0 moveto hsi 0 rlineto 0 vsi rlineto hsi neg 0 rlineto
+closepath clip
+} if
+} bind def
+/@beginspecial {
+/SpecialSave save def
+currentpoint transform initgraphics itransform translate
+dup scale
+landscape {90 rotate} if
+@SpecialDefaults
+@MacSetUp
+} bind def
+/@setspecial {
+hof vof translate
+EPSF BBOX and {
+hsi 0 eq {
+vsi 0 eq {
+hsc vsc
+}{
+vsi ury lly sub div dup
+}ifelse
+}{
+vsi 0 eq {
+hsi urx llx sub div dup
+}{
+hsi urx llx sub div vsi ury lly sub div
+} ifelse
+} ifelse
+scale
+llx neg ury neg translate
+newpath
+llx lly moveto
+urx llx sub 0 rlineto
+0 ury lly sub rlineto
+llx urx sub 0 rlineto
+closepath clip
+newpath
+}{
+@setclipper hsc vsc scale rotat rotate
+} ifelse
+end
+/letter {} def /note {} def /legal {} def /11x17
+/b4 {} def /b5 {} def /a5 {} def /a4 {} def /a3 {} def
+/showpage {} def /copypage {} def /erasepage {} def
+} bind def
+/@MacSetUp {
+userdict /md known {
+userdict /md get type /dicttype eq {
+/MacDrwgs true def
+md /txpose known {
+md /txpose {pxs pys neg scale} put
+} if
+md /cp known {
+md /cp {pop pop pm restore} put
+} if
+} if
+} if
+} bind def
+/@push {
+/SpecialSave save def
+currentpoint translate
+dup scale
+newpath
+} bind def
+/@pop {
+SpecialSave restore
+} bind def
+/@pn
+/setlinewidth load
+def
+/@pt {
+moveto currentpoint currentlinewidth 2 div 0 360 arc fill
+} bind def
+/@ln {
+moveto lineto stroke
+} bind def
+/@ar {
+matrix currentmatrix
+7 -2 roll moveto
+currentpoint translate
+newpath
+5 -2 roll scale
+0 0 1 6 -2 roll arc
+setmatrix
+} bind def
+/@wh {1 setgray} bind def
+/@sh {0.75 setgray} bind def
+/@bk {0 setgray} bind def
+/@RGB {setrgbcolor} bind def
+/@HSB {sethsbcolor} bind def
+/@CMYK {setcmykcolor} bind def
+end
+/@endspecial {
+clear
+TeXDict begin
+SpecialSave restore
+} bind def
+systemdict /setpacking known {
+savepacking setpacking
+} if
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%PaperSize: A4
+%%Feature: *ManualFeed False
+%%Feature: *Resolution 240
+TeXDict begin
+@large
+@a4
+240 START
+1.000 122 /f0 NF
+f0 SF
+[<FE07FC3801E01801C00801C00801C004038004038007FF80020700020700020700010E00010E00010E00009C00009C00009C
+  00007800007800007800003000003000003000> 24 23 -1 0 24.906] 65 D
+[<00FC000382000E01001C0080380040380040780020700020F00020F00000F00000F00000F00000F00000F000207000207800
+  203800603800601C00E00E01E003826000FC20> 24 23 -2 0 23.984] 67 D
+[<FFFC001C07001C03801C01C01C00E01C00F01C00701C00701C00781C00781C00781C00781C00781C00781C00781C00701C00
+  701C00F01C00E01C01C01C03801C0700FFFC00> 24 23 -1 0 25.367] 68 D
+[<FF87FC1C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01C00E01FFFE01C00E01C00E01C00E01C00E01C00
+  E01C00E01C00E01C00E01C00E01C00E0FF87FC> 24 23 -1 0 24.906] 72 D
+[<FFE00E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E00FFE0> 16 23 0 0 11.992] 73 D
+[<3E004300C180E1C0E1C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C01FF8> 16 23 -2 0 17.065] 74 D
+[<FF81FE1C00F81C00F01C00E01C01C01C01C01C03801C07001C0F001E0E001D1C001CBC001C78001C30001C10001C08001C04
+  001C02001C01001C00801C00401C00F0FF81FC> 24 23 -1 0 25.829] 75 D
+[<FFFF801C07801C01801C00801C00C01C00401C00401C00401C00401C00001C00001C00001C00001C00001C00001C00001C00
+  001C00001C00001C00001C00001C0000FFC000> 24 23 -1 0 20.755] 76 D
+[<FE083FE0381C0700101C0700101C0700103A0700103A0700103A0700107107001071070010E0870010E0870010E0870011C0
+  470011C0470011C0470013802700138027001380270017001700170017001E000F001E000F00FE000FE0> 32 23 -1 0 30.441] 77 D
+[<FE00203800601000601000E01001E01001E01003A0100720100720100E20101C20103C2010382010702010F02010E02011C0
+  201380201380201700201E00201E0070FC01FC> 24 23 -1 0 24.906] 78 D
+[<01FC000707000E03801C01C03800E03800E07800F0700070F00078F00078F00078F00078F00078F00078F000787000707800
+  F03800E03800E01C01C00E038007070001FC00> 24 23 -2 0 25.829] 79 D
+[<FF80001C00001C00001C00001C00001C00001C00001C00001C00001C00001C00001FFC001C07001C03C01C01C01C01E01C01
+  E01C01E01C01E01C01C01C03C01C0700FFFC00> 24 23 -1 0 22.600] 80 D
+[<8F80F060C030C01080188018801800180038007003F01FE03FC07E00F000E000C010C010C0104030603030F01F10> 16 23 -2 0 18.449] 83 D
+[<0FFF800070000070000070000070000070000070000070000070000070000070000070000070000070000070000070008070
+  088070088070084070104070106070307FFFF0> 24 23 -1 0 23.984] 84 D
+[<007C000183000700800E00400C00401C00201C00201C00201C00201C00201C00201C00201C00201C00201C00201C00201C00
+  201C00201C00201C00201C00201C0070FF81FC> 24 23 -1 0 24.906] 85 D
+[<1F3C70FEE072E072E072607070701C7007F000702070706070E03F80> 16 14 -1 0 16.604] 97 D
+[<11F01A181C0C1C061C071C071C071C071C071C071C061C0C1E181DF01C001C001C001C001C001C001C001C00FC00> 16 23 0 0 18.449] 98 D
+[<0F80186030107010E000E000E000E000E000E0007020307018700FE0> 16 14 -1 0 14.759] 99 D
+[<0FBF187830386038E038E038E038E038E038E0386038303818780FB80038003800380038003800380038003801F8> 16 23 -1 0 18.449] 100 D
+[<0F80186030106010E000E000E000E000FFF0E0306070306018C00F80> 16 14 -1 0 14.759] 101 D
+[<FF801C001C001C001C001C001C001C001C001C001C001C001C00FF001C001C001C001C001C001C400CE006E003C0> 16 23 0 0 10.147] 102 D
+[<0FC030306018C00CC00CC00C601C3FF83FF03FE0600060002F0039C030C070E070E070E030C039E60F3C> 16 21 -1 7 16.604] 103 D
+[<FF9F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001E1C001D18001CF0001C00001C00001C00
+  001C00001C00001C00001C00001C0000FC0000> 24 23 0 0 18.449] 104 D
+[<FF1C1C1C1C1C1C1C1C1C1C1C1C7C0000000000183C3C18> 8 23 0 0 9.224] 105 D
+[<78EEE6470707070707070707070707070707073F0000000000060F0F06> 8 29 2 6 10.147] 106 D
+[<FF3F801C3E001C3C001C38001C70001CF0001CE0001FC0001DC0001CC0001C20001C30001C3C001C7F001C00001C00001C00
+  001C00001C00001C00001C00001C0000FC0000> 24 23 0 0 17.527] 107 D
+[<FF801C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C00FC00> 16 23 0 0 9.224] 108 D
+[<FF9FCFE01C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001C0E07001E0F07001D0C
+  8600FCF87C00> 32 14 0 0 27.673] 109 D
+[<FF9F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001E1C001D1800FCF000> 24 14 0 0 18.449] 110 D
+[<0FC0186030306018E01CE01CE01CE01CE01CE01C6018303018600FC0> 16 14 -1 0 16.604] 111 D
+[<FF801C001C001C001C001C001DF01E181C0C1C0E1C071C071C071C071C071C071C0E1C0C1E18FDF0> 16 20 0 6 18.449] 112 D
+[<00FF80001C00001C00001C00001C00001C00079C00185C00303C00701C00601C00E01C00E01C00E01C00E01C00601C00701C
+  00303C001C6C00078400> 24 20 -1 6 17.526] 113 D
+[<FF801C001C001C001C001C001C001C001C001C001C201E701E70FDE0> 16 14 0 0 13.006] 114 D
+[<9F00E180C0C080C080C003C03F807F00FE00E000C080C08061803E80> 16 14 -1 0 13.099] 115 D
+[<0F00198038803880388038803800380038003800380038003800FF80380018001800080008000800> 16 20 -1 0 12.914] 116 D
+[<07DF800C3C001C3C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C00FCFC00> 24 14 0 0 18.449] 117 D
+[<0100038003800380074007400F200E200E201C101C103C18381CFE3E> 16 14 -1 0 17.527] 118 D
+[<030600030600070700078F00078F000E8E800E5C800E5C801C58401C38401C3840383020387070FCFCF8> 24 14 -1 0 23.984] 119 D
+[<FCFF3878187008F004E007C003C0038007800EC00E401C203C38FE7E> 16 14 -1 0 17.527] 120 D
+[<7800EC00E600E200020001000100038003800380074007400F200E200E201C101C103C18381CFE3E> 16 20 -1 6 17.527] 121 D
+[<0FC018603030703860186018E01CE01CE01CE01CE01CE01CE01CE01CE01C601860187038303018600FC0> 16 21 -1 0 16.604] 48 D
+[<FFE00E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E00FE000E000600> 16 21 -3 0 16.604] 49 D
+[<FFE07FE03FE0203010100810040006000300018001C000E000E000F04070E070C07080E040E021C01F00> 16 21 -2 0 16.604] 50 D
+[<0FC030604070C038E03CE03C003C003C00380070006007C000E000700070007870787078607030600FC0> 16 21 -1 0 16.604] 51 D
+[<1F00218040C08060E070E070407000700070006040E070C04F0040004000400040007F007F807FC06060> 16 21 -2 0 16.604] 53 D
+[<07C0186030307018601C601CE01CE01CE01CF018F030E860E7C0E000600070003038303818180E1003E0> 16 21 -1 0 16.604] 54 D
+[<1F0020C060607030703000380018001C0F9C185C303C603CE01CE01CE01CE018E0186038303018600F80> 16 21 -1 0 16.604] 57 D
+[<0102040C1818303070606060E0E0E0E0E0E0E0E0E0E060606070303018180C040201> 8 34 -2 9 12.914] 40 D
+[<8040203018180C0C0E060606070707070707070707070606060E0C0C181830204080> 8 34 -2 9 12.914] 41 D
+[<060006000600C630E6703FC00F000F003FC0E670C630060006000600> 16 14 -2 -11 16.604] 42 D
+[<40402020101070F0F060> 8 10 -2 6 9.224] 44 D
+[<60F0F060> 8 4 -2 0 9.224] 46 D
+[<7FFFF0FFFFF8000000000000000000000000000000000000FFFFF87FFFF0> 24 10 -2 -3 25.829] 61 D
+[<00FF000701E008003810000020F0E0218D904307884703888603888E03888E03888E03888E03888E03888603884703904304
+  10218C2020F02010004008008007070000F800> 24 23 -2 0 25.829] 64 D
+[<FE3F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C00FFFF801C1C001C1C001C1C
+  001C1C001C1C001C1C200E1E70070E7001F3E0> 24 23 0 0 19.371] 11 D
+[<FE3F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C00FFFC001C00001C00001C00
+  001C00001C08001C1C000E1C0007080001F000> 24 23 0 0 18.449] 12 D
+[<FF7F801C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C001C1C00FFFC001C1C001C1C001C1C
+  001C1C001C1C001C1C000E1C00071C0001FC00> 24 23 0 0 18.449] 13 D
+[<FFFF> 8 2 0 -6 11.069] 45 D
+1.000 123 /f1 NF
+f1 SF
+[<4000C00060006000300030001800180018000C000C0006000600030003000180018000C000C0006000600030003000300018
+  0018000C000C00060006> 16 30 -5 7 0.000] 54 D
+[<0C000C000C000C000C000C000C000C000C000C000C000C000C000C000C000C000C000C000C00FFC0FFC00C000C000C000C00
+  0C000C000C000C00> 16 29 -2 6 14.759] 121 D
+[<0C000C000C000C000C000C00FFC0FFC00C000C000C000C000C000C0000000C000C000C000C000C000C00FFC0FFC00C000C00
+  0C000C000C000C00> 16 29 -2 6 14.759] 122 D
+1.000 27 /f2 NF
+f2 SF
+[<0007000F001E0038007000E000E001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C0
+  01C001C001C001C001C001C001C00380038007000E001C003800F000F00038001C000E0007000380038001C001C001C001C0
+  01C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C001C000E000E000700038
+  001E000F0007> 16 78 -4 77 24.906] 26 D
+1.000 121 /f3 NF
+f3 SF
+[<1F8780786F80F02E00F01E00F01E00781E003C1E001F1E0001FE00001E00301E00781E00783C007038001FE000> 24 15 -1 0 18.564] 97 D
+[<07E01C38380C780C7000F000F000F000F000F0007018783C383C1C1C07F0> 16 15 -1 0 16.973] 99 D
+[<07F01C18380C78067000F000F000FFFEF00EF00E700E700C381C1C3807E0> 16 15 -1 0 17.503] 101 D
+[<FFFF3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3CFCFC> 8 23 -1 0 10.608] 108 D
+[<FF80FF803C003C003C003C003C003C003C003C003C303A783A78F938F8E0> 16 15 -1 0 15.728] 114 D
+[<DF80F060E020C030C03000F00FF03FE07FC0FF00E000C060C06060E01FE0> 16 15 -1 0 15.063] 115 D
+[<0F801C403C603C603C603C603C003C003C003C003C003C003C00FFC03FC01C001C000C000C000C000C00> 16 21 -1 0 14.851] 116 D
+[<FC3F80FC3F801C3C000C3C0006780007F00003E00001E00003C00007E0000F70000F38001E1800FF3F80FF3F80> 24 15 -1 0 20.155] 120 D
+[<FFF8FFF87FF83FF8101C0C0C060C0300018001E000F000780078007C703CF83CF87CF87870F83FF01FC0> 16 21 -2 0 19.095] 50 D
+1.000 126 /f4 NF
+f4 SF
+[<FCFCFCFC3870387038703FF01FE01CE01CE01CE01CE00CC00CC00CC00CC00CC00CC0078007800780> 16 20 -1 0 17.434] 65 D
+[<FFE0FFF03838383C381C381C381C381C38383FF83FE038F0387038383838383838383870FFF0FFC0> 16 20 -1 0 17.434] 66 D
+[<FF80FFE038F0387038383838381C381C381C381C381C381C381C381C38383838387038F0FFE0FF80> 16 20 -1 0 17.434] 68 D
+[<FFFCFFFC381C381C381C381C380039C039C03FC03FC039C039C038003800381C381C381CFFFCFFFC> 16 20 -1 0 17.434] 69 D
+[<07B80FF81878387870387038E038E038E0FCE0FCE000E000E000E03870387038387818780FF80798> 16 20 -1 0 17.434] 71 D
+[<FFE0FFE00E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E00FFE0FFE0> 16 20 -3 0 17.434] 73 D
+[<FEF0FFF039F03970397039703B703B703B703B703B703B703B703B703A703A703A703E70FFFCFDFC> 16 20 -1 0 17.434] 78 D
+[<FE00FE003800380038003800380038003FC03FF038783838381C381C381C381C38383878FFF0FFC0> 16 20 -1 0 17.434] 80 D
+[<CF80FFC0F0E0E060E07060700070007000E00FE03FC07F00F000E000E0E0E0E0E0E071E03FE01F60> 16 20 -2 0 17.434] 83 D
+[<1FF01FF00380038003800380038003800380038003800380038003800380E39CE39CE39CFFFC7FFC> 16 20 -1 0 17.434] 84 D
+[<03C007E00C301C38381C381C381C381C381C381C381C381C381C381C381C381C381C381CFE7FFE7F> 16 20 0 0 17.434] 85 D
+[<FFF8FFF870387038383838381C001C000E000E00070007000380038001C0E1C0E0E0E0E0FFF07FF0> 16 20 -2 0 17.434] 90 D
+[<1F3E3FFE70F0E070E070E07078703FF00FF00070107038E03FC01F80> 16 14 -1 0 17.434] 97 D
+[<1BC03FE03C703838381C381C381C381C381C381C38383C303FE03BC03800380038003800F800F800> 16 20 -1 0 17.434] 98 D
+[<07C01FE0387070706000E000E000E000E0006000702038701FF007E0> 16 14 -2 0 17.434] 99 D
+[<0F7C1FFC30F07070E070E070E070E070E070E070707038F01FF00F70007000700070007001F001F0> 16 20 -1 0 17.434] 100 D
+[<07C01FF0383870386000E000FFF8FFF8E0386038707038701FE00780> 16 14 -1 0 17.434] 101 D
+[<3FF83FF80380038003800380038003800380038003800380FFFC7FFC03800380038401CE00FE007C> 16 20 0 0 17.434] 102 D
+[<0FC03FF078786018E01CE01CE01C703C3FF83FF03FC070007F003F8039C070E070E070E070E039CE1FFE0F3C> 16 22 -1 8 17.434] 103 D
+[<FE7CFE7C387038703870387038703870387038703C703E703FE039C03800380038003800F800F800> 16 20 -1 0 17.434] 104 D
+[<FFF0FFF00700070007000700070007000700070007000700FF00FF0000000000000006000F000F000600> 16 21 -2 0 17.434] 105 D
+[<FC7CFC7C387038E039E03DC03F803F803F003B8039C039E03FF83FF83800380038003800F800F800> 16 20 -1 0 17.434] 107 D
+[<FFF8FFF80700070007000700070007000700070007000700070007000700070007000700FF00FF00> 16 20 -2 0 17.434] 108 D
+[<F8E380F9E78071C70071C70071C70071C70071C70071C70071C70071C70071C70079E700FFBE00F71C00> 24 14 0 0 17.434] 109 D
+[<FE7CFE7C387038703870387038703870387038703C703E70FFE0F9C0> 16 14 -1 0 17.434] 110 D
+[<0F003FC079E070E0E070E070E070E070E070E07070E079E03FC00F00> 16 14 -2 0 17.434] 111 D
+[<FE00FE00380038003800380038003BC03FE03C703838381C381C381C381C381C381C38383C30FFE0FBC0> 16 21 -1 7 17.434] 112 D
+[<FFF0FFF00E000E000E000E000E000E000E000F000F080F9CFEFCFE78> 16 14 -1 0 17.434] 114 D
+[<DF80FFC0F060E030603000700FE03FC07E00C000C0E0E0E07FE01FE0> 16 14 -2 0 17.434] 115 D
+[<03C007F00E380E380E380E000E000E000E000E000E000E00FFF07FF00E000E000E000600> 16 18 -1 0 17.434] 116 D
+[<0F7C1FFC38F0387038703870387038703870387038703870F9F0F9F0> 16 14 -1 0 17.434] 117 D
+[<078007800FC00CC00CC00CC01CE01CE01CE01CE038703870FCFCFCFC> 16 14 -1 0 17.434] 118 D
+[<18E03DF03DF035B035B035B037B037B03030703870387038FFFCFFFC> 16 14 -1 0 17.434] 119 D
+[<FCFCFCFC1CE01CE00FC00F800780070007800FC01FC01CE0FCF8F8F8> 16 14 -1 0 17.434] 120 D
+[<3C007E0077007700038003800380038003C007C006C006C00EE00EE00CE01CE01C701C703870FCFCFCFC> 16 21 -1 7 17.434] 121 D
+[<FFF8FFF8703838381C380E0006000300038001C070E070707FF83FF8> 16 14 -1 0 17.434] 122 D
+[<07801FE03CF0387070387038E01CE01CE01CE01CE01CE01CE01CE01C7038703838703CF01FE00780> 16 20 -1 0 17.434] 48 D
+[<FFC0FFC00E000E000E000E000E000E000E000E000E000E000E000E00EE00FE001E000E0006000600> 16 20 -3 0 17.434] 49 D
+[<7FF0FFF0707038701C000E000700038001C000C000E0006000704070E070E070E0E070E03FC01F00> 16 20 -2 0 17.434] 50 D
+[<1F003FC070E07070703000380018001C0F9C1FFC387C703CE01CE01CE018E038703838701FE00F80> 16 20 -1 0 17.434] 57 D
+[<3C707FF8679CE39CE788EFC0EFC07DC03CE01CE03CE03E703F7C3B7C3B803B803B801B801F000E00> 16 20 -1 0 17.434] 38 D
+[<60F0F0600000000070F0F0F0F0F0F0F0F0F0F060> 8 20 -6 0 17.434] 33 D
+[<39C039C039C039C039C0FFFCFFFC7FFC1CE01CE01CE01CE01CE07FFCFFFCFFFC0E700E700E700E70> 16 20 -1 0 17.434] 35 D
+[<30107038707C387C387C1C7C1C7C1C380E100E0007000700070003800380038021C071C0F8E0F8E0F8E0F870F870F8387038
+  2018> 16 26 -1 3 17.434] 37 D
+[<80C060303018181878F8F060> 8 12 -6 -8 17.434] 39 D
+[<0180038006000C0018003800300070007000E000E000E000E000E000E000E000700070003000380018000C00060003800180> 16 25 -4 2 17.434] 40 D
+[<80C06030181C0C0E0E070707070707070E0E0C1C183060C080> 8 25 -4 2 17.434] 41 D
+[<060007000600E670F6F0FFF03FC03FC0FFF0F6F0E670060007000600> 16 14 -2 -3 17.434] 42 D
+[<038003800380038003800380FFFCFFFCFFFC038003800380038003800380> 16 15 -1 -3 17.434] 43 D
+[<C0E030301878F8F060> 8 9 -6 5 17.434] 44 D
+[<60F0F060> 8 4 -6 0 17.434] 46 D
+[<C000E000E000700070003800380038001C001C000E000E000E000700070007000380038001C001C001C000E000E000700070
+  0030> 16 26 -2 3 17.434] 47 D
+[<60F0F06000000000000060F0F060> 8 14 -6 0 17.434] 58 D
+[<80C060303070F0F06000000000000060F0F060> 8 19 -6 5 17.434] 59 D
+[<FFFCFFFC7FFC0000000000007FFCFFFCFFFC> 16 9 -1 -6 17.434] 61 D
+[<FF80FF80E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000FF80
+  FF80> 16 26 -6 3 17.434] 91 D
+[<FF80FF800380038003800380038003800380038003800380038003800380038003800380038003800380038003800380FF80
+  FF80> 16 26 -1 3 17.434] 93 D
+[<FFF0FFF0FFF0> 16 3 -2 -9 17.434] 45 D
+[<007000F003E007C00F001E003C00F800F000F8003C001E000F0007C003E000F00070> 16 17 -2 -2 17.434] 60 D
+[<4000E000F0007C003E000F00078003C001F000F001F003C007800F003E007C00F000E0004000> 16 19 -2 -1 17.434] 62 D
+[<00300070007000E000E001C001C001C0038003800700070007000E000E000E001C001C0038003800380070007000E000E000
+  C000> 16 26 -2 3 17.434] 92 D
+[<00F001F00380070007000700070007000700070007000E00FC00FC000E0007000700070007000700070007000700038001F0
+  00F0> 16 26 -2 3 17.434] 123 D
+[<7800FC000E0007000700070007000700070007000700038001F001F00380070007000700070007000700070007000E00FC00
+  7800> 16 26 -2 3 17.434] 125 D
+[<C0C0C0C0C0C0C0C0C0C0C0C0E1C0E1C0C0C0> 16 9 -3 -11 17.434] 34 D
+1.000 117 /f5 NF
+f5 SF
+[<1F8000606000C03000C01800C00C00C00C00601C003FF8003FF0003FE0003000003000001780000CE0001870001870001C38
+  001C38000C30000E798003C780> 24 21 -1 7 16.604] 103 D
+[<FE38381C1C1C1C1C1C0E0E0E0E3E000000000006070703> 8 23 -1 0 9.224] 105 D
+[<FF3F383838381C1C1C1C1C1C1C1C1C1C1C1C0E0E0E0E0F0E0E8C3E78> 16 14 -1 0 18.449] 110 D
+[<FF00380038001C001C001C001C001C001C000E000E100E380F383EF0> 16 14 -1 0 13.006] 114 D
+[<9F00E180C0C0404040E001E00FC03FC03F00380030203020186007A0> 16 14 -1 0 13.099] 115 D
+[<3C00720072007100710071007000700070003800380038003800FF8038001C000C00040004000400> 16 20 -3 0 12.914] 116 D
+[<FFE00E000E0007000700070007000700070003800380038003800380038001C001C001C01FC001C00040> 16 21 -3 0 16.604] 49 D
+[<FFE07FE03FF01010081004080200010000C000E0007000380038001C181C1C1E181E101C081C061801F0> 16 21 -2 0 16.604] 50 D
+[<7FFFF0FFFFF80000000000000000000000000000000000007FFFFC3FFFF8> 24 10 -3 -3 25.829] 61 D
+1.000 123 /f6 NF
+f6 SF
+[<FE03FE3C00F00800E00800E00800E00401C00401C007FFC0020380020380030780010700010700008E00008E00008E00005C
+  00005C00005C00003800003800003800001000> 24 23 -1 0 27.027] 65 D
+[<FF81FE1C00F81C00F01C00E01C01C01C01C01C03801C07001C0F001E0E001D1C001CBC001C78001C30001C10001C08001C06
+  001C01001C00801C00401C00601C0078FF80FE> 24 23 -1 0 27.996] 75 D
+[<FE00103800301000301000701000F01001D01001D0100390100710100F10100E10101C1010381010381010701010E01011C0
+  1011C0101380101700101F00101E0038FC00FE> 24 23 -1 0 27.027] 78 D
+[<87C0D830E018C008800C800C800C000C001C003803F81FF03FE07F00F000E000C008C008C0084018603830580F88> 16 23 -2 0 20.294] 83 D
+[<F83F80301E00101C00101C00101C000FF8000838000C780004700004700002E00002E00002E00001C00001C00001C0000080
+  00> 24 17 -1 0 20.368] 97 D
+[<01F8000E0600180100300100700080600080E00000E00000E00000E00000E000006000807000803001801803800E058001F8
+  80> 24 17 -1 0 19.629] 99 D
+[<FFF000381C003807003803003803803801803801C03801C03801C03801C03801C0380180380380380300380600381C00FFF0
+  00> 24 17 -1 0 20.737] 100 D
+[<FE3F80380E00380E00380E00380E00380E00380E00380E003FFE00380E00380E00380E00380E00380E00380E00380E00FE3F
+  80> 24 17 -1 0 20.368] 104 D
+[<FF801C001C001C001C001C001C001C001C001C001C001C001C001C001C001C00FF80> 16 17 0 0 10.036] 105 D
+[<F861FC70607020F07020F07020F07021C87021C8702384702384702384702702702702702E01702E01702E01703C00F0FC00
+  FC> 24 17 -1 0 24.795] 109 D
+[<F80200700600200E00200E00201E00203A00207A0020720020E20021C20023C2002382002702002E02003E02003C0700F80F
+  80> 24 17 -1 0 20.368] 110 D
+[<03F0000E1C00180600300300700380600180E001C0E001C0E001C0E001C0E001C06001807003803003001806000E1C0003F0
+  00> 24 17 -1 0 21.105] 111 D
+[<0FF80001C00001C00001C00001C00001C00001C00001C00001C00001C00001C00081C08081C08081C08081C080C1C180FFFF
+  80> 24 17 -1 0 19.629] 116 D
+[<03E0000E18001C0400180400380200380200380200380200380200380200380200380200380200380200380200380700FE0F
+  80> 24 17 -1 0 20.368] 117 D
+[<FFFC701C700C38041C041E040E0407000780038001C041E040E04070603870387FFC> 16 17 -1 0 16.678] 122 D
+1.000 121 /f7 NF
+f7 SF
+[<03F00FFC1F063C037C007800F800F800F800F800F800F800781C783E3C3E1E3E0FFC03F8> 16 18 -2 0 20.367] 99 D
+[<01FC000FFF001F01803E00C07C0000780000F80000F80000F80000FFFFC0FFFFC0F803C07803C07C03803C07801E0F000FFE
+  0003F800> 24 18 -1 0 21.004] 101 D
+[<FFE0FFE01F001F001F001F001F001F001F001F001F001F001F0E1F9F1E9F1EDFFE7EFE3C> 16 18 -1 0 18.873] 114 D
+[<CFC0FFE0F070E038C038C03800780FF83FF07FE07FC0FF00F000E030E03070703FF01FB0> 16 18 -2 0 18.076] 115 D
+[<03E00FF00F101F181F181F181F181F001F001F001F001F001F001F001F001F00FFF8FFF83F000F0007000700030003000300> 16 25 -1 0 17.822] 116 D
+[<FF0FFCFF0FFC0C07C00E0F80071F80039F0001BE0000FC0000FC0000F80001F80003F80007EC0007CE000F87001F0380FF87
+  F8FF87F8> 24 18 -1 0 24.186] 120 D
+[<FFFF80FFFF807FFF803FFF801FFF800C01C00600C00380C001C0C000E000007000003C00003E00001F00000F80000F80000F
+  C03007C07807C0FC07C0FC0FC0FC0F80781F80703F001FFC0007F000> 24 26 -2 0 22.913] 50 D
+/pstopsxform pstopsmatrix matrix currentmatrix matrix invertmatrix matrix concatmatrix matrix invertmatrix store
+%%EndSetup
+
+%%Page: pstops 1
+/pstopssaved save def
+pstopsmatrix setmatrix
+0.000000 0.000000 translate
+1.000000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f4 SF
+0 33 p (/*)s
+17 r 1474 1 ru
+1491 r (*)s
+f7 SF
+479 152 p (src2tex)s
+f0 SF
+(*)s
+45 r (version)s
+10 r (2.12)s
+33 r (\(Sep)s
+11 r (9,)s
+11 r (1996\))s
+f6 SF
+466 231 p (Kazuo)s
+13 r (Amano)s
+f1 SF
+(y)s
+f6 SF
+12 r (and)s
+13 r (Shinichi)s
+13 r (Nomoto)s
+f1 SF
+(z)s
+f4 SF
+0 350 p (*)s
+17 r 1474 1 ru
+1491 r (*/)s
+0 470 p (/*)s
+17 r 644 1 ru
+f0 SF
+654 r (pas)s
+2 r 10 1 ru
+10 r (b)s
+1 r (old.c)s
+11 r 644 1 ru
+f4 SF
+660 r (*/)s
+0 510 p (/*)s
+f0 SF
+11 r (In)s
+11 r (P)s
+-2 r (ASCAL,)s
+10 r (several)s
+10 r (key)s
+9 r (words)s
+10 r (are)s
+11 r (usually)s
+11 r (printed)s
+10 r (in)s
+11 r (b)s
+1 r (old)s
+10 r (face.)s
+15 r (Our)s
+f3 SF
+11 r (src2tex)s
+f0 SF
+11 r (and)s
+f3 SF
+11 r (src2latex)s
+f0 SF
+10 r (print)s
+10 r (those)s
+0 549 p (key)s
+10 r (words)s
+10 r (in)s
+11 r (b)s
+1 r (old)s
+11 r (typewriter)s
+11 r (fonts)s
+11 r (if)s
+11 r (the)s
+11 r (input)s
+11 r (\014le)s
+11 r (is)s
+11 r (written)s
+11 r (in)s
+11 r (P)s
+-2 r (ASCAL.)s
+f4 SF
+453 r (*/)s
+0 669 p (#include)s
+17 r (<stdio.h>)s
+0 709 p (#include)s
+17 r ("src2tex.h")s
+0 788 p (extern)s
+17 r (int)s
+18 r (*dec)s
+2 r 10 1 ru
+15 r (buf)s
+2 r 10 1 ru
+16 r (ptr\(\);)s
+0 828 p (extern)s
+17 r (int)s
+18 r (*inc)s
+2 r 10 1 ru
+15 r (buf)s
+2 r 10 1 ru
+16 r (ptr\(\);)s
+0 908 p (/*)s
+17 r 494 1 ru
+f0 SF
+505 r (table)s
+11 r (of)s
+11 r (key)s
+10 r (words)s
+10 r (of)s
+11 r (P)s
+-2 r (ASCAL)s
+11 r 494 1 ru
+f4 SF
+510 r (*/)s
+0 948 p (/*)s
+f0 SF
+17 r (If)s
+11 r (input)s
+11 r (source)s
+11 r (\014le)s
+11 r (is)s
+11 r (written)s
+11 r (in)s
+11 r (P)s
+-2 r (ASCAL,)s
+10 r (then)s
+11 r (the)s
+12 r (following)s
+10 r (words)s
+10 r (are)s
+11 r (printed)s
+10 r (in)s
+11 r (b)s
+1 r (old)s
+11 r (face.)s
+f4 SF
+137 r (*/)s
+0 1028 p (char)s
+17 r (*PAS)s
+3 r 10 1 ru
+15 r (Table[])s
+17 r (=)s
+0 1067 p ({"absolute",)s
+17 r ("and",)s
+18 r ("array",)s
+17 1107 p ("begin",)s
+17 1147 p ("case",)s
+18 r ("const",)s
+17 1187 p ("define",)s
+18 r ("div",)s
+17 r ("downto",)s
+18 r ("do",)s
+17 1227 p ("else",)s
+18 r ("end",)s
+17 r ("external",)s
+17 1267 p ("file",)s
+18 r ("forward",)s
+17 r ("for",)s
+18 r ("function",)s
+17 1306 p ("goto",)s
+17 1346 p ("if",)s
+18 r ("inline",)s
+17 r ("in",)s
+17 1386 p ("label",)s
+18 r ("let",)s
+17 1426 p ("mod",)s
+17 1466 p ("nil",)s
+18 r ("not",)s
+17 1506 p ("of",)s
+18 r ("or",)s
+17 r ("out",)s
+17 1546 p ("packed",)s
+18 r ("procedure",)s
+17 r ("program",)s
+17 1585 p ("record",)s
+18 r ("repeat",)s
+17 r ("return",)s
+17 1625 p ("set",)s
+18 r ("shl",)s
+17 r ("shr",)s
+18 r ("string",)s
+17 1665 p ("then",)s
+18 r ("to",)s
+17 r ("type",)s
+17 1705 p ("until",)s
+17 1745 p ("var",)s
+17 1785 p ("while",)s
+18 r ("with",)s
+17 1825 p ("xor",)s
+0 1860 p 480 1 ru
+f0 SF
+33 1897 p (*)s
+17 r (Permission)s
+8 r (to)s
+9 r (use,)s
+10 r (copy)s
+-3 r (,)s
+9 r (and)s
+9 r (mo)s
+1 r (dify)s
+9 r (this)s
+10 r (softw)s
+-1 r (are)s
+8 r (and)s
+9 r (its)s
+10 r (do)s
+1 r (cumentation)s
+8 r (is)s
+9 r (granted)s
+9 r (under)s
+9 r (no)s
+9 r (conditions.)s
+0 1937 p (How)s
+-1 r (ev)s
+-1 r (er,)s
+11 r (the)s
+12 r (authors)s
+11 r (would)s
+11 r (b)s
+1 r (e)s
+12 r (very)s
+11 r (happy)s
+10 r (if)s
+12 r (users)s
+12 r (could)s
+11 r (inform)s
+12 r (any)s
+11 r (mo)s
+1 r (di\014cations)s
+12 r (to)s
+11 r (k)s
+-1 r (amano@tansei.cc.u-)s
+0 1977 p (tokyo.ac.jp.)s
+14 r (Since)s
+11 r (src2tex)s
+11 r (is)s
+11 r (a)s
+11 r (free)s
+11 r (softw)s
+-1 r (are,)s
+10 r (there)s
+11 r (is)s
+12 r (no)s
+11 r (warran)s
+-1 r (t)s
+-1 r (y)s
+10 r (of)s
+11 r (any)s
+10 r (kind)s
+11 r (for)s
+11 r (the)s
+11 r (program.)s
+f1 SF
+33 2016 p (y)s
+f0 SF
+19 r (Department)s
+10 r (of)s
+11 r (Mathematics,)s
+11 r (Josai)s
+11 r (Universit)s
+-1 r (y)s
+-3 r (,)s
+10 r (Keyakidai,)s
+10 r (Sak)s
+-1 r (ado,)s
+10 r (Saitama,)s
+11 r (350-02,)s
+11 r (JAP)s
+-1 r (AN)s
+10 r (\(k)s
+-1 r (amano@)s
+0 2056 p (p)s
+1 r (o.iijnet.or.jp\))s
+f1 SF
+33 2096 p (z)s
+f0 SF
+19 r (Department)s
+10 r (of)s
+11 r (Mathematics,)s
+11 r (Josai)s
+11 r (Universit)s
+-1 r (y)s
+-2 r (,)s
+10 r (Keyakidai,)s
+10 r (Sak)s
+-1 r (ado,)s
+10 r (Saitama,)s
+11 r (350-02,)s
+11 r (JAP)s
+-2 r (AN)s
+11 r (\(m93093@)s
+0 2136 p (crescent.josai.ac.jp\))s
+1251 2216 p (pas)s
+2 r 10 1 ru
+11 r (b)s
+1 r (old.c)s
+66 r (page)s
+11 r (1)s
+EP
+
+pstopssaved restore
+%%Page: pstops 2
+/pstopssaved save def
+pstopsmatrix setmatrix
+0.000000 0.000000 translate
+1.000000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f4 SF
+17 33 p (""};)s
+0 153 p (/*)s
+17 r 578 1 ru
+f0 SF
+588 r (compare)s
+11 r (tw)s
+-1 r (o)s
+10 r (words)s
+11 r 578 1 ru
+f4 SF
+594 r (*/)s
+0 193 p (/*)s
+f0 SF
+17 r (This)s
+11 r (function)s
+11 r (compares)s
+11 r (tw)s
+-1 r (o)s
+10 r (strings)s
+f4 SF
+133 242 p (buf)s
+2 r 10 1 ru
+10 r (ptr)s
+f0 SF
+(=)s
+f5 SF
+(string1)s
+f0 SF
+(,)s
+f4 SF
+11 r (tbl)s
+3 r 10 1 ru
+10 r (ptr)s
+f0 SF
+(=)s
+f5 SF
+(string2)s
+f0 SF
+0 292 p (and)s
+11 r (returns)s
+f4 SF
+133 353 p (flag)s
+f2 SF
+208 306 p (\032)s
+f0 SF
+239 333 p (=)s
+9 r (0)s
+33 r (if)s
+f5 SF
+11 r (string1=string2)s
+f1 SF
+239 373 p (6)s
+f0 SF
+(=)s
+9 r (0)s
+33 r (otherwise)s
+11 r (.)s
+0 422 p (How)s
+-1 r (ev)s
+-1 r (er,)s
+10 r (compare)s
+2 r 10 1 ru
+10 r (word\(\))s
+10 r (is)s
+11 r (slightly)s
+11 r (di\013erent)s
+10 r (from)s
+11 r (strcmp\(\).)s
+f4 SF
+646 r (*/)s
+0 502 p (int)s
+17 r (compare)s
+3 r 10 1 ru
+15 r (word\(buf)s
+2 r 10 1 ru
+15 r (ptr,)s
+18 r (tbl)s
+2 r 10 1 ru
+15 r (ptr\))s
+0 542 p (int)s
+17 r (*buf)s
+3 r 10 1 ru
+15 r (ptr;)s
+0 582 p (char)s
+17 r (*tbl)s
+3 r 10 1 ru
+15 r (ptr;)s
+0 622 p ({)s
+70 662 p (char)s
+17 r (c;)s
+70 701 p (int)s
+17 r (*ptr,)s
+18 r (flag)s
+17 r (=)s
+17 r (0;)s
+70 781 p (/*)s
+f0 SF
+16 r (if)s
+11 r (the)s
+11 r (previous)s
+12 r (character)s
+10 r (is)s
+11 r (either)s
+11 r (an)s
+11 r (alphab)s
+1 r (et)s
+11 r (or)s
+11 r (a)s
+11 r (num)s
+-1 r (ber,)s
+11 r (then)s
+11 r (returns)s
+11 r (-1)s
+f4 SF
+312 r (*/)s
+70 821 p (ptr)s
+17 r (=)s
+18 r (dec)s
+2 r 10 1 ru
+15 r (buf)s
+2 r 10 1 ru
+16 r (ptr\(buf)s
+2 r 10 1 ru
+15 r (ptr\);)s
+70 861 p (c)s
+17 r (=)s
+18 r (*ptr;)s
+70 901 p (if)s
+17 r (\(\(c)s
+18 r (>=)s
+17 r ('0'\))s
+17 r (&&)s
+18 r (\(c)s
+17 r (<=)s
+18 r ('9'\)\))s
+139 940 p (return)s
+18 r (\(-1\);)s
+70 980 p (if)s
+17 r (\(\(c)s
+18 r (>=)s
+17 r ('A'\))s
+17 r (&&)s
+18 r (\(c)s
+17 r (<=)s
+18 r ('Z'\)\))s
+139 1020 p (return)s
+18 r (\(-1\);)s
+70 1060 p (if)s
+17 r (\(\(c)s
+18 r (>=)s
+17 r ('a'\))s
+17 r (&&)s
+18 r (\(c)s
+17 r (<=)s
+18 r ('z'\)\))s
+139 1100 p (return)s
+18 r (\(-1\);)s
+70 1140 p (if)s
+17 r (\(c)s
+18 r (==)s
+17 r (')s
+2 r 10 1 ru
+16 r ('\))s
+105 1180 p (return)s
+17 r (\(-1\);)s
+70 1219 p (/*)s
+f0 SF
+16 r (\015ag)s
+f1 SF
+17 r (6)s
+f0 SF
+(=)s
+9 r (0)s
+17 r (if)s
+16 r (two)s
+15 r (strings)s
+17 r (are)s
+16 r (di\013erent)s
+f4 SF
+869 r (*/)s
+70 1259 p (/*)s
+f0 SF
+16 r (\015ag)s
+17 r (=)s
+17 r (0)s
+16 r (otherwise)s
+f4 SF
+1123 r (*/)s
+70 1299 p (ptr)s
+17 r (=)s
+18 r (buf)s
+2 r 10 1 ru
+15 r (ptr;)s
+70 1339 p (while)s
+17 r (\(*tbl)s
+2 r 10 1 ru
+16 r (ptr)s
+17 r (!=)s
+18 r ('\\0'\))s
+105 1379 p ({)s
+174 1419 p (c)s
+18 r (=)s
+17 r (*ptr;)s
+174 1459 p (/*)s
+f0 SF
+17 r (upp)s
+1 r (er)s
+16 r (case)s
+f4 SF
+17 r (->)s
+f0 SF
+17 r (low)s
+-1 r (er)s
+15 r (case)s
+f4 SF
+920 r (*/)s
+174 1498 p (if)s
+18 r (\(\(c)s
+17 r (>=)s
+18 r ('A'\))s
+17 r (&&)s
+18 r (\(c)s
+17 r (<=)s
+17 r ('Z'\)\))s
+244 1538 p (c)s
+18 r (+=)s
+17 r (0x20;)s
+174 1578 p (flag)s
+18 r (=)s
+17 r (c)s
+18 r (-)s
+17 r (*tbl)s
+2 r 10 1 ru
+16 r (ptr;)s
+174 1618 p (if)s
+18 r (\(flag)s
+17 r (!=)s
+18 r (0\))s
+244 1658 p (break;)s
+174 1698 p (ptr)s
+18 r (=)s
+17 r (inc)s
+2 r 10 1 ru
+16 r (buf)s
+2 r 10 1 ru
+15 r (ptr\(ptr\);)s
+174 1737 p (++tbl)s
+2 r 10 1 ru
+16 r (ptr;)s
+105 1777 p (})s
+70 1817 p (/*)s
+f0 SF
+16 r (if)s
+11 r (the)s
+11 r (next)s
+12 r (character)s
+10 r (is)s
+11 r (either)s
+11 r (an)s
+11 r (alphab)s
+1 r (et)s
+11 r (or)s
+11 r (a)s
+11 r (num)s
+-1 r (ber,)s
+11 r (then)s
+11 r (returns)s
+11 r (-1)s
+f4 SF
+369 r (*/)s
+70 1857 p (c)s
+17 r (=)s
+18 r (*ptr;)s
+70 1897 p (if)s
+17 r (\(\(c)s
+18 r (>=)s
+17 r ('0'\))s
+17 r (&&)s
+18 r (\(c)s
+17 r (<=)s
+18 r ('9'\)\))s
+139 1937 p (return)s
+18 r (\(-1\);)s
+70 1977 p (if)s
+17 r (\(\(c)s
+18 r (>=)s
+17 r ('A'\))s
+17 r (&&)s
+18 r (\(c)s
+17 r (<=)s
+18 r ('Z'\)\))s
+139 2016 p (return)s
+18 r (\(-1\);)s
+70 2056 p (if)s
+17 r (\(\(c)s
+18 r (>=)s
+17 r ('a'\))s
+17 r (&&)s
+18 r (\(c)s
+17 r (<=)s
+18 r ('z'\)\))s
+139 2096 p (return)s
+18 r (\(-1\);)s
+70 2136 p (if)s
+17 r (\(c)s
+18 r (==)s
+17 r (')s
+2 r 10 1 ru
+16 r ('\))s
+f0 SF
+1251 2216 p (pas)s
+2 r 10 1 ru
+11 r (b)s
+1 r (old.c)s
+66 r (page)s
+11 r (2)s
+EP
+
+pstopssaved restore
+%%Page: pstops 3
+/pstopssaved save def
+pstopsmatrix setmatrix
+0.000000 0.000000 translate
+1.000000 dup scale
+/pstopsmatrix matrix currentmatrix def
+initclip
+pstopsxform concat
+BP
+f0 SF
+1274 -45 p (src2tex)s
+11 r (version)s
+11 r (2.12)s
+f4 SF
+105 33 p (return)s
+17 r (\(-1\);)s
+70 73 p (return)s
+17 r (flag;)s
+0 113 p (})s
+0 232 p (/*)s
+17 r 593 1 ru
+f0 SF
+604 r (get)s
+11 r (b)s
+1 r (old)s
+11 r (face)s
+11 r (\015ag)s
+11 r 593 1 ru
+f4 SF
+609 r (*/)s
+0 272 p (/*)s
+f0 SF
+17 r (This)s
+11 r (function)s
+11 r (compares)s
+11 r (a)s
+11 r (string)s
+f4 SF
+133 322 p (buf)s
+2 r 10 1 ru
+10 r (ptr)s
+f0 SF
+(=)s
+f5 SF
+(string)s
+f0 SF
+0 372 p (with)s
+14 r (key)s
+12 r (words)s
+13 r (stored)s
+14 r (in)s
+f4 SF
+13 r (PAS)s
+3 r 10 1 ru
+10 r (Table[])s
+f0 SF
+(.)s
+23 r (If)s
+13 r (there)s
+14 r (exists)s
+14 r (a)s
+13 r (key)s
+13 r (word)s
+13 r (which)s
+12 r (is)s
+14 r (equal)s
+14 r (to)s
+13 r (given)s
+f5 SF
+13 r (string)s
+f0 SF
+(,)s
+15 r (then)s
+13 r (it)s
+0 412 p (returns)s
+11 r (the)s
+11 r (length)s
+11 r (of)s
+f5 SF
+11 r (string)s
+f0 SF
+(.)s
+f4 SF
+1122 r (*/)s
+0 491 p (int)s
+17 r (get)s
+3 r 10 1 ru
+15 r (bf)s
+2 r 10 1 ru
+15 r (flag\(buf)s
+2 r 10 1 ru
+16 r (ptr\))s
+0 531 p (int)s
+17 r (*buf)s
+3 r 10 1 ru
+15 r (ptr;)s
+0 571 p ({)s
+70 611 p (char)s
+17 r (**table,)s
+18 r (*ptr;)s
+70 651 p (int)s
+17 r (i)s
+18 r (=)s
+17 r (0;)s
+70 731 p (for)s
+17 r (\(table)s
+18 r (=)s
+17 r (PAS)s
+2 r 10 1 ru
+16 r (Table;)s
+17 r (**table)s
+17 r (!=)s
+18 r ('\\0';)s
+17 r (++table\))s
+105 770 p ({)s
+139 810 p (if)s
+18 r (\(compare)s
+2 r 10 1 ru
+15 r (word\(buf)s
+2 r 10 1 ru
+16 r (ptr,)s
+17 r (*table\))s
+18 r (==)s
+17 r (0\))s
+174 850 p ({)s
+0 890 p (#ifdef)s
+17 r (DEBUGGING)s
+209 930 p (printf\("compare)s
+2 r 10 1 ru
+16 r (word\(\):)s
+17 r ("\);)s
+209 970 p (printf\("a)s
+18 r (reserved)s
+17 r (word)s
+18 r (\\"%s\\")s
+17 r (is)s
+17 r (found)s
+18 r (in)s
+17 r (PAS)s
+2 r 10 1 ru
+16 r (table\\n",)s
+17 r (*table\);)s
+0 1010 p (#endif)s
+209 1049 p (/*)s
+f0 SF
+17 r (strlen\()s
+f4 SF
+(*)s
+f0 SF
+(table\))s
+f4 SF
+1068 r (*/)s
+209 1089 p (for)s
+18 r (\(i=)s
+17 r (0,)s
+18 r (ptr)s
+17 r (=)s
+17 r (*table;)s
+18 r (*ptr)s
+17 r (!=)s
+18 r ('\\0';)s
+17 r (++i,)s
+18 r (++ptr\);)s
+209 1129 p (break;)s
+174 1169 p (})s
+105 1209 p (})s
+70 1249 p (return)s
+17 r (i;)s
+0 1288 p (})s
+f0 SF
+1251 2216 p (pas)s
+2 r 10 1 ru
+11 r (b)s
+1 r (old.c)s
+66 r (page)s
+11 r (3)s
+EP
+pstopssaved restore
+%%Trailer
+%%Pages: 3
+END
+%%EOF
